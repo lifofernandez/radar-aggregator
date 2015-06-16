@@ -25,7 +25,7 @@ my %opts = ();
 getopts('dh',\%opts);
 
 my @feed_lines = read_file('feeds.csv');
-#my %FEEDS = ();
+my %FEEDS = ();
 my %ENTRIES = ();
 
 my $debug = $opts{d} || 0;
@@ -42,7 +42,7 @@ foreach my $line(@feed_lines){
   get_feed($url_feed);
 }
 
-print Dumper(\%ENTRIES);
+print Dumper(\%FEEDS);
 
 
 
@@ -61,35 +61,46 @@ print Dumper(\%ENTRIES);
 sub get_feed {
 
     # acceder a cada feed.
-    my $source = shift;
-    my $feed   = XML::FeedPP->new($source);
+    my $feed_source = shift;
+    my $feed   = XML::FeedPP->new($feed_source);
 
-    # print "Title: ", $feed->title(),   "\n";
-    # print "Date: ",  $feed->pubDate(), "\n";
+  
+    my $feed_title       = $feed->title();
+   
+    my $feed_url         = $feed->link();
+   	#my $feed_date        = $feed->pubDate();
+    my $feed_description = $feed->description();
+    #my $feed_copyright	 = $feed->copyright();
+    my $feed_language	 = $feed->language();
+    #my $feed_image       = $feed->image();
+    #$feed->image( $url, $title, $link, $description, $width, $height )
+
+
+    $FEEDS{$feed_title} = {
+    	url 		=> "$feed_url",
+        description => "$feed_description",
+        lang        => "$feed_language",
+    };
+
+
 
     foreach my $item ( $feed->get_item() ) {
 
-        #  print "URL: ",   $item->link(),  "\n";
-        #  print "Title: ", $item->title(), "\n";
-        #  print "Description: ", $item->description(), "\n\n";
-        my $titulo_item = $item->title();
+        my $item_title = $item->title();
 
         #Esto tendria que estar afuera primero.
-        my $item_feed        = $feed->title();
         my $item_date        = $item->pubDate();
         my $item_url         = $item->link();
         my $item_description = $item->description();
-        my $item_content     = '-';
         my $item_tags        = $item->category();
         my $item_author      = $item->author();
 
         #Guardar en el hash main.
-        $ENTRIES{$titulo_item} = {
-            feed        => "$item_feed",
+        $ENTRIES{$item_title} = {
+            feed        => "$feed_title",
             date        => "$item_date",
             url         => "$item_url",
             description => "$item_description",
-            content     => "$item_content",
             tags        => "$item_tags",
             author      => "$item_author"
         };
