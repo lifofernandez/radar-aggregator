@@ -11,6 +11,8 @@ use File::Slurp;
 use Data::Dumper;
 use Getopt::Std;
 use Pod::Usage;
+use HTML::Parse;
+use HTML::FormatText;
 
 =pod
 
@@ -39,10 +41,10 @@ my $debug = $opts{d} || 0;
 foreach my $line(@feed_lines){
   my @array_linea = split(/,/,$line);
   my ($url_feed,@categorias) = @array_linea;
-  get_feed($url_feed);
+  get_feed($url_feed,@categorias);
 }
 
-print Dumper(\%FEEDS);
+print Dumper(\%ENTRIES);
 
 
 
@@ -61,28 +63,29 @@ print Dumper(\%FEEDS);
 sub get_feed {
 
     # acceder a cada feed.
+
     my $feed_source = shift;
     my $feed   = XML::FeedPP->new($feed_source);
+    my @feed_categories = @_;
 
-  
+
     my $feed_title       = $feed->title();
    
     my $feed_url         = $feed->link();
-   	#my $feed_date        = $feed->pubDate();
     my $feed_description = $feed->description();
-    #my $feed_copyright	 = $feed->copyright();
+
     my $feed_language	 = $feed->language();
-    #my $feed_image       = $feed->image();
-    #$feed->image( $url, $title, $link, $description, $width, $height )
 
 
     $FEEDS{$feed_title} = {
     	url 		=> "$feed_url",
         description => "$feed_description",
         lang        => "$feed_language",
+        categorias  => [@feed_categories]
     };
 
 
+    my $feeds_counter = 0;
 
     foreach my $item ( $feed->get_item() ) {
 
@@ -92,6 +95,8 @@ sub get_feed {
         my $item_date        = $item->pubDate();
         my $item_url         = $item->link();
         my $item_description = $item->description();
+        my $item_descriptionClean = HTML::FormatText->new->format(parse_html($item_description));
+
         my $item_tags        = $item->category();
         my $item_author      = $item->author();
 
@@ -101,11 +106,18 @@ sub get_feed {
             date        => "$item_date",
             url         => "$item_url",
             description => "$item_description",
-            tags        => "$item_tags",
+            descriptionClean => "$item_descriptionClean",
+            tags        => [$item_tags],
             author      => "$item_author"
         };
 
+    	
+    	$feeds_counter++;
+
     }
+
+	$FEEDS{$feed_title}->{'n_items'} = "$feeds_counter";
+
     return "### fetched: ", $feed->title() if $debug;
 }
 
