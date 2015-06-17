@@ -10,12 +10,17 @@ angular.module('radarApp', [])
 
   .controller('feedsController', function() {
       var feedsList = this;  
-
+      /*
       feedsList.feeds = [
         {title:'Create Digital Music', categories:['Musica','Arte','Cosas'], description:'Making music with technology', url:'http://createdigitalmusic.com', lang:'en-US', n_items:10,}, 
         {title:'Dataisnature', categories:['Arte'], description:'Interrelationships between natural processes, computational systems and procedural-based art practices', url:'http://www.dataisnature.com', lang:'en-US', n_items:10,}, 
       ];  
+      */
 
+      feedsList.feeds = {
+      "Dataisnature":{"description":"Interrelationships between natural processes, computational systems and procedural-based art practices","n_items":"10","categories":["Arte"],"lang":"en-US","url":"http://www.dataisnature.com"},
+      "Create Digital Music":{"description":"Making music with technology","n_items":"10","categories":["Musica","Arte","Cosas"],"url":"http://createdigitalmusic.com","lang":"en-US"}
+      }
       
   });
 
