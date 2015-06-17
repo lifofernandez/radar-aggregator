@@ -44,7 +44,7 @@ foreach my $line(@feed_lines){
   get_feed($url_feed,@categorias);
 }
 
-print Dumper(\%ENTRIES);
+print Dumper(\%FEEDS);
 
 
 
@@ -81,7 +81,7 @@ sub get_feed {
     	url 		=> "$feed_url",
         description => "$feed_description",
         lang        => "$feed_language",
-        categorias  => [@feed_categories]
+        categories  => [@feed_categories]
     };
 
 
