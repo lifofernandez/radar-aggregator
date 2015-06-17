@@ -13,6 +13,7 @@ use Getopt::Std;
 use Pod::Usage;
 use HTML::Parse;
 use HTML::FormatText;
+use JSON;
 
 =pod
 
@@ -38,17 +39,21 @@ my $debug = $opts{d} || 0;
 ######################################################################
 
 
-foreach my $line(@feed_lines){
+foreach my $line(@feed_lines){  
+  chomp($line);
+  next unless $line;
+  
   my @array_linea = split(/,/,$line);
   my ($url_feed,@categorias) = @array_linea;
   get_feed($url_feed,@categorias);
 }
 
-print Dumper(\%FEEDS);
+#print Dumper(\%FEEDS);
 
+my $FEEDSjson = encode_json \%FEEDS;
+my $ENTRIESSjson = encode_json \%ENTRIES;
 
-
-
+print Dumper($FEEDSjson);
 
 
 
@@ -120,6 +125,7 @@ sub get_feed {
 
     return "### fetched: ", $feed->title() if $debug;
 }
+
 
 
 sub ayudas {

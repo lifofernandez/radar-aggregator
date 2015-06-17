@@ -14,7 +14,6 @@ angular.module('radarApp', [])
       feedsList.feeds = [
         {title:'Create Digital Music', categories:['Musica','Arte','Cosas'], description:'Making music with technology', url:'http://createdigitalmusic.com', lang:'en-US', n_items:10,}, 
         {title:'Dataisnature', categories:['Arte'], description:'Interrelationships between natural processes, computational systems and procedural-based art practices', url:'http://www.dataisnature.com', lang:'en-US', n_items:10,}, 
-
       ];  
 
       
