@@ -32,7 +32,7 @@
         <li ng-repeat="(entryTitle, entryData) in entriesList.entries|orderBy:entriesList.entries.date">
           <span class="{{entryTitle.tags|stringify|lowercase}}">
             <a TARGET="_blank" href="{{entryData.url}}">{{entryTitle}}</a>
-          </span> <span>{{entryData.date}}</span>
+          </span> <span>{{entryData.date|date}}</span>
             <p>
               <span class="description">{{entryData.descriptionClean}}</span> 
               <br>
