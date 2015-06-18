@@ -69,11 +69,13 @@ radarApp.controller('entriesController', function(entriesService, $scope) {
   
 });
 
-
+////////////
 // Filters
+
 radarApp.filter('stringify', function() {
   return function(input, lowercase) {
-    var out = input.join(" ");
+    var out = "";
+    if(input)out = input.join(" ");
     return out;
   };
 

@@ -10,6 +10,7 @@
 
     <h2>Radar</h2>
 
+
     <div ng-controller="feedsController as feedsList">
       <ul class="feeds-list"><span>Feeds: {{feedsList.feeds.length}}</span>
         <li ng-repeat="(feedTitle, feedData) in feedsList.feeds">
@@ -18,7 +19,7 @@
            		<span class="description">{{feedData.description}}</span> 
            		<br>
            		Categorias: 
-           		<span ng-repeat="cat in feedData.categories" class="cat-{{cat|lowercase}}">{{cat}} </span>
+           		<span ng-repeat="cat in feedData.categories" class="cat-{{cat|lowercase}}"> [{{cat}}] </span>
            	</p> 
         </li>
       </ul>
@@ -27,17 +28,24 @@
 
     <div ng-controller="entriesController as entriesList">
       <ul class="entries-list"><span>Entries: {{entriesList.entries.length}}</span>
-        <li ng-repeat="(entryTitle, entryData) in entriesList.entries">
-          <span class="{{entryTitle.tags|stringify|lowercase}}">{{entryTitle}}</span>
+        
+        <li ng-repeat="(entryTitle, entryData) in entriesList.entries|orderBy:entriesList.entries.date">
+          <span class="{{entryTitle.tags|stringify|lowercase}}">
+            <a TARGET="_blank" href="{{entryData.url}}">{{entryTitle}}</a>
+          </span> <span>{{entryData.date}}</span>
             <p>
               <span class="description">{{entryData.descriptionClean}}</span> 
               <br>
-              Tags: 
-              <span ng-repeat="tag in entryData.tags" class="tag-{{cat|lowercase}}">{{tag}}</span>
+              <span ng-if="entryData.tags">tags:<span ng-repeat="tag in entryData.tags" class="tag-{{tag|lowercase}}"> [{{tag}}] </span></span>
+              <br>
+              feed: <a TARGET="_blank" href="{{entryData.feed_url}}">{{entryData.feed}}</a>
             </p> 
         </li>
+     
       </ul>
     </div>
+
+
 
   </body>
 </html>

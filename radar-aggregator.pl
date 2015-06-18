@@ -11,6 +11,7 @@ use File::Slurp;
 use Data::Dumper;
 use Getopt::Std;
 use Pod::Usage;
+use HTML::Entities;
 use HTML::Parse;
 use HTML::FormatText;
 use JSON;
@@ -45,6 +46,7 @@ foreach my $line(@feed_lines){
   
   my @array_linea = split(/,/,$line);
   my ($url_feed,@categorias) = @array_linea;
+
   get_feed($url_feed,@categorias);
 }
 
@@ -75,13 +77,14 @@ sub get_feed {
 
     my $feed_source = shift;
     my $feed   = XML::FeedPP->new($feed_source);
+
     my @feed_categories = @_;
 
 
-    my $feed_title       = $feed->title();
+    my $feed_title       = decode_entities($feed->title());
    
     my $feed_url         = $feed->link();
-    my $feed_description = $feed->description();
+    my $feed_description = decode_entities($feed->description());
 
     my $feed_language	 = $feed->language();
 
@@ -98,25 +101,27 @@ sub get_feed {
 
     foreach my $item ( $feed->get_item() ) {
 
-        my $item_title = $item->title();
+        my $item_title = decode_entities($item->title());
 
         #Esto tendria que estar afuera primero.
         my $item_date        = $item->pubDate();
         my $item_url         = $item->link();
         my $item_description = $item->description();
         my $item_descriptionClean = HTML::FormatText->new->format(parse_html($item_description));
-
-        my $item_tags        = $item->category();
+        $item_descriptionClean = decode_entities($item_descriptionClean);
+        my @item_tags        = $item->category();
         my $item_author      = $item->author();
 
         #Guardar en el hash main.
         $ENTRIES{$item_title} = {
             feed        => "$feed_title",
+            feed_url    => "$feed_url",
+            feed_categories => [@feed_categories],
             date        => "$item_date",
             url         => "$item_url",
             description => "$item_description",
             descriptionClean => "$item_descriptionClean",
-            tags        => [$item_tags],
+            tags        => @item_tags,
             author      => "$item_author"
         };
 
