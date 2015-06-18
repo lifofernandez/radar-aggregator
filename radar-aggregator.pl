@@ -51,9 +51,13 @@ foreach my $line(@feed_lines){
 #print Dumper(\%FEEDS);
 
 my $FEEDSjson = encode_json \%FEEDS;
-my $ENTRIESSjson = encode_json \%ENTRIES;
+my $ENTRIESjson = encode_json \%ENTRIES;
+
+write_file('vista/data/feeds.json', $FEEDSjson);
+write_file('vista/data/entries.json', $ENTRIESjson);
 
 print Dumper($FEEDSjson);
+
 
 
 

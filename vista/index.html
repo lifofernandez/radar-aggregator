@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="radarApp">
+  <head>
+    <script src="js/angular.min.js"></script>
+    <script src="js/radar.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <h2>Radar</h2>
+
+    <div ng-controller="feedsController as feedsList">
+      <ul class="feeds-list"><span>Feeds: {{feedsList.feeds.length}}</span>
+        <li ng-repeat="(feedTitle, feedData) in feedsList.feeds">
+        	<span class="{{feedData.categories|stringify|lowercase}}">{{feedTitle}}</span>
+           	<p>
+           		<span class="description">{{feedData.description}}</span> 
+           		<br>
+           		Categorias: 
+           		<span ng-repeat="cat in feedData.categories" class="cat-{{cat|lowercase}}">{{cat}} </span>
+           	</p> 
+        </li>
+      </ul>
+    </div>
+
+
+    <div ng-controller="entriesController as entriesList">
+      <ul class="entries-list"><span>Entries: {{entriesList.entries.length}}</span>
+        <li ng-repeat="(entryTitle, entryData) in entriesList.entries">
+          <span class="{{entryTitle.tags|stringify|lowercase}}">{{entryTitle}}</span>
+            <p>
+              <span class="description">{{entryData.descriptionClean}}</span> 
+              <br>
+              Tags: 
+              <span ng-repeat="tag in entryData.tags" class="tag-{{cat|lowercase}}">{{tag}}</span>
+            </p> 
+        </li>
+      </ul>
+    </div>
+
+  </body>
+</html>
