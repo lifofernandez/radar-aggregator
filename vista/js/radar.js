@@ -1,9 +1,14 @@
 var radarApp = angular.module('radarApp', []);
 
+////////////
 // Services
+
 // Setting up a service to house our json file so that it can be called by the controllers
-radarApp.factory('feedsService', function($http) {
+radarApp.factory('feedsService', 
+  
+  function($http) {
     var promise;
+
     var jsondata = {
         get: function() {
             if ( !promise ) {
@@ -14,8 +19,11 @@ radarApp.factory('feedsService', function($http) {
             }
         }
     };
+
     return jsondata;
-});
+  }
+
+);
 
 
 radarApp.factory('entriesService', function($http) {
@@ -34,7 +42,7 @@ radarApp.factory('entriesService', function($http) {
 });
 
 
-
+////////////
 // Controles
 
 radarApp.controller('feedsController', function(feedsService, $scope) {
@@ -42,19 +50,10 @@ radarApp.controller('feedsController', function(feedsService, $scope) {
   var feedsList = this;  
   
   feedsService.get().then(function(d) {
-    //$scope.header = d.data.PACKAGE.ITEM[0]
-
     feedsList.feeds  = d.data;
     console.log(d.data);
   })
 
-  
-  /*
-  feedsList.feeds = {
-    "Dataisnature":{"description":"Interrelationships between natural processes, computational systems and procedural-based art practices","n_items":"10","categories":["Arte"],"lang":"en-US","url":"http://www.dataisnature.com"},
-    "Create Digital Music":{"description":"Making music with technology","n_items":"10","categories":["Musica","Arte","Cosas"],"url":"http://createdigitalmusic.com","lang":"en-US"}
-  }
-  */
 });
 
 
@@ -63,9 +62,10 @@ radarApp.controller('entriesController', function(entriesService, $scope) {
   var entriesList = this;  
   
   entriesService.get().then(function(d) {
-    entriesList.entries  = d.data;
+    entriesList.entries = d.data;
     console.log(d.data);
-  })
+  });
+
   
 });
 
@@ -73,11 +73,13 @@ radarApp.controller('entriesController', function(entriesService, $scope) {
 // Filters
 
 radarApp.filter('stringify', function() {
-  return function(input, lowercase) {
+  
+  return function(input) {
     var out = "";
-    if(input)out = input.join(" ");
+    if((input !== null) && ( typeof input !== 'string'))out = input.join(" ");
     return out;
   };
+
 
 });
 

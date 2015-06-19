@@ -29,8 +29,9 @@ my %opts = ();
 getopts('dh',\%opts);
 
 my @feed_lines = read_file('feeds.csv');
-my %FEEDS = ();
-my %ENTRIES = ();
+my @FEEDS = ();
+my @ENTRIES = ();
+
 
 my $debug = $opts{d} || 0;
 
@@ -52,8 +53,8 @@ foreach my $line(@feed_lines){
 
 #print Dumper(\%FEEDS);
 
-my $FEEDSjson = encode_json \%FEEDS;
-my $ENTRIESjson = encode_json \%ENTRIES;
+my $FEEDSjson = encode_json \@FEEDS;
+my $ENTRIESjson = encode_json \@ENTRIES;
 
 write_file('vista/data/feeds.json', $FEEDSjson);
 write_file('vista/data/entries.json', $ENTRIESjson);
@@ -89,13 +90,7 @@ sub get_feed {
     my $feed_language	 = $feed->language();
 
 
-    $FEEDS{$feed_title} = {
-    	url 		=> "$feed_url",
-        description => "$feed_description",
-        lang        => "$feed_language",
-        categories  => [@feed_categories]
-    };
-
+    # entries
 
     my $feeds_counter = 0;
 
@@ -109,11 +104,18 @@ sub get_feed {
         my $item_description = $item->description();
         my $item_descriptionClean = HTML::FormatText->new->format(parse_html($item_description));
         $item_descriptionClean = decode_entities($item_descriptionClean);
+        #item_descriptionClean =~ s/(\.{3})?\s*Read\s*More$//gi;
+        $item_descriptionClean =~ s/Read\s*More$//gi;
+
+
+
         my @item_tags        = $item->category();
         my $item_author      = $item->author();
 
         #Guardar en el hash main.
-        $ENTRIES{$item_title} = {
+       
+        push @ENTRIES, {
+            title       => "$item_title",
             feed        => "$feed_title",
             feed_url    => "$feed_url",
             feed_categories => [@feed_categories],
@@ -123,14 +125,28 @@ sub get_feed {
             descriptionClean => "$item_descriptionClean",
             tags        => @item_tags,
             author      => "$item_author"
-        };
+        };  
 
     	
     	$feeds_counter++;
 
     }
 
-	$FEEDS{$feed_title}->{'n_items'} = "$feeds_counter";
+
+
+    # feeds
+
+    push @FEEDS, {
+        title       => "$feed_title",
+        url         => "$feed_url",
+        description => "$feed_description",
+        lang        => "$feed_language",
+        categories  => [@feed_categories],
+        n_items     => "$feeds_counter",
+    };
+
+
+
 
     return "### fetched: ", $feed->title() if $debug;
 }

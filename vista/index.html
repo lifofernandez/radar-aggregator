@@ -13,13 +13,13 @@
 
     <div ng-controller="feedsController as feedsList">
       <ul class="feeds-list"><span>Feeds: {{feedsList.feeds.length}}</span>
-        <li ng-repeat="(feedTitle, feedData) in feedsList.feeds">
-        	<span class="{{feedData.categories|stringify|lowercase}}">{{feedTitle}}</span>
+        <li ng-repeat="feed in feedsList.feeds">
+        	<span class="{{feed.categories|stringify|lowercase}}">{{feed.title}}</span>
            	<p>
-           		<span class="description">{{feedData.description}}</span> 
+           		<span class="description">{{feed.description}}</span> 
            		<br>
            		Categorias: 
-           		<span ng-repeat="cat in feedData.categories" class="cat-{{cat|lowercase}}"> [{{cat}}] </span>
+           		<span ng-repeat="cat in feed.categories" class="cat-{{cat|lowercase}}"> [{{cat}}] </span>
            	</p> 
         </li>
       </ul>
@@ -29,17 +29,19 @@
     <div ng-controller="entriesController as entriesList">
       <ul class="entries-list"><span>Entries: {{entriesList.entries.length}}</span>
         
-        <li ng-repeat="(entryTitle, entryData) in entriesList.entries|orderBy:entriesList.entries.date">
-          <span class="{{entryTitle.tags|stringify|lowercase}}">
-            <a TARGET="_blank" href="{{entryData.url}}">{{entryTitle}}</a>
-          </span> <span>{{entryData.date|date}}</span>
+        <li ng-repeat="entry in entriesList.entries | orderBy:'date' : true">
+          
+          <span class="{{entry.feed_categories|stringify|lowercase}}">
+            <a TARGET="_blank" href="{{entry.url}}">{{entry.title}}</a>
+          </span> <span>{{entry.date|date:'dd/MM/yyyy'}}</span>
             <p>
-              <span class="description">{{entryData.descriptionClean}}</span> 
+              <span class="description">{{entry.descriptionClean}}</span> 
               <br>
-              <span ng-if="entryData.tags">tags:<span ng-repeat="tag in entryData.tags" class="tag-{{tag|lowercase}}"> [{{tag}}] </span></span>
+              <span ng-if="entry.tags">tags:<span ng-repeat="tag in entry.tags" class="tag-{{tag|lowercase}}"> [{{tag}}] </span></span>
               <br>
-              feed: <a TARGET="_blank" href="{{entryData.feed_url}}">{{entryData.feed}}</a>
+              feed: <a TARGET="_blank" href="{{entry.feed_url}}">{{entry.feed}}</a>
             </p> 
+            
         </li>
      
       </ul>
