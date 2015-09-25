@@ -51,7 +51,7 @@ radarApp.controller('feedsController', function(feedsService, $scope) {
   
   feedsService.get().then(function(d) {
     feedsList.feeds  = d.data;
-    console.log(d.data);
+    //console.log(d.data);
   })
 
 });
@@ -63,7 +63,7 @@ radarApp.controller('entriesController', function(entriesService, $scope) {
   
   entriesService.get().then(function(d) {
     entriesList.entries = d.data;
-    console.log(d.data);
+    //console.log(d.data);
   });
 
   

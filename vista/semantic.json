@@ -1,0 +1,45 @@
+{
+  "base": "semantic/",
+  "paths": {
+    "source": {
+      "config": "src/theme.config",
+      "definitions": "src/definitions/",
+      "site": "src/site/",
+      "themes": "src/themes/"
+    },
+    "output": {
+      "packaged": "../piel/",
+      "uncompressed": "../piel/components/",
+      "compressed": "../piel/components/",
+      "themes": "../piel/themes/"
+    },
+    "clean": "dist/"
+  },
+  "permission": false,
+  "rtl": "No",
+  "components": [
+    "reset",
+    "site",
+    "button",
+    "container",
+    "divider",
+    "header",
+    "icon",
+    "input",
+    "label",
+    "list",
+    "rail",
+    "reveal",
+    "segment",
+    "step",
+    "grid",
+    "item",
+    "search",
+    "sticky",
+    "api",
+    "form",
+    "state",
+    "visibility"
+  ],
+  "version": "2.1.4"
+}

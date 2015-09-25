@@ -1,52 +1,65 @@
 <!doctype html>
 <html ng-app="radarApp">
+  
   <head>
     <script src="js/angular.min.js"></script>
-    <script src="js/radar.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="radar.js"></script>
+
+    <script src="piel/semantic.min.css.js"></script>
+    <link rel="stylesheet" href="piel/semantic.min.css">
+
   </head>
+
+
 
   <body>
 
-    <h2>Radar</h2>
+   
+    <div class="ui container padded">
+      
+      <h1 class="ui header">RAM
+        <div class="sub header">Radar de noticias de Artes Multimediales</div>
+      </h1>
+      <div class="ui divider"></div>
+
+      <div  ng-controller="feedsController as feedsList">
+        <div class="ui horizontal relaxed celled list"><h2>{{feedsList.feeds.length}} Feeds</h2>
+          <div class="item" ng-repeat="feed in feedsList.feeds">
+          	<a class="{{feed.categories|stringify|lowercase}}" TARGET="_blank" title="{{feed.description}}" href="{{feed.url}}">{{feed.title}}</a>             
+          </div>
+        </div>
+      </div>
+      <div class="ui divider"></div>
 
 
-    <div ng-controller="feedsController as feedsList">
-      <ul class="feeds-list"><span>Feeds: {{feedsList.feeds.length}}</span>
-        <li ng-repeat="feed in feedsList.feeds">
-        	<span class="{{feed.categories|stringify|lowercase}}">{{feed.title}}</span>
-           	<p>
-           		<span class="description">{{feed.description}}</span> 
-           		<br>
-           		Categorias: 
-           		<span ng-repeat="cat in feed.categories" class="cat-{{cat|lowercase}}"> [{{cat}}] </span>
-           	</p> 
-        </li>
-      </ul>
-    </div>
-
-
-    <div ng-controller="entriesController as entriesList">
-      <ul class="entries-list"><span>Entries: {{entriesList.entries.length}}</span>
+      
+      <div ng-controller="entriesController as entriesList">
         
-        <li ng-repeat="entry in entriesList.entries | orderBy:'date' : true">
+        <h2 class="ui header">{{entriesList.entries.length}} Entradas</h2>
           
-          <span class="{{entry.feed_categories|stringify|lowercase}}">
-            <a TARGET="_blank" href="{{entry.url}}">{{entry.title}}</a>
-          </span> <span>{{entry.date|date:'dd/MM/yyyy'}}</span>
-            <p>
-              <span class="description">{{entry.descriptionClean}}</span> 
-              <br>
-              <span ng-if="entry.tags">tags:<span ng-repeat="tag in entry.tags" class="tag-{{tag|lowercase}}"> [{{tag}}] </span></span>
-              <br>
-              feed: <a TARGET="_blank" href="{{entry.feed_url}}">{{entry.feed}}</a>
-            </p> 
+          <div class="ui vertical segment" ng-repeat="entry in entriesList.entries | orderBy:'date' : true">
             
-        </li>
-     
-      </ul>
-    </div>
+            <h3 class="{{entry.feed_categories|stringify|lowercase}} ui header">
+              <a TARGET="_blank" href="{{entry.url}}">{{entry.title}}</a>
+            </h3> 
 
+            <p>{{entry.descriptionClean}}</p> 
+
+            <div ng-if="entry.tags">
+              <div ng-repeat="tag in entry.tags | limitTo: 10" class="tag-{{tag|lowercase}} ui tag label">{{tag}}</div>
+            </div>
+
+            <div class="ui left rail">
+              <div class="ui segment">
+                <a TARGET="_blank" href="{{entry.feed_url}}">{{entry.feed}}</a> <span>{{entry.date|date:'dd/MM/yyyy'}}</span>
+              </div>
+            </div>
+              
+          </div>
+       
+        </div>
+      </div>
+    </div>
 
 
   </body>
