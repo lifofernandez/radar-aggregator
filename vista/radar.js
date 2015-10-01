@@ -130,7 +130,8 @@ radarApp.filter('feedsToggle', function(){
 
     if((!feedsSelected) || (feedsSelected.length < 1)){
       //return arr;
-      feedsSelected = ["Dataisnature","TechCrunch","Create Digital Music"];
+      //feedsSelected = ["Dataisnature","TechCrunch","Create Digital Music"];
+      console.log(feedsSelected);
     }
 
     var result = [];

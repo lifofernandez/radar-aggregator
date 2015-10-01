@@ -2,13 +2,18 @@
 <html ng-app="radarApp">
   
   <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Radar de noticias de Artes Multimediales">
+    <meta name="keywords" content="RSS,Aggregator,ATAM">
+    <meta name="author" content="lf">
+
     <script src="js/angular.min.js"></script>
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-   
-    <script src="radar.js"></script>
 
+    
 
     <link rel="stylesheet" href="piel/semantic.min.css">
+
 
   </head>
 
@@ -79,16 +84,16 @@
       </div>
     </div>
   </div>
-    <script src="piel/semantic.min.js"></script>
+    
+<script src="piel/semantic.min.js"></script>
 
+    <script src="radar.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      $('#feedz').dropdown();
-    });
+      $('#feedz').dropdown('set selected', ["Dataisnature","TechCrunch","Create Digital Music"]);
+      //$('#feedz').dropdown('placeholder', 'value');
 
-    // $('select.dropdown')
-    //   .dropdown('set selected', ["Dataisnature","TechCrunch","Create Digital Music"])
-    // ;
+    });
   </script>
 
   </body>
