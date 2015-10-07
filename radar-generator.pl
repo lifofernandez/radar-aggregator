@@ -8,13 +8,16 @@ use feature "say";
 use strict;
 use XML::FeedPP;
 use File::Slurp; 
+
 use Data::Dumper;
 use Getopt::Std;
 use Pod::Usage;
+
+use Date::Manip;
+
 use HTML::Entities;
 use HTML::Parse;
 use HTML::FormatText;
-
 use HTML::Template;
 
 =pod
@@ -33,10 +36,12 @@ getopts('dh',\%opts);
 my @feed_lines = read_file('feeds.csv');
 my $feed_ejemplo = read_file('ejemplo_feed_file.xml');
 
-my %FEEDS = ();
+# my %FEEDS = ();
+# my %ENTRIES = ();
 
-my %ENTRIES = ();
 my @entradas = ();
+my @feeds = ();
+
 
 # open the html template
 my $template = HTML::Template->new(filename => 'index.tmpl');
@@ -48,6 +53,11 @@ my $debug = $opts{d} || 0;
 # Cod Ppal.
 ######################################################################
 
+# DEVELEPMENT content
+
+get_feed("ejemplo_feed_file.xml",["prueba", "pepe"]);
+
+# REAL content
 
 foreach my $line(@feed_lines){  
 	chomp($line);
@@ -59,9 +69,6 @@ foreach my $line(@feed_lines){
 	get_feed($url_feed,@categorias);
 }
 
-# DEVELEPMENT content
-#get_feed("ejemplo_feed_file.xml",["prueba", "pepe"]);
-
 
 
 ######################################################################
@@ -70,6 +77,8 @@ foreach my $line(@feed_lines){
 
 
 $template->param(ENTRADA => \@entradas);
+$template->param(FEED => \@feeds);
+
 my $output = $template->output;
 
 # print $output;
@@ -142,6 +151,7 @@ sub get_feed {
 
 				# Esto tendria que estar afuera primero.
 				my $item_date        			= $item->pubDate();
+
 				my $item_url         			= $item->link();
 				my $item_description 			= $item->description();
 				my $item_descriptionClean = HTML::FormatText->new->format(parse_html($item_description));
@@ -236,21 +246,35 @@ sub get_feed {
 				# 	feed_categories => [@feed_categories]
 				# };  
 
+				my $date1 = ParseDate($item_date);
+				my $date2 = ParseDate("yesterday");
 
-				push @entradas, {
-            title       => "$item_title",
-            date        => "$item_date",
-            url         => "$item_url",
-            # description_raw => "$item_description",
-            description => "$item_descriptionClean",
-            tags        => [@tags],
-            # tags        => @item_tags,
+				my $rango ='0:0:0:0:-24:0:0';
+			 	my $delta = DateCalc($date1,$date2);
 
-            # author      => "$item_author",
-            feed        => "$feed_title",
-            feed_url    => "$feed_url"
-           	# feed_categories => [@feed_categories],     
-        };  
+   			my $esdehoy = Date_Cmp($rango,$delta);
+
+				# imprimir($date1);
+				# imprimir($date2);
+				# imprimir($esdehoy);
+				
+				# print ("\n");
+				if($esdehoy > -1){
+					push @entradas, {
+						title       => "$item_title",
+						date        => "$item_date",
+						url         => "$item_url",
+						# description_raw => "$item_description",
+						description => "$item_descriptionClean",
+						tags        => [@tags],
+						# tags        => @item_tags,
+
+						# author      => "$item_author",
+						feed        => "$feed_title",
+						feed_url    => "$feed_url"
+							# feed_categories => [@feed_categories],     
+					};
+				}
 
 
 			
@@ -262,15 +286,23 @@ sub get_feed {
 
 		# feeds
 
-		$FEEDS{"$feed_title"} = {
-			# title       => "$feed_title",
+		# $FEEDS{"$feed_title"} = {
+		# 	# title       => "$feed_title",
+		# 	url         => "$feed_url",
+		# 	description => "$feed_description",
+		# 	lang        => "$feed_language",
+		# 	categories  => [@feed_categories],
+		# 	n_items     => "$feeds_counter",
+		# };
+
+		push @feeds, {
+			title       => "$feed_title",
 			url         => "$feed_url",
 			description => "$feed_description",
 			lang        => "$feed_language",
-			categories  => [@feed_categories],
-			n_items     => "$feeds_counter",
-		};
-
+			# categories  => [@feed_categories],
+			n_items     => "$feeds_counter",    
+		};  
 
 
 		return "### fetched: ", $feed->title() if $debug;
@@ -283,6 +315,22 @@ sub get_feed {
 
 sub ayudas {
 		pod2usage(-verbose=>3);
+}
+
+sub imprimir {
+	my $input = shift;
+	unless (ref $input) {
+		print "$input\n";
+		} elsif (ref $input eq 'ARRAY') {
+			imprimir($_) for @$input;
+		} elsif (ref $input eq 'HASH') {
+			for (keys %$input) {
+				print "$_\n";
+				imprimir($input->{$_});
+			}
+		} else {
+			print ref $input,"\n";
+		}
 }
 
 

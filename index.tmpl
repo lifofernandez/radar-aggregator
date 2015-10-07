@@ -22,14 +22,22 @@
         </h1>
       </div>
 
-      <!-- <div  class="ui vertical segment" ng-controller="feedsController as feedsList">
-        <div class="ui horizontal relaxed celled list"><h2>{{feedsList.feeds.length}} Feeds</h2>
-          <div class="item" ng-repeat="feed in feedsList.feeds">
-          	<a class="{{feed.categories|stringify|lowercase}}" TARGET="_blank" title="{{feed.description}}" href="{{feed.url}}">{{feed.title}}</a>             
+      <div  class="ui vertical segment">
+        <div class="ui horizontal relaxed celled list"><h2>Feeds</h2>
+        <TMPL_LOOP NAME="FEED">
+     
+        
+          <div class="item">
+          	<a class="" TARGET="_blank" title="<TMPL_VAR NAME=N_ITEMS> entradas | <TMPL_VAR NAME=DESCRIPTION> | <TMPL_VAR NAME=LANG>" href="<TMPL_VAR NAME=URL>"><TMPL_VAR NAME=TITLE></a> 
+            
           </div>
-        </div>
+        
           
-      </div> -->
+
+        </TMPL_LOOP>
+        </div>
+      </div> 
+
 
       
       <div class="main">
