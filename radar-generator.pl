@@ -31,6 +31,8 @@ my %opts = ();
 getopts('dh',\%opts);
 
 my @feed_lines = read_file('feeds.csv');
+my $feed_ejemplo = read_file('ejemplo_feed_file.xml');
+
 my %FEEDS = ();
 
 my %ENTRIES = ();
@@ -57,6 +59,10 @@ foreach my $line(@feed_lines){
 	get_feed($url_feed,@categorias);
 }
 
+# DEVELEPMENT content
+#get_feed("ejemplo_feed_file.xml",["prueba", "pepe"]);
+
+
 
 ######################################################################
 # HTMLing.
@@ -77,7 +83,6 @@ write_file( 'output/index.html', {binmode => ':utf8'}, $output );
 #     
 #     # foreach my $item ( keys %{ $ENTRIES{$entry} } ) {
 #     #       print "$item: $ENTRIES{$entry}{$item}\n";
-
 #     # }
 #     # print "\n";
 # }
@@ -112,14 +117,16 @@ sub get_feed {
 		# acceder a cada feed.
 
 		my $feed_source = shift;
-		my $feed   = XML::FeedPP->new($feed_source);
+	
 
+		my $feed   = XML::FeedPP->new($feed_source);
 		my @feed_categories = @_;
 
 
 		my $feed_title       = decode_entities($feed->title());
 	 
 		my $feed_url         = $feed->link();
+		print ($feed_url."\n");
 		my $feed_description = decode_entities($feed->description());
 
 		my $feed_language	 = $feed->language();
@@ -133,34 +140,62 @@ sub get_feed {
 
 				my $item_title = decode_entities($item->title());
 
-				#Esto tendria que estar afuera primero.
+				# Esto tendria que estar afuera primero.
 				my $item_date        			= $item->pubDate();
 				my $item_url         			= $item->link();
 				my $item_description 			= $item->description();
 				my $item_descriptionClean = HTML::FormatText->new->format(parse_html($item_description));
+				
 				$item_descriptionClean 		= decode_entities($item_descriptionClean);
 				$item_descriptionClean 		=~ s/\R//g;
+				$item_descriptionClean    =~ s/ +/ /g;
 
-				#item_descriptionClean =~ s/(\.{3})?\s*Read\s*More$//gi;
+				# item_descriptionClean    =~ s/(\.{3})?\s*Read\s*More$//gi;
 				$item_descriptionClean 		=~ s/Read\s*More$//gi;
 
 
 
 				my @item_tags        			= $item->category();
-				my @item_tags_arrays 			= grep { ref($_) eq 'ARRAY' } @item_tags;
-				my @item_tags_strings 		= grep { ref($_) ne 'ARRAY' } @item_tags;
-
-				# print Dumper($item->category());
-				
-				# print ('-------');
-				
-				# my @item_tags = ('carro','perro','forro');
-				
 				my @tags       			 			= ();
-				my $index = 0;
+						
+				# my @item_tags = ('carro','perro','forro');
+				# my @item_tags = 'carro';
+
+				# print (ref(\@item_tags));
+				# print Dumper(@item_tags);
+
+				if(@item_tags[0] ne undef){
+
+					foreach (@item_tags){
+						if(ref(\$_) eq 'SCALAR'){
+							my $slug = lc $_;
+							$slug =~ s/[^[:ascii:]]//g;
+							$slug=~s/ /-/g;
+						
+							push @tags, {tagname => $_,tagslug=>$slug};
+						}
+						if(ref(\$_) eq 'REF'){
+							foreach (@$_){
+								my $slug = lc $_;
+								$slug =~ s/[^[:ascii:]]//g;
+								$slug=~s/ /-/g;
+
+								push @tags, {tagname => $_,tagslug=>$slug};
+							}
+						}
+					}
+				}
+
+				
 
 				
 				
+
+
+
+
+				
+				##   reserva   #####################
 				# foreach my $tag (@item_tags) {
 				    
 				#     # if (ref($tag) eq 'ARRAY') {
@@ -173,28 +208,21 @@ sub get_feed {
 				#     $index++;
 				# }
 
-				foreach my $p (@item_tags_arrays){
-					next unless ($p =~ /\w+/);
-				     print $p;
-				     my %prueba = { tagname => $p }; 
-				     push @tags, \%prueba ;
-				}
-
+				# foreach my $p (@item_tags){
+				# 	next unless ($p =~ /\w+/);
+				#      print $p;
+				#      my %prueba = { tagname => $p }; 
+				#      push @tags, \%prueba ;
+				# }
+				####################################
 				
-				# print Dumper(@tags);
-				     
-				# print "\n\n\n";
-				# print Dumper(@tags);
-				# print "\n";
-				# print (@item_tags);
-				# print Dumper(\@tags);
-				# say Dumper($_) foreach @tags;
+
 
 				my $item_author      			= $item->author();
 
-				#Guardar en el hash main.
-			 
-		 
+				# Guardar en el hash main.
+	
+				# hash ariginal	 
 				# $ENTRIES{"$item_title"} = {
 				# 	title     => "$item_title",
 				# 	date        => "$item_date",
@@ -208,6 +236,7 @@ sub get_feed {
 				# 	feed_categories => [@feed_categories]
 				# };  
 
+
 				push @entradas, {
             title       => "$item_title",
             date        => "$item_date",
@@ -215,7 +244,7 @@ sub get_feed {
             # description_raw => "$item_description",
             description => "$item_descriptionClean",
             tags        => [@tags],
-            #tags        => @item_tags,
+            # tags        => @item_tags,
 
             # author      => "$item_author",
             feed        => "$feed_title",

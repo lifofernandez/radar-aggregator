@@ -34,8 +34,8 @@
       
       <div class="main">
       
-        <h2 class="ui header"><TMPL_VAR NAME=NENTRADAS>Entradas</h2>
-        
+        <!-- <h2 class="ui header"><TMPL_VAR NAME=NENTRADAS>Entradas</h2>
+         -->
         <!-- <div class="ui form">
 
           <div class="field">
@@ -63,7 +63,7 @@
             <p><TMPL_VAR NAME=DESCRIPTION></p> 
            
             <TMPL_LOOP NAME="TAGS">
-              <div class="tag-<TMPL_VAR NAME=TAGNAME> ui tag label"><TMPL_VAR NAME=TAGNAME></div>
+              <div id="tag-<TMPL_VAR NAME=TAGSLUG ESCAPE=URL>" class="ui label"><TMPL_VAR NAME=TAGNAME></div>
             </TMPL_LOOP>
            
             <div class="ui left rail">
