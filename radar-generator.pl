@@ -14,6 +14,9 @@ use Getopt::Std;
 use Pod::Usage;
 
 use Date::Manip;
+use POSIX q/strftime/;
+
+use Sort::Maker;
 
 use HTML::Entities;
 use HTML::Parse;
@@ -40,6 +43,7 @@ my $feed_ejemplo = read_file('ejemplo_feed_file.xml');
 # my %ENTRIES = ();
 
 my @entradas = ();
+my @entradas_sorted = ();
 my @feeds = ();
 
 
@@ -76,7 +80,7 @@ foreach my $line(@feed_lines){
 ######################################################################
 
 
-$template->param(ENTRADA => \@entradas);
+$template->param(ENTRADA => \@entradas_sorted);
 $template->param(FEED => \@feeds);
 
 my $output = $template->output;
@@ -147,10 +151,12 @@ sub get_feed {
 
 		foreach my $item ( $feed->get_item() ) {
 
-				my $item_title = decode_entities($item->title());
+				my $item_title 						= decode_entities($item->title());
 
 				# Esto tendria que estar afuera primero.
 				my $item_date        			= $item->pubDate();
+				# imprimir($item_date);
+
 
 				my $item_url         			= $item->link();
 				my $item_description 			= $item->description();
@@ -186,9 +192,9 @@ sub get_feed {
 						}
 						if(ref(\$_) eq 'REF'){
 							foreach (@$_){
-								my $slug = lc $_;
-								$slug =~ s/[^[:ascii:]]//g;
-								$slug=~s/ /-/g;
+								my $slug 	= lc $_;
+								$slug 		=~ s/[^[:ascii:]]//g;
+								$slug			=~ s/ /-/g;
 
 								push @tags, {tagname => $_,tagslug=>$slug};
 							}
@@ -246,20 +252,31 @@ sub get_feed {
 				# 	feed_categories => [@feed_categories]
 				# };  
 
-				my $date1 = ParseDate($item_date);
-				my $date2 = ParseDate("yesterday");
+				# my $date1 = ParseDate($item_date);
+				# my $date2 = ParseDate("yesterday");
 
-				my $rango ='0:0:0:0:-24:0:0';
-			 	my $delta = DateCalc($date1,$date2);
+				# my $rango ='0:0:0:0:-24:0:0';
+			 # 	my $delta = DateCalc($date1,$date2);
 
-   			my $esdehoy = Date_Cmp($rango,$delta);
+   	# 		my $esdehoy = Date_Cmp($rango,$delta);
 
 				# imprimir($date1);
 				# imprimir($date2);
 				# imprimir($esdehoy);
-				
 				# print ("\n");
-				if($esdehoy > -1){
+
+
+				#########################
+				## evaluar fecha de noticias y solo agregar las del dia de ayer.
+
+				my $hoy = time();
+				my $dia = 60 * 60 * 24;
+				my $ayer = $hoy - $dia;
+
+				my $X = UnixDate($item_date, "%s"); # cualquier fecha, en timestamp format.
+
+				if($X >= $ayer && $X <= $hoy){
+				  say "X es mayor : $X";
 					push @entradas, {
 						title       => "$item_title",
 						date        => "$item_date",
@@ -276,12 +293,13 @@ sub get_feed {
 					};
 				}
 
-
-			
+				
 			$feeds_counter++;
 
 		}
-
+			
+		# my @sorted =  sort { $b->{date} <=> $a->{date} } @entradas;
+		# print join "\n", map {$_->{date}." - ".$_->{url}} @sorted;
 
 
 		# feeds
@@ -359,3 +377,16 @@ FEED
 		contenido
 		tags
 		author
+
+
+
+
+
+
+my @fechas = sort { $b <=> $a } (1 .. 31) ;
+say foreach @fechas;
+
+
+
+#say strftime ("%d %B %Y %H %M %S",localtime($hoy));
+say $t_banana_n;
