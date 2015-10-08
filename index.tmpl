@@ -75,9 +75,9 @@
             </TMPL_LOOP>
            
             <div class="ui left rail">
-              <div class="ui basic compact right floated segment">
+              <div class="ui basic compact right floated segment" style="text-align:right;">
                 <a TARGET="_blank" href="<TMPL_VAR NAME=FEED_URL>"><TMPL_VAR NAME=FEED></a>
-                <span><TMPL_VAR NAME=DATE></span>
+                <span id="<TMPL_VAR NAME=TIMESTAMP>"><TMPL_VAR NAME=DATE></span>
               </div>
             </div>
               
@@ -86,6 +86,9 @@
         </TMPL_LOOP>
        
       </div>
+      <footer>
+        <div class="ui vertical segment">Area Transdepartamental de Artes Multimediales / Universidad Nacional de Las Artes</div>
+      </footer>
 
     </div>
  

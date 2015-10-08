@@ -174,12 +174,7 @@ sub get_feed {
 				my @item_tags        			= $item->category();
 				my @tags       			 			= ();
 						
-				# my @item_tags = ('carro','perro','forro');
-				# my @item_tags = 'carro';
-
-				# print (ref(\@item_tags));
-				# print Dumper(@item_tags);
-
+				
 				if(@item_tags[0] ne undef){
 
 					foreach (@item_tags){
@@ -211,34 +206,14 @@ sub get_feed {
 
 
 				
-				##   reserva   #####################
-				# foreach my $tag (@item_tags) {
-				    
-				#     # if (ref($tag) eq 'ARRAY') {
-				#     # 	#next;
-				    	
-				#     # }		
-				#     my %a = {tagname => $tag};
-				#     $tags[$index] = \%a ;
-				#     # push @tags, %a;
-				#     $index++;
-				# }
-
-				# foreach my $p (@item_tags){
-				# 	next unless ($p =~ /\w+/);
-				#      print $p;
-				#      my %prueba = { tagname => $p }; 
-				#      push @tags, \%prueba ;
-				# }
-				####################################
+				#
 				
 
 
 				my $item_author      			= $item->author();
 
-				# Guardar en el hash main.
 	
-				# hash ariginal	 
+				# hash original	 (reserva)
 				# $ENTRIES{"$item_title"} = {
 				# 	title     => "$item_title",
 				# 	date        => "$item_date",
@@ -252,19 +227,7 @@ sub get_feed {
 				# 	feed_categories => [@feed_categories]
 				# };  
 
-				# my $date1 = ParseDate($item_date);
-				# my $date2 = ParseDate("yesterday");
-
-				# my $rango ='0:0:0:0:-24:0:0';
-			 # 	my $delta = DateCalc($date1,$date2);
-
-   	# 		my $esdehoy = Date_Cmp($rango,$delta);
-
-				# imprimir($date1);
-				# imprimir($date2);
-				# imprimir($esdehoy);
-				# print ("\n");
-
+				
 
 				#########################
 				## evaluar fecha de noticias y solo agregar las del dia de ayer.
@@ -273,30 +236,30 @@ sub get_feed {
 				my $dia = 60 * 60 * 24;
 				my $ayer = $hoy - $dia;
 
-				my $X = UnixDate($item_date, "%s"); # cualquier fecha, en timestamp format.
+				my $x = UnixDate($item_date, "%s"); # cualquier fecha, en timestamp format.
 
-				if($X >= $ayer && $X <= $hoy){
-				  say "X es mayor : $X";
+				if($x >= $ayer && $x <= $hoy){
+				  say "es mayor : $x";
 					push @entradas, {
 						title       => "$item_title",
 						date        => "$item_date",
+						timestamp   => "$x",
 						url         => "$item_url",
 						# description_raw => "$item_description",
 						description => "$item_descriptionClean",
 						tags        => [@tags],
-						# tags        => @item_tags,
-
 						# author      => "$item_author",
 						feed        => "$feed_title",
 						feed_url    => "$feed_url"
-							# feed_categories => [@feed_categories],     
+						# feed_categories => [@feed_categories],     
 					};
 				}
 
-				
-			$feeds_counter++;
+				$feeds_counter++;
+			}
 
-		}
+			@entradas_sorted = sort { $b->{timestamp} <=> $a->{timestamp} } @entradas ;
+
 			
 		# my @sorted =  sort { $b->{date} <=> $a->{date} } @entradas;
 		# print join "\n", map {$_->{date}." - ".$_->{url}} @sorted;
@@ -324,7 +287,7 @@ sub get_feed {
 
 
 		return "### fetched: ", $feed->title() if $debug;
-}
+	}
 
 
 
@@ -383,7 +346,6 @@ FEED
 
 
 
-my @fechas = sort { $b <=> $a } (1 .. 31) ;
 say foreach @fechas;
 
 
