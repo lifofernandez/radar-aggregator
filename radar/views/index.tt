@@ -1,1 +1,17 @@
-<div>probando...</div>
+<h2>Radar</h2>
+
+<p><% descripcion %>
+</p>
+
+<br/>
+<h2> Entradas </h2>
+
+<div>
+<% FOR p in data.keys %>
+    <h3><% data.$p.title %></h3>
+    <div style="width: 75%;"><% data.$p.description %></div>
+    <br/>
+<% END %>
+</div>
+
+<br/>

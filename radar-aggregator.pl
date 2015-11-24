@@ -5,22 +5,16 @@
 
 use autodie;
 use strict;
-
 use Pod::Usage;
 use feature "say";
 use Data::Dumper;
-
 use Getopt::Std;
-
 use File::Slurp; 
-
 use XML::FeedPP;
-
 use HTML::Entities;
 use HTML::Parse;
 use HTML::FormatText;
 use JSON;
-
 use Date::Manip;
 use POSIX q/strftime/;
 use Digest::MD5 qw(md5_hex);
@@ -41,12 +35,17 @@ my %opts = ();
 getopts('dh',\%opts);
 
 my @feed_lines = read_file('feeds.csv');
-my @FEEDS = ();
-my @ENTRIES = ();
+#my @FEEDS = ();
+my %FEEDS = ();
+my %ENTRIES = ();
 
 
 my $debug = $opts{d} || 0;
 my $separador = '='x80 . "\n";
+
+my $hoy = time();
+my $dia = 60 * 60 * 24;
+my $ayer = $hoy - $dia;
 
 ######################################################################
 # Cod Ppal.
@@ -64,17 +63,14 @@ foreach my $line(@feed_lines){
 
 #print Dumper(\%FEEDS);
 
-my $FEEDSjson = encode_json \@FEEDS;
-my $ENTRIESjson = encode_json \@ENTRIES;
+my $FEEDSjson = encode_json \%FEEDS;
+my $ENTRIESjson = encode_json \%ENTRIES;
 
 write_file('data/feeds.json', $FEEDSjson);
 write_file('data/entries.json', $ENTRIESjson);
 
 #print Dumper($FEEDSjson);
 
-my $hoy = time();
-my $dia = 60 * 60 * 24;
-my $ayer = $hoy - $dia;
 
 
 ######################################################################
@@ -85,7 +81,7 @@ sub get_feed {
     # acceder a cada feed.
     my $feed_source = shift;
     my $feed   = XML::FeedPP->new($feed_source);
-    #print $separador, Dumper($feed), $separador;
+    print $separador, Dumper($feed), $separador;
 
     my @feed_categories  = @_;
     my $feed_title       = decode_entities( $feed->title() );
@@ -119,12 +115,12 @@ sub get_feed {
 
 
         my $x = UnixDate($item_date, "%s"); # cualquier fecha, en timestamp format.
-        say $x;
 
         if($x >= $ayer && $x <= $hoy){
-          say "es de las ultimas 24hrs ($x)" if $debug;
+          #say "es de las ultimas 24hrs ($x)" if $debug;
+            say $item_date if $debug;
             #Guardar en el hash main.
-            push @ENTRIES, {
+            $ENTRIES{ $item_url_digest } = {
                 title       => "$item_title",
                 feed        => "$feed_title",
                 feed_url    => "$feed_url",
@@ -139,13 +135,13 @@ sub get_feed {
                 author      => "$item_author"
             };  
         }else{
-            say "NO es de las ultimas 24hrs ($x)" if $debug;
+            #say "NO es de las ultimas 24hrs ($x)" if $debug;
         }
     	$feeds_counter++;
     }
 
     # feeds
-    push @FEEDS, {
+    $FEEDS{$feed_url_digest} = {
         title       => "$feed_title",
         url         => "$feed_url",
         id          => "$feed_url_digest",

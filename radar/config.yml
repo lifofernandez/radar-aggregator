@@ -29,6 +29,7 @@ engines:
 
 
 # Para leer/escribir la data en JSON.
-#pruebapp:
-    #JSON: lib/db.json
+radar:
+    entries: data/entries.json
+    descripcion: "Radar de noticias."
     #admin_p: sabaduba123
