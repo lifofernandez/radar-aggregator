@@ -175,7 +175,7 @@ sub get_feed {
         description => "$feed_description",
         lang        => "$feed_language",
         categories  => [@feed_categories],
-        n_entries     => "$feeds_counter",
+        n_entries   => "$feeds_counter",
     };
 
 
