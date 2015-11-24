@@ -4,17 +4,31 @@
 ######################################################################
 
 use autodie;
-use feature "say";
 use strict;
-use XML::FeedPP;
-use File::Slurp; 
-use Data::Dumper;
-use Getopt::Std;
+
 use Pod::Usage;
+use feature "say";
+use Data::Dumper;
+
+use Getopt::Std;
+
+use File::Slurp; 
+
+use XML::FeedPP;
+
 use HTML::Entities;
 use HTML::Parse;
 use HTML::FormatText;
 use JSON;
+
+use Date::Manip;
+use POSIX q/strftime/;
+
+ #use Digest::MD5 qw(md5 md5_hex md5_base64);
+ use Digest::MD5 qw(md5_hex);
+ #$digest = md5($data);
+ #$digest = md5_hex($data);
+ #$digest = md5_base64($data);
 
 =pod
 
@@ -85,6 +99,7 @@ sub get_feed {
     my $feed_title       = decode_entities($feed->title());
    
     my $feed_url         = $feed->link();
+    my $feed_url_digest = md5_hex($feed_url);
     my $feed_description = decode_entities($feed->description());
 
     my $feed_language	 = $feed->language();
@@ -100,7 +115,10 @@ sub get_feed {
 
         #Esto tendria que estar afuera primero.
         my $item_date        = $item->pubDate();
+
         my $item_url         = $item->link();
+        my $item_url_digest = md5_hex($item_url);
+
         my $item_description = $item->description();
         my $item_descriptionClean = HTML::FormatText->new->format(parse_html($item_description));
         $item_descriptionClean = decode_entities($item_descriptionClean);
@@ -108,19 +126,33 @@ sub get_feed {
         $item_descriptionClean =~ s/Read\s*More$//gi;
 
 
-
+        #¿es de las ultimas 24hrs?
         my @item_tags        = $item->category();
         my $item_author      = $item->author();
 
+        my $hoy = time();
+        my $dia = 60 * 60 * 24;
+        my $ayer = $hoy - $dia;
+
+        my $x = UnixDate($item_date, "%s"); # cualquier fecha, en timestamp format.
+
+        if($x >= $ayer && $x <= $hoy){
+          say "es de las ultimas 24hrs ($x)";
+        }else{
+            say "NO es de las ultimas 24hrs ($x)";
+        }
+
         #Guardar en el hash main.
-       
+
         push @ENTRIES, {
             title       => "$item_title",
             feed        => "$feed_title",
             feed_url    => "$feed_url",
+            feed_id     => "$feed_url_digest",
             feed_categories => [@feed_categories],
             date        => "$item_date",
             url         => "$item_url",
+            id          => "$item_url_digest",
             description => "$item_description",
             descriptionClean => "$item_descriptionClean",
             tags        => @item_tags,
@@ -139,10 +171,11 @@ sub get_feed {
     push @FEEDS, {
         title       => "$feed_title",
         url         => "$feed_url",
+        id          => "$feed_url_digest",
         description => "$feed_description",
         lang        => "$feed_language",
         categories  => [@feed_categories],
-        n_items     => "$feeds_counter",
+        n_entries     => "$feeds_counter",
     };
 
 
