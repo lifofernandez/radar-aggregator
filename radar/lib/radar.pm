@@ -44,9 +44,9 @@ get '/update/*' => sub {
 };
 
 
-
-
-
+######################################################################
+# Funciones
+######################################################################
 
 # llamar esta funcion con tres argumentos:
 # 1- archivo con las urls de los feeds.
@@ -56,9 +56,6 @@ sub get_feed_stuff {
     my $f1          = config->{radar}{feed_file};
     my $f2          = config->{radar}{feeds_json_file};
     my $f3          = config->{radar}{entries_json_file};
-    #my $f1 = $_[0];
-    #my $f2 = $_[1];
-    #my $f3 = $_[2];
     my $feed_file_urls = $f1;
     my @feed_lines     = read_file($feed_file_urls);
     foreach my $line(@feed_lines){  
@@ -79,7 +76,6 @@ sub get_feed {
     # acceder a cada feed.
     my $feed_source = shift;
     my $feed   = XML::FeedPP->new($feed_source);
-    #print $separador, Dumper($feed), $separador;
 
     my @feed_categories  = @_;
     my $feed_title       = decode_entities( $feed->title() );
@@ -111,11 +107,7 @@ sub get_feed {
 
 
         my $x = UnixDate($item_date, "%s"); # cualquier fecha, en timestamp format.
-
         if($x >= $ayer && $x <= $hoy){
-          #say "es de las ultimas 24hrs ($x)" if $debug;
-            #say $item_date if $debug;
-            #Guardar en el hash main.
             $ENTRIES{ $item_url_digest } = {
                 title       => "$item_title",
                 feed        => "$feed_title",
@@ -146,4 +138,10 @@ sub get_feed {
     };
 }
 
+
+
+
+
+
+#-----------------------------------------------------------------
 true;
