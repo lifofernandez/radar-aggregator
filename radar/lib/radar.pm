@@ -23,10 +23,11 @@ my $hoy           = time();
 my $dia           = 60 * 60 * 24;
 my $ayer          = $hoy - $dia;
 
+my $data_file           = read_file config->{radar}{entries_json_file};
+my $desc                = config->{radar}{descripcion};
+my $data                = from_json $data_file;
+
 get '/' => sub {
-    my $data_file           = read_file config->{radar}{entries_json_file};
-    my $desc                = config->{radar}{descripcion};
-    my $data                = from_json $data_file;
     @ids_items_db           = keys(%$data); #setear este array.
     #pa debuggear...
     #my $arrocero = join " ", @ids_items_db;
@@ -72,9 +73,24 @@ sub get_feed_stuff {
     }
 
     my $FEEDSjson   = encode_json \%FEEDS;
+    write_file ($f2, $FEEDSjson );
+
     my $ENTRIESjson = encode_json \%ENTRIES;
-    write_file ($f2, { append => 1 }, $FEEDSjson    );
-    write_file ($f3, { append => 1 }, $ENTRIESjson  );
+    
+    my $guardar = 0;
+
+    #guardar lo nuevo con lo viejo, en el mismo hashref.
+    foreach my $hoy_rss ( keys (%$ENTRIESjson) ){
+        unless($hoy_rss ~~ @ids_items_db){
+            $ENTRIES{$hoy_rss} = $ENTRIESjson->{$hoy_rss};
+            $guardar++
+        }
+    }
+
+    # guardar todo.
+    unless ($guardar == 0){
+        write_file ($f3, encode_json \%ENTRIES);
+    }
 }
 
 sub get_feed {
