@@ -30,6 +30,10 @@ engines:
 
 # Para leer/escribir la data en JSON.
 radar:
-    entries: data/entries.json
+    pie_de_pag: "UNA - ATAM - 2015"
     descripcion: "Radar de noticias."
-    #admin_p: sabaduba123
+    admin_p: sabaduba123
+    entries: data/entries.json
+    feed_file: data/feeds.csv
+    feeds_json_file: data/feeds.json
+    entries_json_file: data/entries.json
