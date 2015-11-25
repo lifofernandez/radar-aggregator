@@ -27,12 +27,13 @@ get '/' => sub {
     my $data_file           = read_file config->{radar}{entries_json_file};
     my $desc                = config->{radar}{descripcion};
     my $data                = from_json $data_file;
-    @ids_items_db           = sort ( %{ $data } ); #setear este array.
-    #@ids_items_db           = @{ $data } ; #setear este array.
-    print Dumper($data);
+    @ids_items_db           = keys(%$data); #setear este array.
+    #pa debuggear...
+    #my $arrocero = join " ", @ids_items_db;
+    #print Dumper($data);
+    #template 'index',       { data => $data , descripcion => $desc, extras => $arrocero};
     my $h                   = config->{radar}{pie_de_pag};
-    #template 'index',       { data => $data , descripcion => $desc, extras => $h};
-    template 'index',       { data => $data , descripcion => $desc, extras => Dumper(@ids_items_db)};
+    template 'index',       { data => $data , descripcion => $desc, extras => $h};
 };
 
 get '/update/*' => sub {
