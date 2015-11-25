@@ -75,21 +75,21 @@ sub get_feed_stuff {
     my $FEEDSjson   = encode_json \%FEEDS;
     write_file ($f2, $FEEDSjson );
 
-    my $ENTRIESjson = encode_json \%ENTRIES;
     
     my $guardar = 0;
 
     #guardar lo nuevo con lo viejo, en el mismo hashref.
-    foreach my $hoy_rss ( keys (%$ENTRIESjson) ){
+    foreach my $hoy_rss ( keys (%$data) ){
         unless($hoy_rss ~~ @ids_items_db){
-            $ENTRIES{$hoy_rss} = $ENTRIESjson->{$hoy_rss};
+            $ENTRIES{$hoy_rss} = $data->{$hoy_rss};
             $guardar++
         }
     }
+    my $ENTRIESjson = encode_json \%ENTRIES;
 
     # guardar todo.
     unless ($guardar == 0){
-        write_file ($f3, encode_json \%ENTRIES);
+        write_file ($f3, $ENTRIESjson);
     }
 }
 
