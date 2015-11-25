@@ -12,6 +12,7 @@ use HTML::Parse;
 use HTML::FormatText;
 use Date::Manip;
 use Digest::MD5 qw(md5_hex);
+use JSON;
 
 our $VERSION = '0.1';
 
@@ -22,7 +23,7 @@ my $dia           = 60 * 60 * 24;
 my $ayer          = $hoy - $dia;
 
 get '/' => sub {
-    my $data_file           = read_file config->{radar}{entries};
+    my $data_file           = read_file config->{radar}{entries_json_file};
     my $desc                = config->{radar}{descripcion};
     my $data                = from_json $data_file;
     my $h                   = config->{radar}{pie_de_pag};
@@ -31,13 +32,11 @@ get '/' => sub {
 };
 
 get '/update/*' => sub {
-    my ($pass) = splat;
-    my $pass_conf = config->{radar}{admin_p};
-    my $f1 = config->{radar}{feed_file};
-    my $f2 = config->{radar}{feeds_json_file};
-    my $f3 = config->{radar}{entries_json_file};
+    my ( $pass )    = splat;
+    my $pass_conf   = config->{radar}{admin_p};
+    #print $f1, $f2, $f3;
     if ($pass eq $pass_conf){
-        get_feed_stuff($f1,$f2,$f3);
+        get_feed_stuff();
         template 'sip';
     } else {
         redirect '/';
@@ -54,9 +53,12 @@ get '/update/*' => sub {
 # 2- archivo json con los feeds (feeds.json)
 # 3- archivo_json con las entradas (entries.json).
 sub get_feed_stuff {
-    my $f1 = $_[0];
-    my $f2 = $_[1];
-    my $f3 = $_[2];
+    my $f1          = config->{radar}{feed_file};
+    my $f2          = config->{radar}{feeds_json_file};
+    my $f3          = config->{radar}{entries_json_file};
+    #my $f1 = $_[0];
+    #my $f2 = $_[1];
+    #my $f3 = $_[2];
     my $feed_file_urls = $f1;
     my @feed_lines     = read_file($feed_file_urls);
     foreach my $line(@feed_lines){  
@@ -66,20 +68,11 @@ sub get_feed_stuff {
       my ($url_feed,@categorias) = @array_linea;
       get_feed($url_feed,@categorias);
     }
-    write_feeds_json_file($f2);
-    write_entries_json_file($f3);
-}
 
-sub write_feeds_json_file {
-    my $fff = shift;
-    my $FEEDSjson = to_json %FEEDS;
-    write_file($fff, $FEEDSjson);
-}
-
-sub write_entries_json_file {
-    my $ff = shift;
-    my $ENTRIESjson = to_json %ENTRIES;
-    write_file($ff, $ENTRIESjson);
+    my $FEEDSjson   = encode_json \%FEEDS;
+    my $ENTRIESjson = encode_json \%ENTRIES;
+    write_file ($f2, $FEEDSjson     );
+    write_file ($f3, $ENTRIESjson   );
 }
 
 sub get_feed {
