@@ -18,6 +18,7 @@ our $VERSION = '0.1';
 
 my %FEEDS         = ();
 my %ENTRIES       = ();
+my @ids_items_db  = ();
 my $hoy           = time();
 my $dia           = 60 * 60 * 24;
 my $ayer          = $hoy - $dia;
@@ -26,9 +27,12 @@ get '/' => sub {
     my $data_file           = read_file config->{radar}{entries_json_file};
     my $desc                = config->{radar}{descripcion};
     my $data                = from_json $data_file;
+    @ids_items_db           = sort ( %{ $data } ); #setear este array.
+    #@ids_items_db           = @{ $data } ; #setear este array.
+    print Dumper($data);
     my $h                   = config->{radar}{pie_de_pag};
-    #print Dumper($data);
-    template 'index',       { data => $data , descripcion => $desc, extras => $h};
+    #template 'index',       { data => $data , descripcion => $desc, extras => $h};
+    template 'index',       { data => $data , descripcion => $desc, extras => Dumper(@ids_items_db)};
 };
 
 get '/update/*' => sub {
@@ -68,8 +72,8 @@ sub get_feed_stuff {
 
     my $FEEDSjson   = encode_json \%FEEDS;
     my $ENTRIESjson = encode_json \%ENTRIES;
-    write_file ($f2, $FEEDSjson     );
-    write_file ($f3, $ENTRIESjson   );
+    write_file ($f2, { append => 1 }, $FEEDSjson    );
+    write_file ($f3, { append => 1 }, $ENTRIESjson  );
 }
 
 sub get_feed {
@@ -105,23 +109,24 @@ sub get_feed {
         my @item_tags        = $item->category();
         my $item_author      = $item->author();
 
-
         my $x = UnixDate($item_date, "%s"); # cualquier fecha, en timestamp format.
         if($x >= $ayer && $x <= $hoy){
-            $ENTRIES{ $item_url_digest } = {
-                title       => "$item_title",
-                feed        => "$feed_title",
-                feed_url    => "$feed_url",
-                feed_id     => "$feed_url_digest",
-                feed_categories => [@feed_categories],
-                date        => "$item_date",
-                url         => "$item_url",
-                id          => "$item_url_digest",
-                description => "$item_description",
-                descriptionClean => "$item_descriptionClean",
-                tags        => @item_tags,
-                author      => "$item_author"
-            };  
+            unless(item_repetido($item_url_digest)){
+                $ENTRIES{ $item_url_digest } = {
+                    title       => "$item_title",
+                    feed        => "$feed_title",
+                    feed_url    => "$feed_url",
+                    feed_id     => "$feed_url_digest",
+                    feed_categories => [@feed_categories],
+                    date        => "$item_date",
+                    url         => "$item_url",
+                    id          => "$item_url_digest",
+                    description => "$item_description",
+                    descriptionClean => "$item_descriptionClean",
+                    tags        => @item_tags,
+                    author      => "$item_author"
+                };
+            }
         }
     	$feeds_counter++;
     }
@@ -138,7 +143,14 @@ sub get_feed {
     };
 }
 
-
+sub item_repetido {
+    my $itemi_id = $_[0];
+    if ($itemi_id ~~ @ids_items_db){
+        return true;
+    } else {
+        return false;
+    }
+}
 
 
 
