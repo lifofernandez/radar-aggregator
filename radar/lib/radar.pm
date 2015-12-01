@@ -18,7 +18,9 @@ our $VERSION = '0.1';
 
 my %FEEDS         = ();
 my %ENTRIES       = ();
+my %CANAL         = ();
 my @ids_items_db  = ();
+#my @channels__db  = ();
 my $hoy           = time();
 my $dia           = 60 * 60 * 24;
 my $ayer          = $hoy - $dia;
@@ -42,11 +44,16 @@ get '/update/*' => sub {
     my $pass_conf   = config->{radar}{admin_p};
     #print $f1, $f2, $f3;
     if ($pass eq $pass_conf){
-        get_feed_stuff();
-        template 'sip';
+        my @nv = get_feed_stuff();
+        template 'sip', { nv => %CANAL};
     } else {
         redirect '/';
     }
+};
+
+any qr{.*} => sub {
+    status 'not_found';
+    template '404', { path => request->path };
 };
 
 
@@ -69,7 +76,10 @@ sub get_feed_stuff {
       next unless $line;
       my @array_linea = split(/,/,$line);
       my ($url_feed,@categorias) = @array_linea;
-      get_feed($url_feed,@categorias);
+      my @nv = get_feed($url_feed,@categorias);
+      if (@nv){
+        $CANAL{$url_feed} = \@nv;
+      }
     }
 
     my $FEEDSjson   = encode_json \%FEEDS;
@@ -126,6 +136,7 @@ sub get_feed {
         my @item_tags        = $item->category();
         my $item_author      = $item->author();
 
+        my @nuevas_entries = ();
         my $x = UnixDate($item_date, "%s"); # cualquier fecha, en timestamp format.
         if($x >= $ayer && $x <= $hoy){
             unless(item_repetido($item_url_digest)){
@@ -143,6 +154,7 @@ sub get_feed {
                     tags        => @item_tags,
                     author      => "$item_author"
                 };
+                push(@nuevas_entries,$item_title);
             }
         }
     	$feeds_counter++;
@@ -158,6 +170,7 @@ sub get_feed {
         categories  => [@feed_categories],
         n_entries   => "$feeds_counter",
     };
+    return @nuevas_entries;
 }
 
 sub item_repetido {
