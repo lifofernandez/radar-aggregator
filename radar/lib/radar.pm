@@ -120,6 +120,7 @@ sub get_feed {
     my @items_de_hoy = $feed->match_item( pubDate => q/$rgx_fecha/); 
 
 
+    my @nuevas_entries = ();
     foreach my $item ( $feed->get_item() ) {
         my $item_title = decode_entities($item->title());
 
@@ -136,7 +137,6 @@ sub get_feed {
         my @item_tags        = $item->category();
         my $item_author      = $item->author();
 
-        my @nuevas_entries = ();
         my $x = UnixDate($item_date, "%s"); # cualquier fecha, en timestamp format.
         if($x >= $ayer && $x <= $hoy){
             unless(item_repetido($item_url_digest)){
