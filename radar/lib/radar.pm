@@ -45,7 +45,8 @@ get '/update/*' => sub {
     #print $f1, $f2, $f3;
     if ($pass eq $pass_conf){
         my @nv = get_feed_stuff();
-        template 'sip', { nv => %CANAL};
+        my $CANAL = \%CANAL;
+        template 'sip', { nv => $CANAL};
     } else {
         redirect '/';
     }
