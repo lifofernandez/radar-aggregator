@@ -1,6 +1,6 @@
 <h2>Actualizada la DB</h2>
 <div id="content">
-    <% FOR p in nv.key %>
+    <% FOR p in nv.keys %>
     <div>
     <strong><% $p %></strong>
         <% FOR a in nv.$p %>
