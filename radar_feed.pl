@@ -13,13 +13,13 @@ use Data::Dumper;
 use File::Slurp     qw(read_file write_file);
 
 #pal rss
-#use XML::Feed;
 use XML::FeedPP;
 use DateTime;
 use DateTime::Format::W3CDTF; 
 use XML::Entities;
 use JSON            "to_json";
 
+# O P T s
 my %opts = ();
 getopts('dhf:',\%opts);
 
@@ -34,8 +34,8 @@ Radar: Bajador de feeds rss y atom..
 ######################################################################
 # VARIABLES GLOBALES
 ######################################################################
-my $debug = 0;
-my $t_banana = strftime ("%d_%B_%Y_%H_%M_%S",localtime(time()));
+my $debug = $opts{d};
+my $t_banana = strftime ("%d_%B_%Y",localtime(time()));
 my $archivo_urls_categorias_csv = 'feeds.csv';
 my @uri_rss_all     = ();
 my %RSS             = ();
@@ -53,18 +53,24 @@ if ($opts{h}){
     ayudas();
     exit 0;
 }
-if ($opts{d}){
-    $debug = 1;
-}
+
 if ($opts{f}){
     die unless -e $opts{f};
     $archivo_urls_categorias_csv = $opts{f};
 }
-   
+
+# Recontra-Main   
 feeds_list($archivo_urls_categorias_csv);
 print Dumper(%RSS) if $debug;
 url_getter();
 
+=pod
+
+=head2
+
+Al final se pasa el hasref a un json!
+
+=cut
 my $BIG = \%Results;
 my $BIGBIG = to_json $BIG;
 write_file("todas_las_entradas.json", {binmode=>':utf8'}, $BIGBIG);
@@ -73,15 +79,12 @@ my $A = \%HOY;
 my $AA = to_json $A;
 write_file("HOY.json", {binmode => ':utf8'}, $AA);
 
-
+#fin
 exit 0;
 
 ######################################################################
 # S U B S
 ######################################################################
-sub ayudas {
-    pod2usage(-verbose=>3);
-}
 sub feeds_list {
     my $file_name = shift;
     my $n = 0;
@@ -95,44 +98,33 @@ sub feeds_list {
         $n++;
     }
 }
+
+=pod
+
+=head2 FeedPP
+
+La funcion url_getter hace todo el trabajo con los Rss.
+
+Utiliza XML::FeedPP.
+
+=cut
+
 sub url_getter {
     foreach my $uri_rss (@uri_rss_all){
-        #my $feed = XML::Feed->parse(URI->new($uri_rss));
         my $feed = XML::FeedPP->new($uri_rss);
         my %entries_stuffs = ();
         my %entries_hoy = ();
         my $nro = 0;
-        #for my $entry ($feed->entries){
         for my $entry ($feed->get_item()){
             print Dumper($entry) if $debug;
 
-            $entries_stuffs{$nro}{'title'}      = decode_shits ($entry->title );
-            $entries_stuffs{$nro}{'author'}     = decode_shits( $entry->author );
-            $entries_stuffs{$nro}{'link'}       = decode_shits( $entry->link );
-            $entries_stuffs{$nro}{'content'}    = decode_shits( $entry->description );
-            $entries_stuffs{$nro}{'time'}       = tiempo_lindo( $entry->pubDate );
+            $entries_stuffs{$nro}{'title'}   = decode_shits($entry->title);
+            $entries_stuffs{$nro}{'author'}  = decode_shits($entry->author);
+            $entries_stuffs{$nro}{'link'}    = decode_shits($entry->link);
+            $entries_stuffs{$nro}{'content'} = decode_shits($entry->description);
+            $entries_stuffs{$nro}{'time'}    = tiempo_lindo($entry->pubDate);
             
-            #my $tt = DateTime->from_object(object => $entry->modified || $entry->issued);
-            #my $fecha_bien_laputaquetepario = $tt->datetime(); 
-            #$fecha_bien_laputaquetepario    =~ s/([^T]+)T([^T]+)/\2 \1/g;
-            #$entries_stuffs{$nro}{'time'}       = $fecha_bien_laputaquetepario;
-
-            #Fijarse si es de hasta ayer.
-            #my $tiempo_desde_creacion_del_entry = $hoy->epoch() - $tt->epoch(); 
-            #say $tiempo_desde_creacion_del_entry if $debug;
-            #if ($tiempo_desde_creacion_del_entry < $un_dia){
-                #$entries_hoy{$nro}{'title'}      = decode_shits ($entry->title );
-                #$entries_hoy{$nro}{'author'}     = decode_shits( $entry->author );
-                #$entries_hoy{$nro}{'link'}       = decode_shits( $entry->link );
-                #$entries_hoy{$nro}{'summary'}    = decode_shits( $entry->summary );
-                #$entries_hoy{$nro}{'content'}    = decode_shits( $entry->content->body );
-                #my $tth = DateTime->from_object(object => $entry->modified || $entry->issued);
-                #my $fecha_bien_laputaqueteparioh = $tth->datetime(); 
-                #$fecha_bien_laputaqueteparioh    =~ s/([^T]+)T([^T]+)/\2 \1/g;
-                #$entries_stuffs{$nro}{'time'}       = $fecha_bien_laputaqueteparioh;
-            #}
-            
-            # FIJARSE SI TIENE MENOS DE UN DIA DE ANTIGUEDAD
+            # FIJARSE SI ES NUEVO (HASTA HACE UN DIA ATRAS)
             my $chiotto = DateTime::Format::W3CDTF->new;
             my $tiempo_desde_creacion_del_entry_pre = $chiotto->parse_datetime($entry->pubDate);
             print Dumper($tiempo_desde_creacion_del_entry)if $debug; ############ DEBUUGUGUGUGUGUGUGUEARRRR ACA!!!!
@@ -141,11 +133,11 @@ sub url_getter {
             
             if ($tiempo_desde_creacion_del_entry <= $un_dia + 20){
                 say "es de hoy" if $debug;
-                $entries_hoy{$nro}{'title'}      = decode_shits ($entry->title );
-                $entries_hoy{$nro}{'author'}     = decode_shits( $entry->author );
-                $entries_hoy{$nro}{'link'}       = decode_shits( $entry->link );
-                $entries_hoy{$nro}{'content'}    = decode_shits( $entry->description );
-                $entries_hoy{$nro}{'time'}       = tiempo_lindo( $entry->pubDate );
+                $entries_hoy{$nro}{'title'}   = decode_shits($entry->title);
+                $entries_hoy{$nro}{'author'}  = decode_shits($entry->author);
+                $entries_hoy{$nro}{'link'}    = decode_shits($entry->link);
+                $entries_hoy{$nro}{'content'} = decode_shits($entry->description);
+                $entries_hoy{$nro}{'time'}    = tiempo_lindo($entry->pubDate);
             }
             $nro++;
         }
@@ -153,11 +145,13 @@ sub url_getter {
         $HOY{$feed->title}      = \%entries_hoy;
     }
 }
+
 sub decode_shits {
     my $shit = shift;
     my $coso_sin_codificar = XML::Entities::decode('all',$shit);
     return $coso_sin_codificar;
 }
+
 sub tiempo_lindo {
     my $st = shift;
     my $fecha_bien_laputaquetepario = $st;
@@ -165,6 +159,9 @@ sub tiempo_lindo {
     return $fecha_bien_laputaquetepario;    
 }
 
+sub ayudas {
+    pod2usage(-verbose=>3);
+}
 __DATA__
 
 # Para mejorar
