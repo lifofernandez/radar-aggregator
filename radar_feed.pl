@@ -21,13 +21,25 @@ use JSON            "to_json";
 
 # O P T s
 my %opts = ();
-getopts('dhf:',\%opts);
+getopts('dhkf:',\%opts);
 
 =pod
 
 =head1 SYNOPSIS
 
 Radar: Bajador de feeds rss y atom..
+
+=head2 Forma de uso:
+
+=over
+
+=item -d debug 
+
+=item -k Guardar todos los feeds que encuentre en "ALL.json".
+
+=item -f [Archivo csv con feeds a parsear/bajar]
+
+=back
 
 =cut
 
@@ -71,13 +83,17 @@ url_getter();
 Al final se pasa el hasref a un json!
 
 =cut
-my $BIG = \%Results;
-my $BIGBIG = to_json $BIG;
-write_file("todas_las_entradas.json", {binmode=>':utf8'}, $BIGBIG);
+
+if ($opts{k}){
+    my $BIG = \%Results;
+    my $BIGBIG = to_json $BIG;
+    write_file("ALL.json", {binmode=>':utf8'}, $BIGBIG);
+}
 
 my $A = \%HOY;
 my $AA = to_json $A;
-write_file("HOY.json", {binmode => ':utf8'}, $AA);
+my $archivo_salida_hoy = $t_banana . '.json';
+write_file($archivo_salida_hoy, {binmode => ':utf8'}, $AA);
 
 #fin
 exit 0;
@@ -127,7 +143,7 @@ sub url_getter {
             # FIJARSE SI ES NUEVO (HASTA HACE UN DIA ATRAS)
             my $chiotto = DateTime::Format::W3CDTF->new;
             my $tiempo_desde_creacion_del_entry_pre = $chiotto->parse_datetime($entry->pubDate);
-            print Dumper($tiempo_desde_creacion_del_entry)if $debug; ############ DEBUUGUGUGUGUGUGUGUEARRRR ACA!!!!
+            my $tt_entry = DateTime->from_object( object => $tiempo_desde_creacion_del_entry_pre);
             my $tiempo_desde_creacion_del_entry = $hoy->epoch() - $tiempo_desde_creacion_del_entry_pre->epoch();
             say $tiempo_desde_creacion_del_entry if $debug;
             
@@ -164,19 +180,8 @@ sub ayudas {
 }
 __DATA__
 
-# Para mejorar
+# Para mejorar/revisar
 
-* No se que onda con los encodings.
-* No me gusta el metodo para ver si la fecha del articulo es de hoy
-* hay html embebido.... ¿Qué hacer con eso?
-* El formato del JSON es arbitrario.
-
-~~ Pasar a FeedPP que es mejor!~~
-
-~~W3CDTF:: Es el nombre ISO del formato en el que (deberían) está el tiempo en rss/atom.~~
-
-
-Hay una cagada con el tiempo y el objeto que parsea la gilada: no hace la cuenta!
-
-
-
+* No se que onda con los encodings. __LIFO__
+* hay html embebido.... ¿Qué hacer con eso? __LIFO__
+* El formato del JSON es arbitrario. __LIFO__
