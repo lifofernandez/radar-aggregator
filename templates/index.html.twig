@@ -3,15 +3,31 @@
 	<head>
 	<meta charset="utf-8" />
 		<title>el Reidar</title>
+
+		<!-- Google Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300,400italic,500,700">
+		<!-- CSS Reset -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+
+		
+		<!-- Milligram CSS minified -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css">
+		<!-- Milligram CSS minified -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css.map">
+
 		<style type="text/css">
-			body{font-family: monospace;}
+			body{font-family: "Roboto Mono", Courrier, monospace;}
+			article{max-width: 680px;margin: 40px 0;}
+			article .content{font-weight: 300;}
+			header h4 {font-weight: 700; } a{color: #007C85;}
+			.fecha{font-weight: 100;}
 			img{display: block;}
-			article{
-				max-width: 680px;
-			}
+			.cat{font-weight: 500;}
 		</style>
+
 	</head>
-	<body>
+	<body class="container">
+		
 		<header>
 			<h1>El Radario</h1>
 			<nav>
@@ -32,22 +48,27 @@
 			
 			{% for feed in feeds %}
 				<section id="{{ feed.name|replace({' ': '-'})|lower }}">
-					<h1>{{ feed.name }}</h1>
+					<h2>{{ feed.name }}</h2>
 					
 					{% for entry in feed.entries %}
 						<article id="{{ entry.title|replace({' ': '-'})|lower }}">
 							<header>
-								<h1>
+								<h4>
 									<a target="_BLANK" href="{{entry.link}}">
 										{{entry.title}}
 									</a>
-								</h1>
-								<span>{{entry.time}}</span>
+								</h4>
+								<span class="fecha">{{entry.time|date("m/d/Y")}}</span>
 							</header>
-							
-								{{entry.content|raw}}
+								<div class="content">
+									{{entry.content|replace({'&nbsp;': ''})|raw}}
+								</div>
+							<footer>
+								{% for cat in entry.feed_categories %}
+								<span class="cat">{{cat}}</span>&nbsp;
+								{% endfor %}
 
-							<footer></footer>
+							</footer>
 						</article>
 					{% endfor %}
 
