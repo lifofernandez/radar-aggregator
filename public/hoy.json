@@ -1,59 +1,170 @@
 {
-    "feeds": [{
-        "name": "TedCrhuch",
-        "url": "httt:wpewepfmfm",
-        "entries": [{
-            "tags": null,
-            "feed_url": "http://www.dataisnature.com",
-            "description": "Illustration from The Design of Diagrams for Engineering Formulas and the Theory of Nomography &#8211; Laurence Hewes and Herbert Seward [1923] Laurence Hewes&#8217;s and Herbert Seward&#8217;s manual on the design of nomographs, published in 1923, is an unintentional masterpiece of analogue calculation aesthetics. The topologies and contours of these charts echo the systems they encapsulate. [&#8230;]",
-            "author": "paul",
-            "url": "http://www.dataisnature.com/?p=2222",
-            "title": "The Music of Nomography –  Laurence Hewes’s & Herbert Seward’s ‘Design of Diagrams for Engineering Formulas’ and John Cage’s scores",
-            "date": "2015-09-13T19:29:35+00:00",
-            "descriptionClean": "Illustration from The Design of Diagrams for Engineering Formulas and the\n   Theory of Nomography – Laurence Hewes and Herbert Seward [1923]\n   Laurence Hewes’s and Herbert Seward’s manual on the design of\n   nomographs, published in 1923, is an unintentional masterpiece of\n   analogue calculation aesthetics. The topologies and contours of these\n   charts echo the systems they encapsulate.\n",
-            "feed_categories": [
-                "Arte"
-            ]
-        }, {
-            "description": "Cyprea (Cowry) Shells from Thesaurus Conchyliorum &#8211; G.B Sowerby (Cyprea mappa shown in center) Remi Rorschach, one of a few dozen or so characters in George Perec&#8217;s immensely complex and ingeniously constrained masterpiece &#8216;Life a Users Manual&#8217;, has a series of seemingly incongruous occupations &#8211; Â first a clown and circus manager, then an international shell [&#8230;]",
-            "tags": null,
-            "url": "http://www.dataisnature.com/?p=2212",
-            "title": "Cypraea mappa – The Mollusc Cartographer",
-            "author": "paul",
-            "feed": "Dataisnature",
-            "feed_categories": [
-                "Arte"
+    "feeds": [
+        {
+            "name": "TechCrunch",
+            "entries": [
+                {
+                    "content": "<img width=\"680\" height=\"454\" src=\"https://tctechcrunch2011.files.wordpress.com/2015/08/shutterstock_237882754.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"dining, restaurant\" />Â So youâre a techie and a foodie. Youâre having dinner and your phone buzzes to let you know you can pay for the meal youâre enjoying right from an app. Itâs then you realize thereâs something going on in restaurant tech. <a href=\"http://techcrunch.com/2016/04/26/the-restaurant-os/?ncid=rss\">Read More</a>",
+                    "time": "20:00:40+00:00 2016-04-26",
+                    "title": "The restaurant OSÃÂ ",
+                    "link": "http://techcrunch.com/2016/04/26/the-restaurant-os/?ncid=rss",
+                    "author": "Chris Caliz"
+                },
+                {
+                    "title": "Regulators order environmental impact study of Lyft Line and UberPOOL",
+                    "time": "19:15:33+00:00 2016-04-26",
+                    "link": "http://techcrunch.com/2016/04/26/regulators-order-environmental-impact-study-of-lyft-line-and-uberpool/?ncid=rss",
+                    "author": "Kate Conger",
+                    "content": "<img width=\"680\" height=\"382\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/03/lyftline-e1439850695167.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"Lyft Line Carpool\" />Â Remember when a California regulatory agency tried to shut down carpooling services like UberPOOL and Lyft Line throughout the state? Well, you can breathe a sigh of relief. Two years after its initial threats, the California Public Utilities Commission (CPUC) has decided that the services are legal and can continue to operate. However, the CPUC has ordered Uber and Lyft to provide specificsâ¦ <a href=\"http://techcrunch.com/2016/04/26/regulators-order-environmental-impact-study-of-lyft-line-and-uberpool/?ncid=rss\">Read More</a>"
+                },
+                {
+                    "author": "Devin Coldewey",
+                    "link": "http://techcrunch.com/2016/04/26/teardown-of-htc-vive-highlights-the-headsets-differences-from-oculus-rift/?ncid=rss",
+                    "time": "19:10:08+00:00 2016-04-26",
+                    "title": "Teardown of HTC Vive highlights the headsetâs differences from Oculus Rift",
+                    "content": "<img width=\"680\" height=\"510\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/vive-teardown-2.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"vive teardown 2\" />Â Todayâs VR headsets are marvels of miniaturization. And, as iFixitâs teardowns show, both the Oculus Rift and HTCâs Vive are also remarkably user-friendly when it comes to repair and customization. <a href=\"http://techcrunch.com/2016/04/26/teardown-of-htc-vive-highlights-the-headsets-differences-from-oculus-rift/?ncid=rss\">Read More</a>"
+                },
+                {
+                    "content": "<img width=\"680\" height=\"383\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/pullstring-platform.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"pullstring-platform\" />Â ToyTalk, the startup that mashed together Barbie and the Internet of Things and let your kids chat away with Thomas the Tank Engine for hours on end, is cashing out on the bot craze with a slight realignment of philosophy â and a new name. The company developed a whole toolset â called PullString â to enable writers to create narratives for childrenâs toys. <a href=\"http://techcrunch.com/2016/04/26/pullstring-bot-authoring/?ncid=rss\">Read More</a>",
+                    "time": "19:00:10+00:00 2016-04-26",
+                    "title": "ToyTalk renames to PullString, repositions as authoring tool for bots",
+                    "author": "Haje Jan Kamps",
+                    "link": "http://techcrunch.com/2016/04/26/pullstring-bot-authoring/?ncid=rss"
+                },
+                {
+                    "content": "<img width=\"680\" height=\"375\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/screen-shot-2016-04-26-at-12-32-14-pm.png?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"Screen Shot 2016-04-26 at 12.32.14 PM\" />Â HTC is devoting more and more resources to virtual reality as it looks to outrun its mobile demons and catch the VR wave before everyone else. Today at a press conference in China, HTC announced that it will be devoting $100 million toÃÂ a new virtual reality accelerator program for developers called Vive X, VR Focus reports. Applications are live now over on HTCâs site. The acceleratorâ¦ <a href=\"http://techcrunch.com/2016/04/26/htc-announces-100m-vive-x-virtual-reality-accelerator-program/?ncid=rss\">Read More</a>",
+                    "title": "HTC announces $100M Vive X virtual reality accelerator program",
+                    "time": "18:22:10+00:00 2016-04-26",
+                    "author": "Lucas Matney",
+                    "link": "http://techcrunch.com/2016/04/26/htc-announces-100m-vive-x-virtual-reality-accelerator-program/?ncid=rss"
+                },
+                {
+                    "content": "<img width=\"680\" height=\"353\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/capture1.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"Capture\" />Â Android Wear smartwatches come in many shapes and sizes â their watch bands, however, do not. Until now, of course. <a href=\"http://techcrunch.com/2016/04/26/android-wear-gets-a-watch-band-standard-via-mode/?ncid=rss\">Read More</a>",
+                    "author": "Stefan Etienne",
+                    "link": "http://techcrunch.com/2016/04/26/android-wear-gets-a-watch-band-standard-via-mode/?ncid=rss",
+                    "title": "Android Wear gets a watch band standard via MODE",
+                    "time": "18:13:23+00:00 2016-04-26"
+                },
+                {
+                    "content": "<img width=\"680\" height=\"536\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/starbucks-iphone.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"starbucks-iphone\" />Â Can the latest app from Starbucks become the next Kimoji? Nah, probably not. But the company this week has released its first consumer-facing app thatâs solely focused on entertainment, as opposed to its core business of selling food and drink.ÃÂ Yes, thatâs right. Starbucks has its own emoji keyboard app now, so you can more easily text friends pictures of Frappuccinos, coffees,â¦ <a href=\"http://techcrunch.com/2016/04/26/starbucks-launched-its-own-keyboard-app-so-you-can-text-emojis-of-unicorns-drinking-coffee/?ncid=rss\">Read More</a>",
+                    "link": "http://techcrunch.com/2016/04/26/starbucks-launched-its-own-keyboard-app-so-you-can-text-emojis-of-unicorns-drinking-coffee/?ncid=rss",
+                    "author": "Sarah Perez",
+                    "time": "17:54:25+00:00 2016-04-26",
+                    "title": "Starbucks launched its own keyboard app so you can text emojis of unicorns drinking coffee"
+                },
+                {
+                    "content": "<img width=\"680\" height=\"453\" src=\"https://tctechcrunch2011.files.wordpress.com/2015/11/465698354.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"tim cook\" />Â Some of the biggest names in tech and corporate America, including Facebook CEO Mark Zuckerberg,ÃÂ Apple CEO Tim Cook, Facebook COO Sheryl SandbergÃÂ and Walmart CEO Doug McMillon, have teamed up with governors and educators to ask Congress to provide $250 million in federal funding to school districts in order to giveÃÂ every single K-12 student in the nation an opportunity to learn how to code.â¦ <a href=\"http://techcrunch.com/2016/04/26/tim-cook-mark-zuckerberg-and-others-urge-congress-to-fund-k-12-computer-science-education/?ncid=rss\">Read More</a>",
+                    "time": "17:12:32+00:00 2016-04-26",
+                    "title": "Tim Cook, Mark Zuckerberg and others urge Congress to fund K-12 computer science education",
+                    "author": "Megan Rose Dickey",
+                    "link": "http://techcrunch.com/2016/04/26/tim-cook-mark-zuckerberg-and-others-urge-congress-to-fund-k-12-computer-science-education/?ncid=rss"
+                },
+                {
+                    "content": "<img width=\"680\" height=\"425\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/skype-for-mac.png?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"Skype-for-Mac\" />Â Microsoft announced this morning the launch of Skype for Business for Mac Preview ÃÂ â the business-focused version of Skypeâs communications services aimed at a commercial client base. I.T. administrators and individuals can sign up to test the new desktop software, which introduces features like Outlook integration, additional security, and calls that allow for up to 250 peopleâ¦ <a href=\"http://techcrunch.com/2016/04/26/skype-for-business-hits-the-mac-in-preview-mode/?ncid=rss\">Read More</a>",
+                    "title": "Skype for Business hits the Mac in Preview mode",
+                    "time": "17:07:16+00:00 2016-04-26",
+                    "author": "Sarah Perez",
+                    "link": "http://techcrunch.com/2016/04/26/skype-for-business-hits-the-mac-in-preview-mode/?ncid=rss"
+                },
+                {
+                    "content": "<img width=\"680\" height=\"664\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/large-thumbs-creators.png?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"large-thumbs-creators\" />Â Next time you open the YouTube app on your iOS or Android phone, youâll be greeted by a new homepage experience. Before, YouTube would show you a list of recommended items with small thumbnails, followed by a few more lists of recommended videos about topics youâve recently shown interested in. Now, youâll see a single feed of recommended videos that are all presented withâ¦ <a href=\"http://techcrunch.com/2016/04/26/youtube-brings-a-new-homepage-with-improved-recommendations-to-its-ios-and-android-apps/?ncid=rss\">Read More</a>",
+                    "link": "http://techcrunch.com/2016/04/26/youtube-brings-a-new-homepage-with-improved-recommendations-to-its-ios-and-android-apps/?ncid=rss",
+                    "author": "Frederic Lardinois",
+                    "title": "YouTube brings a new homepage with improved recommendations to its iOS and Android apps",
+                    "time": "17:00:39+00:00 2016-04-26"
+                },
+                {
+                    "title": "Hover, a self-flying camera drone, lands $25M for better aerial shots",
+                    "time": "16:23:37+00:00 2016-04-26",
+                    "author": "Fitz Tepper",
+                    "link": "http://techcrunch.com/2016/04/26/hover-a-self-flying-camera-drone-lands-25m-for-better-aerial-shots/?ncid=rss",
+                    "content": "<img width=\"450\" height=\"255\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/pushing-hover-camera.gif?w=450\" class=\"attachment-large size-large wp-post-image\" alt=\"Pushing Hover Camera\" />Â Have you ever tried to capture close-up video of yourself or others with a traditional drone? Itâs nearlyÃÂ impossible.\nTo solve this problem China-based Zero Zero Robotics has raised $25M to build Hover, a small self-flying drone.ÃÂ The funding is composed mainly of a $23M Series AÃÂ round from IDG, and China-focusedÃÂ firmsÃÂ GSR Ventures, ZhenFund, ZUIG.\nWhile this is the first publiclyâ¦ <a href=\"http://techcrunch.com/2016/04/26/hover-a-self-flying-camera-drone-lands-25m-for-better-aerial-shots/?ncid=rss\">Read More</a>"
+                },
+                {
+                    "content": "<img width=\"680\" height=\"453\" src=\"https://tctechcrunch2011.files.wordpress.com/2014/05/early-vehicle-lores.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"self driving car\" />Â Google, Uber and Lyft have joined forces with automakers Volvo and Ford, creating a coalition to influenceÃÂ lawmakers, regulators and the public, Automotive News reported on Tuesday. The new lobby, dubbedÃÂ The Self-Driving Coalition for Safer Streets, will be led by David Strickland, long-time safety watchdog who wasÃÂ formerly the head of theÃÂ U.S. National Highway Traffic Safetyâ¦ <a href=\"http://techcrunch.com/2016/04/26/google-uber-lyft-join-automakers-in-self-driving-car-lobby/?ncid=rss\">Read More</a>",
+                    "link": "http://techcrunch.com/2016/04/26/google-uber-lyft-join-automakers-in-self-driving-car-lobby/?ncid=rss",
+                    "author": "Lora Kolodny",
+                    "title": "Google, Uber, Lyft join automakers in self-driving car lobby",
+                    "time": "16:21:56+00:00 2016-04-26"
+                },
+                {
+                    "content": "<img width=\"680\" height=\"454\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/shutterstock_12130795.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"computer programming\" />Â If youâre a web developer who wants to make a big impact on TechCrunch, hereâs your chance! In preparation for tackling some ambitious projects, our product team has grown rapidly in recent months and we are still looking for one more. There couldnât be a more exciting time to join us. <a href=\"http://techcrunch.com/2016/04/26/techcrunch-web-developer-job/?ncid=rss\">Read More</a>",
+                    "author": "Nicole Wilke",
+                    "link": "http://techcrunch.com/2016/04/26/techcrunch-web-developer-job/?ncid=rss",
+                    "title": "TechCrunch is hiring an ambitious web developer. Could it be you?",
+                    "time": "16:11:13+00:00 2016-04-26"
+                },
+                {
+                    "title": "Wattpad sets its sights on brands, publishers and Hollywood with Wattpad Studios",
+                    "time": "16:02:07+00:00 2016-04-26",
+                    "author": "Anthony Ha",
+                    "link": "http://techcrunch.com/2016/04/26/wattpad-studios/?ncid=rss",
+                    "content": "<img width=\"680\" height=\"526\" src=\"https://tctechcrunch2011.files.wordpress.com/2014/06/wattpad_ipad.png?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"wattpad_ipad\" />Â Wattpad, a popular site where authors can share stories with readers, is announcing its broader ambitions with the launch of a new division called Wattpad Studios. The company describes Studios as a way for Wattpad to partner with the entertainment industry, and it said the new divisionÃÂ will operate like the multi-channel networks that work withÃÂ online video creators. Wattpad Studios buildsâ¦ <a href=\"http://techcrunch.com/2016/04/26/wattpad-studios/?ncid=rss\">Read More</a>"
+                },
+                {
+                    "title": "Attention VCs, here are the Startup Alley companies at Disrupt NY",
+                    "time": "16:00:42+00:00 2016-04-26",
+                    "link": "http://techcrunch.com/2016/04/26/attention-vcs-here-are-the-startup-alley-companies-at-disrupt-ny/?ncid=rss",
+                    "author": "Anthony Domanico",
+                    "content": "<img width=\"680\" height=\"453\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/02/16758204214_218dd14c1c_o.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"NEW YORK, NY - MAY 05:  General atmosphere during TechCrunch Disrupt NY 2015 - Day 2 at The Manhattan Center on May 5, 2015 in New York City.  (Photo by Noam Galai/Getty Images for TechCrunch)\" />Â Hey all you investors out there, weâre excited to announce the companies that will be on display in the Startup Alley at Disrupt NY, and you can check out every single one of them on our brand-new Startup Alley Hub. In addition to all sorts of great information on Startup Alley companies, the Startup Alley Hub lets you easily follow the companies youâre interested in meeting upâ¦ <a href=\"http://techcrunch.com/2016/04/26/attention-vcs-here-are-the-startup-alley-companies-at-disrupt-ny/?ncid=rss\">Read More</a>"
+                },
+                {
+                    "link": "http://techcrunch.com/2016/04/26/what-to-expect-for-twitters-first-quarter-results/?ncid=rss",
+                    "author": "Matthew Lynley",
+                    "title": "What to expect for Twitterâs first-quarter results",
+                    "time": "15:45:37+00:00 2016-04-26",
+                    "content": "<img width=\"680\" height=\"453\" src=\"https://tctechcrunch2011.files.wordpress.com/2015/09/459305186.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"Jack Dorsey\" />Â Last quarter,ÃÂ Twitterâs user base (excluding SMS fast-followers) actually shrankÃÂ â and this was a hugeÃÂ moment for the company. While there were whispers of peak Twitter circling for some time now, that looming theory was finally confirmed in the companyâs fourth-quarter results. Twitter had gone from 307 million users to 305 million. Twitter, at one point a rocket-ship,â¦ <a href=\"http://techcrunch.com/2016/04/26/what-to-expect-for-twitters-first-quarter-results/?ncid=rss\">Read More</a>"
+                },
+                {
+                    "time": "15:37:49+00:00 2016-04-26",
+                    "title": "Amazon cracks down on fake reviews with another lawsuit",
+                    "link": "http://techcrunch.com/2016/04/26/amazon-cracks-down-on-fake-reviews-with-another-lawsuit/?ncid=rss",
+                    "author": "Sarah Perez",
+                    "content": "<img width=\"680\" height=\"476\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/screen-shot-2016-04-06-at-8-44-15-am.png?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"amazon\" />Â Amazon is continuing its efforts to crack down on fake, paid-for reviews of the products it sells on its website, by filing yet another lawsuit against those who offer glowing reviews in exchange for cash. In this latest suit, filed on Friday, the company is targeting the operators of five websites engaged in this business practice. The sites offer verified reviews for books and otherâ¦ <a href=\"http://techcrunch.com/2016/04/26/amazon-cracks-down-on-fake-reviews-with-another-lawsuit/?ncid=rss\">Read More</a>"
+                },
+                {
+                    "content": "<img width=\"680\" height=\"510\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/wedo_threephone_taskstribechat.png?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"WeDo_ThreePhone_Tasks+Tribe+Chat\" />Â There areÃÂ dozensÃÂ of task-management and to-do appsÃÂ in the market today, with some like Any.do, Wunderlist (now owned by Microsoft) and Todoist already used by tens ofÃÂ millions of people to organise their lives and coordinate that with people they know. Now, make way for a new oneÃÂ called WeDo, whose developersÃÂ believe it can do things better for a wider market of people. Launchingâ¦ <a href=\"http://techcrunch.com/2016/04/26/do-we-have-room-for-one-more-task-management-app-apparently-wedo/?ncid=rss\">Read More</a>",
+                    "author": "Ingrid Lunden",
+                    "link": "http://techcrunch.com/2016/04/26/do-we-have-room-for-one-more-task-management-app-apparently-wedo/?ncid=rss",
+                    "time": "15:24:19+00:00 2016-04-26",
+                    "title": "Do we have room for one more task-management app? Apparently, WeDo"
+                },
+                {
+                    "title": "What to expect for Appleâs second-quarter results",
+                    "time": "15:11:29+00:00 2016-04-26",
+                    "link": "http://techcrunch.com/2016/04/26/what-to-expect-for-apples-second-quarter-results/?ncid=rss",
+                    "author": "Matthew Lynley",
+                    "content": "<img width=\"680\" height=\"457\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/03/516837056.jpg?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"CUPERTINO, CA - MARCH 21:  Apple CEO Tim Cook speaks during an Apple special event at the Apple headquarters on March 21, 2016 in Cupertino, California. The company is expected to update its iPhone and iPad lines, and introduce new bands for the Apple Watch.  (Photo by Justin Sullivan/Getty Images)\" />Â Apple will report its second-quarter earnings, and all eyes are going to be on the companyâs iPhone sales. Thatâs because the big question for Apple is going to be whether or not iPhone sales have hit a wall and that the company will see a year-over-year decline in revenue, marking a significant moment for the company which has traditionally steadily grown iPhone sales to generateâ¦ <a href=\"http://techcrunch.com/2016/04/26/what-to-expect-for-apples-second-quarter-results/?ncid=rss\">Read More</a>"
+                },
+                {
+                    "title": "Weak ties matter",
+                    "time": "15:00:53+00:00 2016-04-26",
+                    "link": "http://techcrunch.com/2016/04/26/weak-ties-matter/?ncid=rss",
+                    "author": "Everett Harper",
+                    "content": "<img width=\"680\" height=\"383\" src=\"https://tctechcrunch2011.files.wordpress.com/2016/04/ropes.png?w=680\" class=\"attachment-large size-large wp-post-image\" alt=\"ropes\" />Â Iâm going to drop some science on you â social science â about how to recruit a diverse team of high performers. In 1973, Stanford sociology professor Mark Granovetter published an empirical paper called The Strength of Weak Ties. If youâre wondering about the validity of a 40-year-old study on hiring for today, consider that Professor Granovetter is one of the pioneersâ¦ <a href=\"http://techcrunch.com/2016/04/26/weak-ties-matter/?ncid=rss\">Read More</a>"
+                }
             ],
-            "date": "2015-08-20T19:40:28+00:00",
-            "descriptionClean": "Cyprea (Cowry) Shells from Thesaurus Conchyliorum – G.B Sowerby (Cyprea\n   mappa shown in center) Remi Rorschach, one of a few dozen or so\n   characters in George Perec’s immensely complex and ingeniously\n   constrained masterpiece ‘Life a Users Manual’, has a series of\n   seemingly incongruous occupations – Â first a clown and circus\n   manager, then an international shell\n"
-        }]
-    }, {
-        "name": "dataisnature",
-        "url": "httt:dataisnature.orggga",
-        "entries": [{
-            "tags": null,
-            "feed_url": "http://www.dataisnature.com",
-            "description": "Illustration from The Design of Diagrams for Engineering Formulas and the Theory of Nomography &#8211; Laurence Hewes and Herbert Seward [1923] Laurence Hewes&#8217;s and Herbert Seward&#8217;s manual on the design of nomographs, published in 1923, is an unintentional masterpiece of analogue calculation aesthetics. The topologies and contours of these charts echo the systems they encapsulate. [&#8230;]",
-            "author": "paul",
-            "url": "http://www.dataisnature.com/?p=2222",
-            "title": "The Music of Nomography –  Laurence Hewes’s & Herbert Seward’s ‘Design of Diagrams for Engineering Formulas’ and John Cage’s scores",
-            "date": "2015-09-13T19:29:35+00:00",
-            "descriptionClean": "Illustration from The Design of Diagrams for Engineering Formulas and the\n   Theory of Nomography – Laurence Hewes and Herbert Seward [1923]\n   Laurence Hewes’s and Herbert Seward’s manual on the design of\n   nomographs, published in 1923, is an unintentional masterpiece of\n   analogue calculation aesthetics. The topologies and contours of these\n   charts echo the systems they encapsulate.\n",
-            "feed_categories": [
-                "Arte"
-            ]
-        }, {
-            "description": "Cyprea (Cowry) Shells from Thesaurus Conchyliorum &#8211; G.B Sowerby (Cyprea mappa shown in center) Remi Rorschach, one of a few dozen or so characters in George Perec&#8217;s immensely complex and ingeniously constrained masterpiece &#8216;Life a Users Manual&#8217;, has a series of seemingly incongruous occupations &#8211; Â first a clown and circus manager, then an international shell [&#8230;]",
-            "tags": null,
-            "url": "http://www.dataisnature.com/?p=2212",
-            "title": "Cypraea mappa – The Mollusc Cartographer",
-            "author": "paul",
-            "feed": "Dataisnature",
-            "feed_categories": [
-                "Arte"
+            "url": "http://techcrunch.com"
+        },
+        {
+            "url": "http://createdigitalmusic.com",
+            "entries": [
+                {
+                    "content": "<p>Modstep, the step sequencer on steroids on iOS, just got a huge pile of new features. It hosts AU plug-ins (yes, iOS plug-ins). It adds per-track MIDI, for hardware and apps. It has loads of new features for clips and arranging. It is, basically, a MIDI daw with built-in instruments thatâs unlike nearly anything on desktop â only it was designed from the ground-up for the iPad. In fact, it does so much that itâs a bit overwhelming. So, letâs take a birds-eye view of whatâs new â and then turn to the singular educational force that s Jakob Haq ...</p>\n<p>The post <a rel=\"nofollow\" href=\"http://createdigitalmusic.com/2016/04/modstep-is-now-a-hub-for-everything-learn-how-to-use-it/\">Modstep is now a hub for everything; learn how to use it</a> appeared first on <a rel=\"nofollow\" href=\"http://createdigitalmusic.com\">cdm createdigitalmusic</a>.</p>\n",
+                    "time": "11:42:53+00:00 2016-04-26",
+                    "title": "Modstep is now a hub for everything; learn how to use it",
+                    "link": "http://createdigitalmusic.com/2016/04/modstep-is-now-a-hub-for-everything-learn-how-to-use-it/",
+                    "author": "Peter Kirn"
+                },
+                {
+                    "content": "<p>As part of a collaboration with Novation, we spoke with artists Shawn Rudiman and My Panda Shall Fly about how theyâre working with Novationâs Circuit. Both artists got their hands on the updates to the Circuit hardware in advance â providing drag-and-drop sample loading and sample editing. They talk a bit about what thatâs meant to them â and what they think about working with hardware in general. Track ID, from the beginning: âDark Houseâ by Shawn Rudiman, appropriately from his Hardware Survival Techniques EP. The video gives you some highlights, but I spoke to both artists to get more ...</p>\n<p>The post <a rel=\"nofollow\" href=\"http://createdigitalmusic.com/2016/04/artists-share-novation-circuit-tips-with-shawn-rudiman-and-my-panda-shall-fly/\">Artists share Novation Circuit tips, with Shawn Rudiman and My Panda Shall Fly</a> appeared first on <a rel=\"nofollow\" href=\"http://createdigitalmusic.com\">cdm createdigitalmusic</a>.</p>\n",
+                    "time": "20:51:19+00:00 2016-04-25",
+                    "title": "Artists share Novation Circuit tips, with Shawn Rudiman and My Panda Shall Fly",
+                    "link": "http://createdigitalmusic.com/2016/04/artists-share-novation-circuit-tips-with-shawn-rudiman-and-my-panda-shall-fly/",
+                    "author": "Peter Kirn"
+                }
             ],
-            "date": "2015-08-20T19:40:28+00:00",
-            "descriptionClean": "Cyprea (Cowry) Shells from Thesaurus Conchyliorum – G.B Sowerby (Cyprea\n   mappa shown in center) Remi Rorschach, one of a few dozen or so\n   characters in George Perec’s immensely complex and ingeniously\n   constrained masterpiece ‘Life a Users Manual’, has a series of\n   seemingly incongruous occupations – Â first a clown and circus\n   manager, then an international shell\n"
-        }]
-    }]
+            "name": "cdm createdigitalmusic"
+        }
+    ]
 }

@@ -33,9 +33,9 @@
 						<article id="{{ entry.title|replace({' ': '-'})|lower }}">
 							<header>
 								<h1>{{entry.title}}</h1>
-								<span>{{entry.date}}</span>
+								<span>{{entry.time}}</span>
 							</header>
-							<p>{{entry.descriptionClean}}</p>
+							<p>{{entry.content}}</p>
 							<footer></footer>
 						</article>
 					{% endfor %}
