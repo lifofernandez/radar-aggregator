@@ -87,7 +87,8 @@ my $AA = to_json( $C , {
     pretty => 1 } 
     );
 my $archivo_salida_hoy = $t_banana . '.json';
-write_file($archivo_salida_hoy, { binmode => ':utf8' }, $AA);
+#write_file($archivo_salida_hoy, { binmode => ':utf8' }, $AA);
+write_file($archivo_salida_hoy, $AA);
 
 #fin
 exit 0;
