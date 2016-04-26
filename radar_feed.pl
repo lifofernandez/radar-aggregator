@@ -19,6 +19,7 @@ use DateTime::Format::W3CDTF;
 use XML::Entities;
 use HTML::Entities  "decode_entities";
 use JSON            "to_json";
+use utf8;
 
 # O P T s
 my %opts = ();
@@ -88,8 +89,8 @@ my $AA = to_json( $C , {
     pretty => 1 } 
     );
 my $archivo_salida_hoy = $t_banana . '.json';
-#write_file($archivo_salida_hoy, { binmode => ':utf8' }, $AA);
-write_file($archivo_salida_hoy, $AA);
+write_file($archivo_salida_hoy, { binmode => ':utf8' }, $AA);
+#write_file($archivo_salida_hoy, $AA);
 
 #fin
 exit 0;
@@ -166,9 +167,11 @@ sub url_getter {
 
 sub decode_shits {
 	my $shit = shift;
-	my $coso_sin_codificar = decode_entities(XML::Entities::decode('all',$shit));
+	#my $coso_sin_codificar = XML::Entities::decode('all',XML::Entities::numify('all',decode_entities($shit)));
+	my $coso_sin_codificar = XML::Entities::decode('all', decode_entities($shit));
+    my $puto = 'Â';
+    $coso_sin_codificar =~ s/\Q$puto\E//g;
 	return $coso_sin_codificar;
-	#return $shit;
 }
 
 sub tiempo_lindo {
@@ -182,83 +185,3 @@ sub ayudas {
 	pod2usage(-verbose=>3);
 }
 __DATA__
-
-# Para mejorar/revisar
-
-* No se que onda con los encodings. 
-	# los reviso y te digo
-* hay html embebido.... ¿Qué hacer con eso? __LIFO__
-	# esta bien guardar descripcion y descripcionLimpia ¿o es mejor que lo haga des?
-* El formato del JSON es arbitrario. 
-	# en /public/hoy.json esta la estrcuctura que facilita todo desp
-	# es un array de hashes creo, 
-	
-
-{
-	"feeds": [
-		{
-		   "name"   : "TedCrhuch",
-		   "url"    : "httt:wpewepfmfm",  
-		   "entries": [
-				{
-					"tags": null,
-					"feed_url": "http://www.dataisnature.com",
-					"description": "Illustration from The Design of Diagrams for Engineering Formulas and the Theory of Nomography &#8211; Laurence Hewes and Herbert Seward [1923] Laurence Hewes&#8217;s and Herbert Seward&#8217;s manual on the design of nomographs, published in 1923, is an unintentional masterpiece of analogue calculation aesthetics. The topologies and contours of these charts echo the systems they encapsulate. [&#8230;]",
-					"author": "paul",
-					"url": "http://www.dataisnature.com/?p=2222",
-					"title": "The Music of Nomography –  Laurence Hewes’s & Herbert Seward’s ‘Design of Diagrams for Engineering Formulas’ and John Cage’s scores",
-					"date": "2015-09-13T19:29:35+00:00",
-					"descriptionClean": "Illustration from The Design of Diagrams for Engineering Formulas and the\n   Theory of Nomography – Laurence Hewes and Herbert Seward [1923]\n   Laurence Hewes’s and Herbert Seward’s manual on the design of\n   nomographs, published in 1923, is an unintentional masterpiece of\n   analogue calculation aesthetics. The topologies and contours of these\n   charts echo the systems they encapsulate.\n",
-					"feed_categories": [
-						"Arte"
-					],
-				},
-				{
-					"description": "Cyprea (Cowry) Shells from Thesaurus Conchyliorum &#8211; G.B Sowerby (Cyprea mappa shown in center) Remi Rorschach, one of a few dozen or so characters in George Perec&#8217;s immensely complex and ingeniously constrained masterpiece &#8216;Life a Users Manual&#8217;, has a series of seemingly incongruous occupations &#8211; Â first a clown and circus manager, then an international shell [&#8230;]",
-					"tags": null,
-					"url": "http://www.dataisnature.com/?p=2212",
-					"title": "Cypraea mappa – The Mollusc Cartographer",
-					"author": "paul",
-					"feed": "Dataisnature",
-					"feed_categories": [
-						"Arte"
-					],
-					"date": "2015-08-20T19:40:28+00:00",
-					"descriptionClean": "Cyprea (Cowry) Shells from Thesaurus Conchyliorum – G.B Sowerby (Cyprea\n   mappa shown in center) Remi Rorschach, one of a few dozen or so\n   characters in George Perec’s immensely complex and ingeniously\n   constrained masterpiece ‘Life a Users Manual’, has a series of\n   seemingly incongruous occupations – Â first a clown and circus\n   manager, then an international shell\n"
-				}
-			]
-		},
-		{
-		   "name"   : "dataisnature", 
-		   "url"    : "httt:dataisnature.orggga",  
-		   "entries": [
-				{
-					"tags": null,
-					"feed_url": "http://www.dataisnature.com",
-					"description": "Illustration from The Design of Diagrams for Engineering Formulas and the Theory of Nomography &#8211; Laurence Hewes and Herbert Seward [1923] Laurence Hewes&#8217;s and Herbert Seward&#8217;s manual on the design of nomographs, published in 1923, is an unintentional masterpiece of analogue calculation aesthetics. The topologies and contours of these charts echo the systems they encapsulate. [&#8230;]",
-					"author": "paul",
-					"url": "http://www.dataisnature.com/?p=2222",
-					"title": "The Music of Nomography –  Laurence Hewes’s & Herbert Seward’s ‘Design of Diagrams for Engineering Formulas’ and John Cage’s scores",
-					"date": "2015-09-13T19:29:35+00:00",
-					"descriptionClean": "Illustration from The Design of Diagrams for Engineering Formulas and the\n   Theory of Nomography – Laurence Hewes and Herbert Seward [1923]\n   Laurence Hewes’s and Herbert Seward’s manual on the design of\n   nomographs, published in 1923, is an unintentional masterpiece of\n   analogue calculation aesthetics. The topologies and contours of these\n   charts echo the systems they encapsulate.\n",
-					"feed_categories": [
-						"Arte"
-					],
-				},
-				{
-					"description": "Cyprea (Cowry) Shells from Thesaurus Conchyliorum &#8211; G.B Sowerby (Cyprea mappa shown in center) Remi Rorschach, one of a few dozen or so characters in George Perec&#8217;s immensely complex and ingeniously constrained masterpiece &#8216;Life a Users Manual&#8217;, has a series of seemingly incongruous occupations &#8211; Â first a clown and circus manager, then an international shell [&#8230;]",
-					"tags": null,
-					"url": "http://www.dataisnature.com/?p=2212",
-					"title": "Cypraea mappa – The Mollusc Cartographer",
-					"author": "paul",
-					"feed": "Dataisnature",
-					"feed_categories": [
-						"Arte"
-					],
-					"date": "2015-08-20T19:40:28+00:00",
-					"descriptionClean": "Cyprea (Cowry) Shells from Thesaurus Conchyliorum – G.B Sowerby (Cyprea\n   mappa shown in center) Remi Rorschach, one of a few dozen or so\n   characters in George Perec’s immensely complex and ingeniously\n   constrained masterpiece ‘Life a Users Manual’, has a series of\n   seemingly incongruous occupations – Â first a clown and circus\n   manager, then an international shell\n"
-				}
-			]
-		}
-	]
-}
