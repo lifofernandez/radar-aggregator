@@ -5,6 +5,10 @@
 		<title>el Reidar</title>
 		<style type="text/css">
 			body{font-family: monospace;}
+			img{display: block;}
+			article{
+				max-width: 680px;
+			}
 		</style>
 	</head>
 	<body>
@@ -40,9 +44,8 @@
 								</h1>
 								<span>{{entry.time}}</span>
 							</header>
-							{% block content %}
+							
 								{{entry.content|raw}}
-							{% endblock content %}
 
 							<footer></footer>
 						</article>
