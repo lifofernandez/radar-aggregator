@@ -21,7 +21,7 @@ use JSON            "to_json";
 
 # O P T s
 my %opts = ();
-getopts('dhkf:',\%opts);
+getopts('dhf:',\%opts);
 
 =pod
 
@@ -34,8 +34,6 @@ Radar: Bajador de feeds rss y atom..
 =over
 
 =item -d debug 
-
-=item -k Guardar todos los feeds que encuentre en "ALL.json".
 
 =item -f [Archivo csv con feeds a parsear/bajar]
 
@@ -53,7 +51,7 @@ my @uri_rss_all     = ();
 my %RSS             = ();
 my %Noticias        = ();
 my %Results         = ();
-my %HOY             = ();
+my @HOY             = ();
 my $hoy = DateTime->now(@_)->truncate( to => 'minute' );
 my $un_dia = 60 * 60 * 24 + 10;
 
@@ -90,8 +88,8 @@ if ($opts{k}){
 	write_file("ALL.json", {binmode=>':utf8'}, $BIGBIG);
 }
 
-my $A = \%HOY;
-my $AA = to_json $A;
+my $A = \@HOY;
+my $AA = to_json( $A , { utf8 => 1, pretty => 1 } );
 my $archivo_salida_hoy = $t_banana . '.json';
 write_file($archivo_salida_hoy, {binmode => ':utf8'}, $AA);
 
@@ -128,17 +126,12 @@ Utiliza XML::FeedPP.
 sub url_getter {
 	foreach my $uri_rss (@uri_rss_all){
 		my $feed = XML::FeedPP->new($uri_rss);
-		my %entries_stuffs = ();
-		my %entries_hoy = ();
 		my $nro = 0;
+        my @entries = ();
 		for my $entry ($feed->get_item()){
 			print Dumper($entry) if $debug;
-
-			$entries_stuffs{$nro}{'title'}   = decode_shits($entry->title);
-			$entries_stuffs{$nro}{'author'}  = decode_shits($entry->author);
-			$entries_stuffs{$nro}{'link'}    = decode_shits($entry->link);
-			$entries_stuffs{$nro}{'content'} = decode_shits($entry->description);
-			$entries_stuffs{$nro}{'time'}    = tiempo_lindo($entry->pubDate);
+		    my %entries_hoy = ();
+            my $es_de_hoy = 0;
 			
 			# FIJARSE SI ES NUEVO (HASTA HACE UN DIA ATRAS)
 			my $chiotto = DateTime::Format::W3CDTF->new;
@@ -149,16 +142,25 @@ sub url_getter {
 			
 			if ($tiempo_desde_creacion_del_entry <= $un_dia + 20){
 				say "es de hoy" if $debug;
-				$entries_hoy{$nro}{'title'}   = decode_shits($entry->title);
-				$entries_hoy{$nro}{'author'}  = decode_shits($entry->author);
-				$entries_hoy{$nro}{'link'}    = decode_shits($entry->link);
-				$entries_hoy{$nro}{'content'} = decode_shits($entry->description);
-				$entries_hoy{$nro}{'time'}    = tiempo_lindo($entry->pubDate);
+				$entries_hoy{'title'}   = decode_shits($entry->title);
+				$entries_hoy{'author'}  = decode_shits($entry->author);
+				$entries_hoy{'link'}    = decode_shits($entry->link);
+				$entries_hoy{'content'} = decode_shits($entry->description);
+				$entries_hoy{'time'}    = tiempo_lindo($entry->pubDate);
+                $es_de_hoy++;
 			}
-			$nro++;
+            if ($es_de_hoy == 1){
+                my $HE = \%entries_hoy;
+                push(@entries,$HE);
+                $nro++;
+            }
 		}
-		$Results{$feed->title}  = \%entries_stuffs;
-		$HOY{$feed->title}      = \%entries_hoy;
+        if ($nro >= 1){
+            my %hash_pal_key = (    name =>$feed->title, url =>$feed->link  );
+            $hash_pal_key{entries} = \@entries;
+            my $HK = \%hash_pal_key;
+            push (@HOY,$HK);
+        }
 	}
 }
 
