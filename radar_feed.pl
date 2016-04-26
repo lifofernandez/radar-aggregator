@@ -47,13 +47,13 @@ Radar: Bajador de feeds rss y atom..
 # VARIABLES GLOBALES
 ######################################################################
 my $debug = $opts{d};
-my $t_banana = strftime ("%d_%B_%Y",localtime(time()));
+my $un_dia          = 60 * 60 * 24;
+my $t_banana = strftime ("%d_%B_%Y",localtime(time()-$un_dia));
 my $archivo_urls_categorias_csv = 'feeds.csv';
 my @uri_rss_all     = ();
 my %RSS             = ();
 my @HOY             = ();
 my $hoy             = DateTime->now(@_)->truncate( to => 'minute' );
-my $un_dia          = 60 * 60 * 24 + 10;
 
 
 ######################################################################
@@ -88,9 +88,13 @@ my $AA = to_json( $C , {
     #utf8 => 1, 
     pretty => 1 } 
     );
-my $archivo_salida_hoy = $t_banana . '.json';
-write_file($archivo_salida_hoy, { binmode => ':utf8' }, $AA);
-#write_file($archivo_salida_hoy, $AA);
+my $archivo_salida_hoy = 'hoy.json';
+#my $archivo_salida_hoy = $t_banana . '.json';
+my $estado_backup = archivear_el_de_ayer();
+if ($estado_backup eq 'si' || $debug){
+    say "Se movio el archivo de ayer!";
+    write_file($archivo_salida_hoy, { binmode => ':utf8' }, $AA);
+}
 
 #fin
 exit 0;
@@ -168,9 +172,9 @@ sub url_getter {
 sub decode_shits {
 	my $shit = shift;
 	#my $coso_sin_codificar = XML::Entities::decode('all',XML::Entities::numify('all',decode_entities($shit)));
-	my $coso_sin_codificar = XML::Entities::decode('all', decode_entities($shit));
-    my $puto = 'Â';
-    $coso_sin_codificar =~ s/\Q$puto\E//g;
+	my $coso_sin_codificar  = XML::Entities::decode('all', decode_entities($shit));
+    my $puto  = 'Â';
+    $coso_sin_codificar     =~ s/\Q$puto\E//g;
 	return $coso_sin_codificar;
 }
 
@@ -181,7 +185,22 @@ sub tiempo_lindo {
 	return $fecha_bien_laputaquetepario;    
 }
 
+sub archivear_el_de_ayer {
+    my $nombre_del_de_ayer = $t_banana . '.json';
+    my $nn_hoy = 'hoy.json';
+    unless (-e $nombre_del_de_ayer){
+        if (rename $nn_hoy, $nombre_del_de_ayer){
+            return 'si';
+        } else {
+            return 'no';
+        }
+    }
+}
+
+
+
 sub ayudas {
 	pod2usage(-verbose=>3);
 }
+
 __DATA__
