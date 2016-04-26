@@ -33,9 +33,9 @@ Radar: Bajador de feeds rss y atom..
 
 =over
 
-=item -d debug 
-
 =item -f [Archivo csv con feeds a parsear/bajar]
+
+=item -d debug 
 
 =back
 
@@ -49,11 +49,9 @@ my $t_banana = strftime ("%d_%B_%Y",localtime(time()));
 my $archivo_urls_categorias_csv = 'feeds.csv';
 my @uri_rss_all     = ();
 my %RSS             = ();
-my %Noticias        = ();
-my %Results         = ();
 my @HOY             = ();
-my $hoy = DateTime->now(@_)->truncate( to => 'minute' );
-my $un_dia = 60 * 60 * 24 + 10;
+my $hoy             = DateTime->now(@_)->truncate( to => 'minute' );
+my $un_dia          = 60 * 60 * 24 + 10;
 
 
 ######################################################################
@@ -82,16 +80,14 @@ Al final se pasa el hasref a un json!
 
 =cut
 
-if ($opts{k}){
-	my $BIG = \%Results;
-	my $BIGBIG = to_json $BIG;
-	write_file("ALL.json", {binmode=>':utf8'}, $BIGBIG);
-}
-
-my $A = \@HOY;
-my $AA = to_json( $A , { utf8 => 1, pretty => 1 } );
+my %fs = ( feeds => \@HOY );
+my $C = \%fs;
+my $AA = to_json( $C , { 
+    #utf8 => 1, 
+    pretty => 1 } 
+    );
 my $archivo_salida_hoy = $t_banana . '.json';
-write_file($archivo_salida_hoy, {binmode => ':utf8'}, $AA);
+write_file($archivo_salida_hoy, { binmode => ':utf8' }, $AA);
 
 #fin
 exit 0;
@@ -107,8 +103,9 @@ sub feeds_list {
 		chomp($ln);
 		my @r = split(/,/,$ln);
 		print Dumper(@r) if $debug;
-		$RSS{$n} = \@r;
-		push (@uri_rss_all,$r[0]);
+        my $pri = shift @r;
+		$RSS{$pri} = \@r;
+		push (@uri_rss_all,$pri);
 		$n++;
 	}
 }
@@ -147,6 +144,7 @@ sub url_getter {
 				$entries_hoy{'link'}    = decode_shits($entry->link);
 				$entries_hoy{'content'} = decode_shits($entry->description);
 				$entries_hoy{'time'}    = tiempo_lindo($entry->pubDate);
+                $entries_hoy{'feed_categories'} = $RSS{$uri_rss}; # ArrayRef !!
                 $es_de_hoy++;
 			}
             if ($es_de_hoy == 1){
