@@ -133,12 +133,14 @@ sub url_getter {
         my $nro = 0;
         for my $entry ($feed->get_item()){
             print Dumper($entry) if $debug;
-
-            $entries_stuffs{$nro}{'title'}   = decode_shits($entry->title);
-            $entries_stuffs{$nro}{'author'}  = decode_shits($entry->author);
-            $entries_stuffs{$nro}{'link'}    = decode_shits($entry->link);
-            $entries_stuffs{$nro}{'content'} = decode_shits($entry->description);
-            $entries_stuffs{$nro}{'time'}    = tiempo_lindo($entry->pubDate);
+            if ($opts{k}){
+                $entries_stuffs{$nro}{'title'}   = decode_shits($entry->title);
+                $entries_stuffs{$nro}{'author'}  = decode_shits($entry->author);
+                $entries_stuffs{$nro}{'link'}    = decode_shits($entry->link);
+                $entries_stuffs{$nro}{'content'} = decode_shits($entry->description);
+                $entries_stuffs{$nro}{'category'} = decode_shits($entry->category);
+                $entries_stuffs{$nro}{'time'}    = tiempo_lindo($entry->pubDate);
+            }
             
             # FIJARSE SI ES NUEVO (HASTA HACE UN DIA ATRAS)
             my $chiotto = DateTime::Format::W3CDTF->new;
@@ -153,11 +155,14 @@ sub url_getter {
                 $entries_hoy{$nro}{'author'}  = decode_shits($entry->author);
                 $entries_hoy{$nro}{'link'}    = decode_shits($entry->link);
                 $entries_hoy{$nro}{'content'} = decode_shits($entry->description);
+                $entries_hoy{$nro}{'category'} = decode_shits($entry->category);
                 $entries_hoy{$nro}{'time'}    = tiempo_lindo($entry->pubDate);
             }
             $nro++;
         }
-        $Results{$feed->title}  = \%entries_stuffs;
+        if ($opts{k}){ 
+            $Results{$feed->title}  = \%entries_stuffs; 
+        }
         $HOY{$feed->title}      = \%entries_hoy;
     }
 }
