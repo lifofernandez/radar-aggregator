@@ -1,3 +1,6 @@
 vista/semantic
 vista/node_modules
 DS_Store
+tmp/
+reserva/
+vendor/

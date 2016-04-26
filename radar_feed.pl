@@ -182,6 +182,11 @@ __DATA__
 
 # Para mejorar/revisar
 
-* No se que onda con los encodings. __LIFO__
+* No se que onda con los encodings. 
+    # los reviso y te digo
 * hay html embebido.... ¿Qué hacer con eso? __LIFO__
-* El formato del JSON es arbitrario. __LIFO__
+    # esta bien guardar descripcion y descripcionLimpia ¿o es mejor que lo haga des?
+* El formato del JSON es arbitrario. 
+    # en /public/hoy.json esta la estrcuctura que facilita todo desp
+    # es un array de hashes creo, 
+    
