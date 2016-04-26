@@ -3,7 +3,7 @@
 	<head>
 		<title>el Reidar</title>
 		<style type="text/css">
-		body{font-family: monospace;}
+			body{font-family: monospace;}
 		</style>
 	</head>
 	<body>
@@ -15,7 +15,10 @@
 		<section>
 			{% for entry in entries %}
 				<article id="#{{ entry.title|replace({' ': '-'})|lower }}">
-					<header><h1>{{ entry.title }}</h1></header>
+					<header>
+						<h1>{{ entry.title }}</h1>
+						<span>{{entry.date}}</span>
+					</header>
 					<p>{{entry.descriptionClean}}</p>
 					<footer></footer>
 				</article>
