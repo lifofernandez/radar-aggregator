@@ -14,13 +14,14 @@ $template = $twig->loadTemplate('index.html.twig');
 
 /*	Cargar	*/
 
-$entriesJson = file_get_contents('hoy.json');
-$entries = json_decode($entriesJson,true); // 'true' devuelve  array
+$feedsJson = file_get_contents("hoy.json");
+//var_dump($feedsJson);
+$feeds = json_decode($feedsJson,true); // 'true' devuelve  array
 
 
 /*	Render	*/
 
-echo $template->render($entries);
+echo $template->render($feeds);
 
 /*	Leesto!	*/
 

@@ -194,8 +194,8 @@ __DATA__
 {
 	"feeds": [
 		{
-		   "name"   : "TedCrhuch" 
-		   "url"    : "httt:wpewepfmfm"  
+		   "name"   : "TedCrhuch",
+		   "url"    : "httt:wpewepfmfm",  
 		   "entries": [
 				{
 					"tags": null,
@@ -226,8 +226,8 @@ __DATA__
 			]
 		},
 		{
-		   "name"   : "dataisnature" 
-		   "url"    : "httt:dataisnature.orggga"  
+		   "name"   : "dataisnature", 
+		   "url"    : "httt:dataisnature.orggga",  
 		   "entries": [
 				{
 					"tags": null,

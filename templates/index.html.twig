@@ -9,23 +9,43 @@
 	<body>
 		<header>
 			<h1>El Radario</h1>
-			<nav></nav>
-		</header>
+			<nav>
+				<ul>
+					{% for feed in feeds %}
+					<li>
+						<a href="#{{ feed.name|replace({' ': '-'})|lower }}">
+							{{ feed.name }}
+						</a>
+						{{ feed.entries|length }}
+					</li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</header >
 		
-		<section>
-			{% for entry in entries %}
-				<article id="#{{ entry.title|replace({' ': '-'})|lower }}">
-					<header>
-						<h1>{{ entry.title }}</h1>
-						<span>{{entry.date}}</span>
-					</header>
-					<p>{{entry.descriptionClean}}</p>
-					<footer></footer>
-				</article>
+		<main id="content" class="group" role="main">
+			
+			{% for feed in feeds %}
+				<section id="{{ feed.name|replace({' ': '-'})|lower }}">
+					<h1>{{ feed.name }}</h1>
+					
+					{% for entry in feed.entries %}
+						<article id="{{ entry.title|replace({' ': '-'})|lower }}">
+							<header>
+								<h1>{{entry.title}}</h1>
+								<span>{{entry.date}}</span>
+							</header>
+							<p>{{entry.descriptionClean}}</p>
+							<footer></footer>
+						</article>
+					{% endfor %}
+
+				</section>
 			{% endfor %}
-		</section>
 		
-		<footer></footer>
+		</main>
+
+		<footer>ATAM // UNA</footer>
 	
 	</body>
 </html>
