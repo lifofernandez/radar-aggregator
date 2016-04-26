@@ -17,6 +17,7 @@ use XML::FeedPP;
 use DateTime;
 use DateTime::Format::W3CDTF; 
 use XML::Entities;
+use HTML::Entities  "decode_entities";
 use JSON            "to_json";
 
 # O P T s
@@ -165,8 +166,9 @@ sub url_getter {
 
 sub decode_shits {
 	my $shit = shift;
-	my $coso_sin_codificar = XML::Entities::decode('all',$shit);
+	my $coso_sin_codificar = decode_entities(XML::Entities::decode('all',$shit));
 	return $coso_sin_codificar;
+	#return $shit;
 }
 
 sub tiempo_lindo {
