@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+	<meta charset="utf-8" />
 		<title>el Reidar</title>
 		<style type="text/css">
 			body{font-family: monospace;}
@@ -22,7 +23,7 @@
 				</ul>
 			</nav>
 		</header >
-		
+
 		<main id="content" class="group" role="main">
 			
 			{% for feed in feeds %}
@@ -32,10 +33,17 @@
 					{% for entry in feed.entries %}
 						<article id="{{ entry.title|replace({' ': '-'})|lower }}">
 							<header>
-								<h1>{{entry.title}}</h1>
+								<h1>
+									<a target="_BLANK" href="{{entry.link}}">
+										{{entry.title}}
+									</a>
+								</h1>
 								<span>{{entry.time}}</span>
 							</header>
-							<p>{{entry.content}}</p>
+							{% block content %}
+								{{entry.content|raw}}
+							{% endblock content %}
+
 							<footer></footer>
 						</article>
 					{% endfor %}
