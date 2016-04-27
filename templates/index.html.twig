@@ -15,14 +15,19 @@
 		<!-- Milligram CSS minified -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css.map">
 
+
+
 		<style type="text/css">
 			body{font-family: "Roboto Mono", Courrier, monospace;}
-			article{max-width: 680px;margin: 40px 0;}
+			body > header,section,body > footer{width: 680px;margin: 0px auto;}
+			article{width: 680px;margin: 40px auto;}
 			article .content{font-weight: 300;}
 			header h4 {font-weight: 700; } a{color: #007C85;}
 			.fecha{font-weight: 100;}
 			img{display: block;}
+			header > footer{text-align: right;}
 			.cat{font-weight: 500;}
+
 		</style>
 
 	</head>
@@ -53,12 +58,13 @@
 					{% for entry in feed.entries %}
 						<article id="{{ entry.title|replace({' ': '-'})|lower }}">
 							<header>
+								<span class="fecha">{{entry.time|date("m/d/Y")}}</span>
 								<h4>
 									<a target="_BLANK" href="{{entry.link}}">
 										{{entry.title}}
 									</a>
 								</h4>
-								<span class="fecha">{{entry.time|date("m/d/Y")}}</span>
+								
 							</header>
 								<div class="content">
 									{{entry.content|replace({'&nbsp;': ''})|raw}}

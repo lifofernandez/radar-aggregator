@@ -14,7 +14,7 @@ $template = $twig->loadTemplate('index.html.twig');
 
 /*	Cargar	*/
 
-$feedsJson = file_get_contents("../26_abril_2016.json");
+$feedsJson = file_get_contents("../hoy.json");
 //var_dump($feedsJson);
 $feeds = json_decode($feedsJson,true); // 'true' devuelve  array
 
