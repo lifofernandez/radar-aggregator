@@ -164,12 +164,13 @@ sub url_getter {
                 $entries_hoy{'feed_categories'} = $RSS{$uri_rss}; # ArrayRef !!
                 $es_de_hoy++;
                 # Guardar al feed de salida
-                my $item = $rss_out->add_item($entries_hoy{'content'});
-                $item->title($entries_hoy{'title'});
+                print $entry->link;
+                my $item = $rss_out->add_item($entry->link);
+                $item->title($entry->title);
                 my $autor_raidar = $entries_hoy{'author'} . " - Radar ATAM.";
                 $item->author($autor_raidar);
                 $item->pubDate($entry->pubDate);
-                $item->link($entry->link);
+                $item->description($entry->description);
 			}
             if ($es_de_hoy == 1){
                 my $HE = \%entries_hoy;
