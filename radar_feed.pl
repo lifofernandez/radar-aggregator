@@ -164,7 +164,7 @@ sub url_getter {
                 $entries_hoy{'feed_categories'} = $RSS{$uri_rss}; # ArrayRef !!
                 $es_de_hoy++;
                 # Guardar al feed de salida
-                print $entry->link;
+                print $entry->link if $debug;
                 my $item = $rss_out->add_item($entry->link);
                 $item->title($entry->title);
                 my $autor_raidar = $entries_hoy{'author'} . " - Radar ATAM.";
