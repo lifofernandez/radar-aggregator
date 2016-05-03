@@ -69,6 +69,15 @@ if ($opts{f}){
 	$archivo_urls_categorias_csv = $opts{f};
 }
 
+# Feed salida, channel infos.
+my $rss_out = XML::FeedPP::RSS->new();
+my $w3m_ahora = DateTime::Format::W3CDTF->new;
+my $tw3 = $w3m_ahora->format_datetime($hoy);
+$rss_out->title("Radar de noticias - ATAM");
+$rss_out->link("http://multimediales.com.ar");
+$rss_out->pubDate($tw3);
+#Las entradas se agregan desde url_getter
+
 # Recontra-Main   
 feeds_list($archivo_urls_categorias_csv);
 print Dumper(%RSS) if $debug;
@@ -94,6 +103,7 @@ my $estado_backup = archivear_el_de_ayer();
 if ($estado_backup eq 'si' || $debug){
     say "Se movio el archivo de ayer!";
     write_file($archivo_salida_hoy, { binmode => ':utf8' }, $AA);
+    $rss_out->to_file("public/rss");
 }
 
 #fin
@@ -153,6 +163,14 @@ sub url_getter {
 				$entries_hoy{'time'}    = tiempo_lindo($entry->pubDate);
                 $entries_hoy{'feed_categories'} = $RSS{$uri_rss}; # ArrayRef !!
                 $es_de_hoy++;
+                # Guardar al feed de salida
+                print $entry->link;
+                my $item = $rss_out->add_item($entry->link);
+                $item->title($entry->title);
+                my $autor_raidar = $entries_hoy{'author'} . " - Radar ATAM.";
+                $item->author($autor_raidar);
+                $item->pubDate($entry->pubDate);
+                $item->description($entry->description);
 			}
             if ($es_de_hoy == 1){
                 my $HE = \%entries_hoy;
