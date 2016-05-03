@@ -146,6 +146,7 @@ sub url_getter {
 			print Dumper($entry) if $debug;
 		    my %entries_hoy = ();
             my $es_de_hoy = 0;
+            next unless $entry->pubDate;
 			
 			# FIJARSE SI ES NUEVO (HASTA HACE UN DIA ATRAS)
 			my $chiotto = DateTime::Format::W3CDTF->new;
