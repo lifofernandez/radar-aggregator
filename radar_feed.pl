@@ -103,7 +103,7 @@ my $estado_backup = archivear_el_de_ayer();
 if ($estado_backup eq 'si' || $debug){
     say "Se movio el archivo de ayer!";
     write_file($archivo_salida_hoy, { binmode => ':utf8' }, $AA);
-    $rss_out->to_file("public/index.rss");
+    $rss_out->to_file("public/rss");
 }
 
 #fin

@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 	<meta charset="utf-8" />
-		<title>el Reidar</title>
+		<title>RAM | Radar de noticias de Artes Multimediales</title>
 
 		<!-- Google Fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300,400italic,500,700">
 		<!-- CSS Reset -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" type="text/css">
 
 		
 		<!-- Milligram CSS minified -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css" type="text/css">
 		<!-- Milligram CSS minified -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css.map">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css.map" type="text/css">
 
 
 		<!-- RSS FEEDS!!!! Agregado el dia del trabajador. -->
-		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://multimediales.com.ar/index.rss">
+		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://multimediales.com.ar/rss">
 
 		<style type="text/css">
 			body{font-family: "Roboto Mono", Courrier, monospace;}
-			body > header,section,body > footer{width: 680px;margin: 0px auto;}
-			article{width: 680px;margin: 40px auto;}
+			body > header,
+			section,
+			body > footer{
+				width: 680px;margin: 0px auto;
+			}
+			article{
+				width: 680px;
+				margin: 40px auto;
+				border-bottom: 1px solid #d3d3d3;
+				padding-bottom: 20px;
+			}
 			article .content{font-weight: 300;}
 			header h4 {font-weight: 700; } a{color: #007C85;}
 			.fecha{font-weight: 100;}
-			img{display: block;}
-			header > footer{text-align: right;}
+			.content img{
+				display: block;
+				margin-bottom: 10px;
+			}
+			article > footer{
+				/*text-align: right;*/
+				/*background: #007C85;
+				color: white;*/
+			}
 			.cat{font-weight: 500;}
 
 		</style>
@@ -36,48 +52,80 @@
 	<body class="container">
 		
 		<header>
-			<h1>El Radario</h1>
-			<nav>
-				<ul>
-					{% for feed in feeds %}
-					<li>
-						<a href="#{{ feed.name|replace({' ': '-'})|lower }}">
-							{{ feed.name }}
-						</a>
-						{{ feed.entries|length }}
-					</li>
-					{% endfor %}
-				</ul>
+			<h1>RAM</h1>
+			<p>Radar de noticias de Artes Multimediales.<br>
+			<small>Los contenidos a continuación fueron publicados en el día <em>{{ "now"|localizeddate("J d \\d\\e M \\d\\e Y","none", locale) }}</em> en sus respectivos canales, su recopilacion en esta página es sin fines de lucro y no tiene otro motivo que la divulgación de temas ralcionados con la materia.</small>
+			</p>
+			
+			<nav> 
+				
+				
+					<table>
+					  <thead>
+						<tr>
+						  <th>Feed</th>
+						  <th>Cantidad</th>
+						  <th>Url</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						{% for feed in feeds %}
+							<tr>
+								<td>
+									<a href="#{{ feed.name|replace({' ': '-'})|lower }}">
+										{{ feed.name }}
+									</a>
+								</td>
+								<td>{{ feed.entries|length }}</td>
+								<td>
+									<a target="_BLANK" href="{{ feed.url }}">
+										{{ feed.url|replace({'http://':'','www.':''}) }}
+									</a>
+								</td>
+							</tr>
+						{% endfor %}
+					  </tbody>
+					</table>
+
 			</nav>
+
 		</header >
 
 		<main id="content" class="group" role="main">
 			
 			{% for feed in feeds %}
 				<section id="{{ feed.name|replace({' ': '-'})|lower }}">
-					<h2>{{ feed.name }}</h2>
 					
+					<header>
+						<h2>{{ feed.name }}</h2>
+					</header>
+
 					{% for entry in feed.entries %}
-						<article id="{{ entry.title|replace({' ': '-'})|lower }}">
+
+						<article id="{{ entry.title|replace({' ': '-'})|lower }}" 
+							class="{{ entry.feed_categories|join(' ')|lower }}">
+							
 							<header>
-								<span class="fecha">{{entry.time|date("m/d/Y")}}</span>
+								<span class="fecha">{{entry.time|date("H:i")}}hs</span>
+								-
+								<strong class="categorias">{{ entry.feed_categories|join(' ') }}</strong>
 								<h4>
 									<a target="_BLANK" href="{{entry.link}}">
 										{{entry.title}}
 									</a>
 								</h4>
-								
 							</header>
-								<div class="content">
-									{{entry.content|replace({'&nbsp;': ''})|raw}}
-								</div>
+							
+							<div class="content">
+								{{ entry.content|raw }}
+							</div>
+							
 							<footer>
-								{% for cat in entry.feed_categories %}
-								<span class="cat">{{cat}}</span>&nbsp;
-								{% endfor %}
-
+								
 							</footer>
+
 						</article>
+
 					{% endfor %}
 
 				</section>
@@ -85,7 +133,10 @@
 		
 		</main>
 
-		<footer>ATAM // UNA</footer>
+		<footer>
+			<a target="_BLANK" href="http://una.edu.ar/">Universidad Nacional del las Artes</a> <br>
+			<a target="_BLANK" href="http://multimedia.una.edu.ar/">Área Transdepartamental de Artes Multimediales</a>
+		</footer>
 	
 	</body>
 </html>
