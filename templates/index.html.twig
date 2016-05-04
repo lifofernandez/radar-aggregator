@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-	<meta charset="utf-8" />
+
+		<meta charset="UTF-8" />
+		
+
+		
 		<title>RAM | Radar de noticias de Artes Multimediales</title>
 
 		<!-- Google Fonts -->
@@ -19,18 +23,31 @@
 		<!-- RSS FEEDS!!!! Agregado el dia del trabajador. -->
 		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://multimediales.com.ar/rss">
 
+
+
 		<style type="text/css">
 			body{font-family: "Roboto Mono", Courrier, monospace;}
+			nav ul li{
+				list-style: none;
+				font-size: .9em;
+			}
 			body > header,
 			section,
 			body > footer{
-				width: 680px;margin: 0px auto;
+				/*width: 680px;margin: 0px auto;*/
 			}
+			section{
+				margin-bottom: 100px;
+			}
+
 			article{
-				width: 680px;
-				margin: 40px auto;
+				/*width: 680px;*/
+				margin: 40px 0;
 				border-bottom: 1px solid #d3d3d3;
 				padding-bottom: 20px;
+			}
+			section article:last-child{
+				border-bottom-width: 0px; 
 			}
 			article .content{font-weight: 300;}
 			header h4 {font-weight: 700; } a{color: #007C85;}
@@ -38,6 +55,8 @@
 			.content img{
 				display: block;
 				margin-bottom: 10px;
+				max-width: 100%;
+				height: auto;
 			}
 			article > footer{
 				/*text-align: right;*/
@@ -46,97 +65,106 @@
 			}
 			.cat{font-weight: 500;}
 
+			.subrrayado{
+				border-bottom: 2px solid #606c76;
+				padding-bottom: 5px;
+			}
+			.anchor a{
+				font-size: .8em;
+				color: #d3d3d3;
+			}
 		</style>
 
 	</head>
+
 	<body class="container">
-		
-		<header>
-			<h1>RAM</h1>
-			<p>Radar de noticias de Artes Multimediales.<br>
-			<small>Los contenidos a continuación fueron publicados en el día <em>{{ "now"|localizeddate("J d \\d\\e M \\d\\e Y","none", locale) }}</em> en sus respectivos canales, su recopilacion en esta página es sin fines de lucro y no tiene otro motivo que la divulgación de temas ralcionados con la materia.</small>
-			</p>
-			
-			<nav> 
-				
-				
-					<table>
-					  <thead>
-						<tr>
-						  <th>Feed</th>
-						  <th>Cantidad</th>
-						  <th>Url</th>
-						</tr>
-					  </thead>
-					  <tbody>
+
+			 
+			<header>
+				<h1>RAM</h1>
+				<p>Radar de noticias de Artes Multimediales<br>
+				<small>Los contenidos a continuación fueron publicados en el día <em>{{ "now"|localizeddate("J d \\d\\e M \\d\\e Y","none", locale) }}</em> en sus respectivos canales, su recopilacion en esta página es sin fines de lucro y no tiene otro motivo que la divulgación de temas ralacionados con la carrera.</small>
+				</p>
+			</header >
+
+			<div class="row">
+
+	    	
+	    	<div class="column column-25 ">
+	    		
+	    		<nav> 
+					  <ul>
 						{% for feed in feeds %}
-							<tr>
-								<td>
-									<a href="#{{ feed.name|replace({' ': '-'})|lower }}">
-										{{ feed.name }}
-									</a>
-								</td>
-								<td>{{ feed.entries|length }}</td>
-								<td>
-									<a target="_BLANK" href="{{ feed.url }}">
-										{{ feed.url|replace({'http://':'','www.':''}) }}
-									</a>
-								</td>
-							</tr>
+							<li>
+									<a title="{{ feed.url }}"  href="#{{ feed.name|lower|replace({' ': '-'})|raw }}">
+										{{ feed.name|raw }}
+									</a> [{{ feed.entries|length }}]
+							</li>
 						{% endfor %}
-					  </tbody>
-					</table>
+					  </ul>
+				</nav>
 
-			</nav>
+			</div>
+				
 
-		</header >
 
-		<main id="content" class="group" role="main">
-			
-			{% for feed in feeds %}
-				<section id="{{ feed.name|replace({' ': '-'})|lower }}">
+	    	<div class="column column-75">
+
+	    		
+				<main id="content" class="group" role="main">
 					
-					<header>
-						<h2>{{ feed.name }}</h2>
-					</header>
-
-					{% for entry in feed.entries %}
-
-						<article id="{{ entry.title|replace({' ': '-'})|lower }}" 
-							class="{{ entry.feed_categories|join(' ')|lower }}">
+					{% for feed in feeds %}
+						<section id="{{ feed.name|lower|replace({' ': '-'})|raw }}">
 							
 							<header>
-								<span class="fecha">{{entry.time|date("H:i")}}hs</span>
-								-
-								<strong class="categorias">{{ entry.feed_categories|join(' ') }}</strong>
-								<h4>
-									<a target="_BLANK" href="{{entry.link}}">
-										{{entry.title}}
-									</a>
-								</h4>
+								<h2 class="subrrayado">{{ feed.name|raw }}</h2>
 							</header>
-							
-							<div class="content">
-								{{ entry.content|raw }}
-							</div>
-							
-							<footer>
-								
-							</footer>
 
-						</article>
+							{% for entry in feed.entries %}
 
+								<article id="{{ entry.title|lower|replace({' ': '-'})|raw  }}" 
+									class="{{ entry.feed_categories|join(' ')|lower }}">
+									
+									<header>
+										<span class="fecha">{{entry.time|date("H:i")}}hs</span>
+										-
+										<strong class="categorias">{{ entry.feed_categories|join(' ')|escape }}</strong>
+										
+										<h4>
+											<a target="_BLANK" href="{{entry.link}}">
+												{{entry.title}}
+											</a>
+											<span class="anchor">
+											<a href="#{{ entry.title|lower|replace({' ': '-'})|raw  }}">#</a></span>
+
+										</h4>
+										
+									</header>
+									
+									<div class="content">
+										{{ entry.content|raw }}
+									</div>
+									
+									<footer>
+										
+									</footer>
+
+								</article>
+
+							{% endfor %}
+
+						</section>
 					{% endfor %}
+				
+				</main>
 
-				</section>
-			{% endfor %}
-		
-		</main>
-
-		<footer>
-			<a target="_BLANK" href="http://una.edu.ar/">Universidad Nacional del las Artes</a> <br>
-			<a target="_BLANK" href="http://multimedia.una.edu.ar/">Área Transdepartamental de Artes Multimediales</a>
-		</footer>
+				
+		</div>
+  	</div>
+  	<footer>
+					<a target="_BLANK" href="http://una.edu.ar/">Universidad Nacional del las Artes</a> <br>
+					<a target="_BLANK" href="http://multimedia.una.edu.ar/">Área Transdepartamental de Artes Multimediales</a>
+				</footer>
 	
 	</body>
 </html>
