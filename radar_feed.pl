@@ -115,7 +115,7 @@ exit 0;
 sub feeds_list {
 	my $file_name = shift;
 	my $n = 0;
-	my @datas = read_file($file_name);
+	my @datas = read_file($file_name, { binmode => ':utf8'});
 	foreach my $ln (@datas){
 		chomp($ln);
 		my @r = split(/,/,$ln);
