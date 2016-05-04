@@ -89,7 +89,7 @@
 			<header>
 				<h1>RAM</h1>
 				<p>Radar de noticias de Artes Multimediales<br>
-				<small>Los contenidos a continuación fueron publicados en el día <em>{{ "now"|localizeddate("J d \\d\\e M \\d\\e Y","none", locale) }}</em> en sus respectivos canales, su recopilacion en esta página es sin fines de lucro y no tiene otro motivo que la divulgación de temas ralacionados con la carrera.</small>
+				<small>Los contenidos a continuación fueron publicados en el día <em>{{ timestamp|localizeddate("J d \\d\\e M \\d\\e Y","none", locale) }}</em> en sus respectivos canales, su recopilacion en esta página es sin fines de lucro y no tiene otro motivo que la divulgación de temas ralacionados con la carrera.</small>
 				</p>
 			</header >
 
@@ -123,8 +123,10 @@
 						<section id="{{ feed.name|lower|replace({' ': '-'})|raw }}">
 							
 							<header>
-								<h2 class="subrrayado">{{ feed.name|raw }}
-								<span class="subtitulo">Subtitulo</span></h2>
+								<h2 class="subrrayado">
+									{{ feed.name|raw }}
+									<span class="subtitulo">{{ feed.feed_categories|join(' ')|escape }}</span>
+								</h2>
 								
 							</header>
 
@@ -135,7 +137,7 @@
 									
 									<header>
 										<span class="fecha">{{entry.time|date("H:i")}}hs</span>
-										<span class="subtitulo">{{ entry.feed_categories|join(' ')|escape }}</span>
+										<span class="subtitulo"></span>
 										<h4>
 											<a target="_BLANK" href="{{entry.link}}">
 												{{entry.title}}

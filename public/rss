@@ -3,7 +3,17 @@
 <channel>
 <title>Radar de noticias - ATAM</title>
 <link>http://multimediales.com.ar</link>
-<pubDate>Wed, 04 May 2016 19:26:00 GMT</pubDate>
+<pubDate>Wed, 04 May 2016 22:47:00 GMT</pubDate>
+<item>
+<title>The 1955 Fender Tweed amp now lives in software</title>
+<link>http://createdigitalmusic.com/2016/05/the-1955-fender-tweed-amp-now-lives-in-software/</link>
+<author>Peter Kirn - Radar ATAM.</author>
+<guid isPermaLink="true">http://createdigitalmusic.com/2016/05/the-1955-fender-tweed-amp-now-lives-in-software/</guid>
+<pubDate>Wed, 04 May 2016 22:01:25 +0000</pubDate>
+<description>&lt;p&gt;The art of modeling at a handful of the best software shops continues to progress. And so it is that Universal Audio say they&#8217;ve simulated every tiny detail, &#8220;from speaker paper and heat dissipation, to filter caps and transformers,&#8221; of one of the world&#8217;s best-known amplifiers &#8211; the Fender Tweed. It&#8217;s the cranked sound of Neil Young; it&#8217;s the clear lead of Larry Carlton. It&#8217;s a lot of other things. It&#8217;s now on a computer, too. Universal Audio this week added to their stable of hardware DSP plug-ins with the 8.6 release of their software, including an emulation of the ...&lt;/p&gt;
+&lt;p&gt;The post &lt;a rel=&quot;nofollow&quot; href=&quot;http://createdigitalmusic.com/2016/05/the-1955-fender-tweed-amp-now-lives-in-software/&quot;&gt;The 1955 Fender Tweed amp now lives in software&lt;/a&gt; appeared first on &lt;a rel=&quot;nofollow&quot; href=&quot;http://createdigitalmusic.com&quot;&gt;cdm createdigitalmusic&lt;/a&gt;.&lt;/p&gt;
+</description>
+</item>
 <item>
 <title>Lords of Synth is an epic parody from Adult Swim</title>
 <link>http://createdigitalmusic.com/2016/05/lords-of-synth-is-an-epic-parody-from-adult-swim/</link>
@@ -60,6 +70,15 @@ Obfuscation tackles the ethical debates surrounding obfuscation and discusses th
 &lt;/ul&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/wmmna/~4/ibQfXfDGUe0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
 </item>
 <item>
+<title>Your Quadcopter Has Three Propellers Too Many</title>
+<link>http://hackaday.com/2016/05/04/your-quadcopter-has-three-propellers-too-many/</link>
+<author>Elliot Williams - Radar ATAM.</author>
+<guid isPermaLink="true">http://hackaday.com/2016/05/04/your-quadcopter-has-three-propellers-too-many/</guid>
+<pubDate>Wed, 04 May 2016 20:00:21 +0000</pubDate>
+<description>&lt;p&gt;While studying failure modes for quadcopters, and how to get them safely to the ground with less than a full quad of propellers, a group of researchers at the Institute for Dynamic Systems and Control at ETH Zurich came up with a great idea: a mode of flight that&#8217;s like the controlled spinning descent of a maple seed.&lt;/p&gt;
+&lt;p&gt;The Monospinner runs on the absolute minimum number of moving parts. Namely, one. Even a normal helicopter has a swash plate for adjustable blade pitch, and a tail rotor to keep it from spinning. Give up the idea that you want to  &lt;a href=&quot;http://hackaday.com/2016/05/04/your-quadcopter-has-three-propellers-too-many/&quot; class=&quot;read_more&quot;&gt;&#8230;read more&lt;/a&gt;&lt;/p&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://pixel.wp.com/b.gif?host=hackaday.com&#038;blog=4779443&#038;post=203682&#038;subd=hackadaycom&#038;ref=&#038;feed=1&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</description>
+</item>
+<item>
 <title>JIT Learning Using Expert Systems</title>
 <link>http://hackaday.com/2016/05/04/jit-learning-using-expert-systems/</link>
 <author>Brian Benchoff - Radar ATAM.</author>
@@ -112,21 +131,22 @@ Obfuscation tackles the ethical debates surrounding obfuscation and discusses th
 &lt;p&gt;[Simplifier]&#8217;s workshop seems like a pretty cool place. It must have a bit of an early 20th-century vibe, like the shop that [John Fleming] used for his early work on vacuum tubes. Glass work, metal work, electronics &#8211; looks like [Simplifier] has a little bit of everything going  &lt;a href=&quot;http://hackaday.com/2016/05/04/home-brew-vacuum-tubes-are-easier-than-you-think/&quot; class=&quot;read_more&quot;&gt;&#8230;read more&lt;/a&gt;&lt;/p&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://pixel.wp.com/b.gif?host=hackaday.com&#038;blog=4779443&#038;post=201673&#038;subd=hackadaycom&#038;ref=&#038;feed=1&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</description>
 </item>
 <item>
-<title>An Open Source Lead Tester</title>
-<link>http://hackaday.com/2016/05/03/an-open-source-lead-tester/</link>
-<author>Brian Benchoff - Radar ATAM.</author>
-<guid isPermaLink="true">http://hackaday.com/2016/05/03/an-open-source-lead-tester/</guid>
-<pubDate>Wed, 04 May 2016 05:00:07 +0000</pubDate>
-<description>&lt;p&gt;If you&#8217;ve ever needed an example of colossal failure of government actors, you need only to look at Flint, Michigan&#8217;s water crisis. After the city of Flint changed water supplies from Detroit to the Flint river, city officials failed to add the correct corrosion inhibitors. This meant that lead dissolved into the water, thousands of children were exposed to lead in drinking water, a government coverup ensued, [Erin Brockovich]&#160;showed up, the foreman of the Flint water plant was found dead, and the&#160;City Hall&#160;office containing the water records was broken into. &lt;/p&gt;
-&lt;p&gt;Perhaps inspired by Flint, [Matthew] is working on an Open  &lt;a href=&quot;http://hackaday.com/2016/05/03/an-open-source-lead-tester/&quot; class=&quot;read_more&quot;&gt;&#8230;read more&lt;/a&gt;&lt;/p&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://pixel.wp.com/b.gif?host=hackaday.com&#038;blog=4779443&#038;post=202614&#038;subd=hackadaycom&#038;ref=&#038;feed=1&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</description>
-</item>
-<item>
 <title>Track what your government representatives are doing for you</title>
 <link>http://flowingdata.com/2016/05/04/track-what-your-government-representatives-are-doing-for-you/</link>
 <author>Nathan Yau - Radar ATAM.</author>
 <guid isPermaLink="true">http://flowingdata.com/2016/05/04/track-what-your-government-representatives-are-doing-for-you/</guid>
 <pubDate>Wed, 04 May 2016 09:51:42 +0000</pubDate>
 <description>&lt;p&gt;&lt;a href=&quot;http://flowingdata.com/2016/05/04/track-what-your-government-representatives-are-doing-for-you/&quot;&gt;&lt;img width=&quot;720&quot; height=&quot;575&quot; src=&quot;http://i2.wp.com/flowingdata.com/wp-content/uploads/2016/04/Represent-app-from-ProPublica.png?fit=720%2C575&quot; class=&quot;attachment-medium size-medium wp-post-image&quot; alt=&quot;Represent app from ProPublica&quot; srcset=&quot;http://i2.wp.com/flowingdata.com/wp-content/uploads/2016/04/Represent-app-from-ProPublica.png?w=1000 1000w, http://i2.wp.com/flowingdata.com/wp-content/uploads/2016/04/Represent-app-from-ProPublica.png?resize=210%2C168 210w, http://i2.wp.com/flowingdata.com/wp-content/uploads/2016/04/Represent-app-from-ProPublica.png?resize=720%2C575 720w, http://i2.wp.com/flowingdata.com/wp-content/uploads/2016/04/Represent-app-from-ProPublica.png?resize=768%2C614 768w&quot; sizes=&quot;(max-width: 720px) 100vw, 720px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;Taking over an old New York Times project, ProPublica re-launches Represent, which offers an app and an API to see what your local lawmakers have been doing on your behalf.&#8230;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; &lt;a href=&quot;http://flowingdata.com/tag/api/&quot; rel=&quot;tag&quot;&gt;API&lt;/a&gt;, &lt;a href=&quot;http://flowingdata.com/tag/elections/&quot; rel=&quot;tag&quot;&gt;elections&lt;/a&gt;, &lt;a href=&quot;http://flowingdata.com/tag/government/&quot; rel=&quot;tag&quot;&gt;government&lt;/a&gt;, &lt;a href=&quot;http://flowingdata.com/tag/propublica/&quot; rel=&quot;tag&quot;&gt;ProPublica&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>The 1955 Fender Tweed amp now lives in software</title>
+<link>http://createdigitalmusic.com/2016/05/the-1955-fender-tweed-amp-now-lives-in-software/</link>
+<author>Peter Kirn - Radar ATAM.</author>
+<guid isPermaLink="true">http://createdigitalmusic.com/2016/05/the-1955-fender-tweed-amp-now-lives-in-software/</guid>
+<pubDate>Wed, 04 May 2016 22:01:25 +0000</pubDate>
+<description>&lt;p&gt;The art of modeling at a handful of the best software shops continues to progress. And so it is that Universal Audio say they&#8217;ve simulated every tiny detail, &#8220;from speaker paper and heat dissipation, to filter caps and transformers,&#8221; of one of the world&#8217;s best-known amplifiers &#8211; the Fender Tweed. It&#8217;s the cranked sound of Neil Young; it&#8217;s the clear lead of Larry Carlton. It&#8217;s a lot of other things. It&#8217;s now on a computer, too. Universal Audio this week added to their stable of hardware DSP plug-ins with the 8.6 release of their software, including an emulation of the ...&lt;/p&gt;
+&lt;p&gt;The post &lt;a rel=&quot;nofollow&quot; href=&quot;http://createdigitalmusic.com/2016/05/the-1955-fender-tweed-amp-now-lives-in-software/&quot;&gt;The 1955 Fender Tweed amp now lives in software&lt;/a&gt; appeared first on &lt;a rel=&quot;nofollow&quot; href=&quot;http://createdigitalmusic.com&quot;&gt;cdm createdigitalmusic&lt;/a&gt;.&lt;/p&gt;
+</description>
 </item>
 <item>
 <title>Lords of Synth is an epic parody from Adult Swim</title>
@@ -455,12 +475,28 @@ for snooping.
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/developreneur&quot;&gt; /u/developreneur &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c#.5788gci1g&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hut7i/target_blank_the_most_underestimated/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
+<title>Shtetl-Optimized » The 8000th Busy Beaver number eludes ZF set theory</title>
+<link>http://www.reddit.com/r/programming/comments/4hvko0/shtetloptimized_the_8000th_busy_beaver_number/</link>
+<author>/u/personman - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hvko0/shtetloptimized_the_8000th_busy_beaver_number/</guid>
+<pubDate>Wed, 04 May 2016 17:26:07 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/personman&quot;&gt; /u/personman &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.scottaaronson.com/blog/?p=2725&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hvko0/shtetloptimized_the_8000th_busy_beaver_number/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
 <title>DConf 2016 is streaming right now</title>
 <link>http://www.reddit.com/r/programming/comments/4hti33/dconf_2016_is_streaming_right_now/</link>
 <author>/u/p0nce - Radar ATAM.</author>
 <guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hti33/dconf_2016_is_streaming_right_now/</guid>
 <pubDate>Wed, 04 May 2016 07:53:36 +0000</pubDate>
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/p0nce&quot;&gt; /u/p0nce &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.ustream.tv/channel/pR6fAWVkXzw&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hti33/dconf_2016_is_streaming_right_now/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>Apple finally declares WebObjects dead</title>
+<link>http://www.reddit.com/r/programming/comments/4hv1zt/apple_finally_declares_webobjects_dead/</link>
+<author>/u/hugith - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hv1zt/apple_finally_declares_webobjects_dead/</guid>
+<pubDate>Wed, 04 May 2016 15:43:31 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/hugith&quot;&gt; /u/hugith &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.businessinsider.com/apple-officially-discontinues-webobjects-2016-5?r=US&amp;amp;IR=T&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hv1zt/apple_finally_declares_webobjects_dead/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
 <title>The Frustration and Loneliness of Server-Side Javascript Development</title>
@@ -479,22 +515,6 @@ for snooping.
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/yokohummer7&quot;&gt; /u/yokohummer7 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/40457956/haskell_sucks.pdf&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4htka5/haskell_sucks_pdf/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>Apple finally declares WebObjects dead</title>
-<link>http://www.reddit.com/r/programming/comments/4hv1zt/apple_finally_declares_webobjects_dead/</link>
-<author>/u/hugith - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hv1zt/apple_finally_declares_webobjects_dead/</guid>
-<pubDate>Wed, 04 May 2016 15:43:31 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/hugith&quot;&gt; /u/hugith &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.businessinsider.com/apple-officially-discontinues-webobjects-2016-5?r=US&amp;amp;IR=T&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hv1zt/apple_finally_declares_webobjects_dead/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
-</item>
-<item>
-<title>Shtetl-Optimized » The 8000th Busy Beaver number eludes ZF set theory</title>
-<link>http://www.reddit.com/r/programming/comments/4hvko0/shtetloptimized_the_8000th_busy_beaver_number/</link>
-<author>/u/personman - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hvko0/shtetloptimized_the_8000th_busy_beaver_number/</guid>
-<pubDate>Wed, 04 May 2016 17:26:07 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/personman&quot;&gt; /u/personman &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.scottaaronson.com/blog/?p=2725&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hvko0/shtetloptimized_the_8000th_busy_beaver_number/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
-</item>
-<item>
 <title>Angular 2 best practices: Change detector performance</title>
 <link>http://www.reddit.com/r/programming/comments/4hvhx5/angular_2_best_practices_change_detector/</link>
 <author>/u/dpashk - Radar ATAM.</author>
@@ -503,20 +523,20 @@ for snooping.
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/dpashk&quot;&gt; /u/dpashk &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.lucidchart.com/techblog/2016/05/04/angular-2-best-practices-change-detector-performance/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hvhx5/angular_2_best_practices_change_detector/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>Waybackpack: download the entire Wayback Machine archive for a given URL</title>
-<link>http://www.reddit.com/r/programming/comments/4hsn2v/waybackpack_download_the_entire_wayback_machine/</link>
-<author>/u/iamkeyur - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hsn2v/waybackpack_download_the_entire_wayback_machine/</guid>
-<pubDate>Wed, 04 May 2016 03:11:26 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/iamkeyur&quot;&gt; /u/iamkeyur &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://github.com/jsvine/waybackpack&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hsn2v/waybackpack_download_the_entire_wayback_machine/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
-</item>
-<item>
 <title>Neon bubbles.</title>
 <link>http://www.reddit.com/r/programming/comments/4hvbyt/neon_bubbles/</link>
 <author>/u/chicadesign - Radar ATAM.</author>
 <guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hvbyt/neon_bubbles/</guid>
 <pubDate>Wed, 04 May 2016 16:38:56 +0000</pubDate>
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/chicadesign&quot;&gt; /u/chicadesign &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://codepen.io/giana/pen/LVvaNQ&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hvbyt/neon_bubbles/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>IBM Wants Everyone to Try a Quantum Computer</title>
+<link>http://www.reddit.com/r/programming/comments/4huy7o/ibm_wants_everyone_to_try_a_quantum_computer/</link>
+<author>/u/secretguy21 - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4huy7o/ibm_wants_everyone_to_try_a_quantum_computer/</guid>
+<pubDate>Wed, 04 May 2016 15:21:29 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/secretguy21&quot;&gt; /u/secretguy21 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.nytimes.com/2016/05/04/technology/ibm-wants-everyone-to-try-a-quantum-computer.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4huy7o/ibm_wants_everyone_to_try_a_quantum_computer/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
 <title>Simplevisor: Intel x64 Windows-specific hypervisor</title>
@@ -535,20 +555,12 @@ for snooping.
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/ilackarms&quot;&gt; /u/ilackarms &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://github.com/emc-advanced-dev/unik&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hvyiu/unik_the_open_source_unikernel_deployment_platform/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>IBM Wants Everyone to Try a Quantum Computer</title>
-<link>http://www.reddit.com/r/programming/comments/4huy7o/ibm_wants_everyone_to_try_a_quantum_computer/</link>
-<author>/u/secretguy21 - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4huy7o/ibm_wants_everyone_to_try_a_quantum_computer/</guid>
-<pubDate>Wed, 04 May 2016 15:21:29 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/secretguy21&quot;&gt; /u/secretguy21 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.nytimes.com/2016/05/04/technology/ibm-wants-everyone-to-try-a-quantum-computer.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4huy7o/ibm_wants_everyone_to_try_a_quantum_computer/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
-</item>
-<item>
-<title>Data Mining Problems in Retail</title>
-<link>http://www.reddit.com/r/programming/comments/4htav4/data_mining_problems_in_retail/</link>
-<author>/u/vladmihalcea - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4htav4/data_mining_problems_in_retail/</guid>
-<pubDate>Wed, 04 May 2016 06:35:15 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/vladmihalcea&quot;&gt; /u/vladmihalcea &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://highlyscalable.wordpress.com/2015/03/10/data-mining-problems-in-retail/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4htav4/data_mining_problems_in_retail/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Waybackpack: download the entire Wayback Machine archive for a given URL</title>
+<link>http://www.reddit.com/r/programming/comments/4hsn2v/waybackpack_download_the_entire_wayback_machine/</link>
+<author>/u/iamkeyur - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hsn2v/waybackpack_download_the_entire_wayback_machine/</guid>
+<pubDate>Wed, 04 May 2016 03:11:26 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/iamkeyur&quot;&gt; /u/iamkeyur &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://github.com/jsvine/waybackpack&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hsn2v/waybackpack_download_the_entire_wayback_machine/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
 <title>Medical Equipment Crashes During Heart Procedure</title>
@@ -559,6 +571,46 @@ for snooping.
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/elfdom&quot;&gt; /u/elfdom &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://news.softpedia.com/news/medical-equipment-crashes-during-heart-procedure-because-of-antivirus-scan-503642.shtml&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hvk7m/medical_equipment_crashes_during_heart_procedure/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
+<title>Real World Microservices: When Services Stop Playing Well and Start Getting Real</title>
+<link>http://www.reddit.com/r/programming/comments/4hwjup/real_world_microservices_when_services_stop/</link>
+<author>/u/olix0r - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hwjup/real_world_microservices_when_services_stop/</guid>
+<pubDate>Wed, 04 May 2016 20:48:25 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/olix0r&quot;&gt; /u/olix0r &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://blog.buoyant.io/2016/05/04/real-world-microservices-when-services-stop-playing-well-and-start-getting-real/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hwjup/real_world_microservices_when_services_stop/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>Simon Peyton Jones (Mr Haskell) elected into the Royal Society Fellowship</title>
+<link>http://www.reddit.com/r/programming/comments/4hui67/simon_peyton_jones_mr_haskell_elected_into_the/</link>
+<author>/u/taiarmin - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hui67/simon_peyton_jones_mr_haskell_elected_into_the/</guid>
+<pubDate>Wed, 04 May 2016 13:40:11 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/taiarmin&quot;&gt; /u/taiarmin &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://lambda-the-ultimate.org/node/5332&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hui67/simon_peyton_jones_mr_haskell_elected_into_the/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>Data Mining Problems in Retail</title>
+<link>http://www.reddit.com/r/programming/comments/4htav4/data_mining_problems_in_retail/</link>
+<author>/u/vladmihalcea - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4htav4/data_mining_problems_in_retail/</guid>
+<pubDate>Wed, 04 May 2016 06:35:15 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/vladmihalcea&quot;&gt; /u/vladmihalcea &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://highlyscalable.wordpress.com/2015/03/10/data-mining-problems-in-retail/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4htav4/data_mining_problems_in_retail/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>Kill Your Inner Code Monkey by Patrick McKenzie</title>
+<link>http://www.reddit.com/r/programming/comments/4hw25h/kill_your_inner_code_monkey_by_patrick_mckenzie/</link>
+<author>/u/yosriady - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hw25h/kill_your_inner_code_monkey_by_patrick_mckenzie/</guid>
+<pubDate>Wed, 04 May 2016 19:03:33 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/yosriady&quot;&gt; /u/yosriady &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=X6qlDJBz55s&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hw25h/kill_your_inner_code_monkey_by_patrick_mckenzie/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>Huge number of sites imperiled by critical image-processing vulnerability</title>
+<link>http://www.reddit.com/r/programming/comments/4hvbyk/huge_number_of_sites_imperiled_by_critical/</link>
+<author>/u/thehashrocket - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hvbyk/huge_number_of_sites_imperiled_by_critical/</guid>
+<pubDate>Wed, 04 May 2016 16:38:52 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/thehashrocket&quot;&gt; /u/thehashrocket &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://arstechnica.com/security/2016/05/easily-exploited-bug-exposes-huge-number-of-sites-to-code-execution-attacks/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hvbyk/huge_number_of_sites_imperiled_by_critical/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
 <title>SLAyer - an automatic formal verification tool that uses separation logic to verify memory safety of C programs.</title>
 <link>http://www.reddit.com/r/programming/comments/4hu4dd/slayer_an_automatic_formal_verification_tool_that/</link>
 <author>/u/N3mes1s - Radar ATAM.</author>
@@ -567,60 +619,94 @@ for snooping.
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/N3mes1s&quot;&gt; /u/N3mes1s &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://github.com/Microsoft/SLAyer&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hu4dd/slayer_an_automatic_formal_verification_tool_that/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>Upto - Bash function that allows to go up to a certain directory. It&apos;s been more useful than what I thought.</title>
-<link>http://www.reddit.com/r/programming/comments/4hpu0w/upto_bash_function_that_allows_to_go_up_to_a/</link>
-<author>/u/driv338 - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hpu0w/upto_bash_function_that_allows_to_go_up_to_a/</guid>
-<pubDate>Tue, 03 May 2016 20:03:44 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/driv338&quot;&gt; /u/driv338 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://github.com/driv/upto&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hpu0w/upto_bash_function_that_allows_to_go_up_to_a/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Why JPEG is like a photocopier (generation loss in-depth analysis)</title>
+<link>http://www.reddit.com/r/programming/comments/4hv2xx/why_jpeg_is_like_a_photocopier_generation_loss/</link>
+<author>/u/jonsneyers - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hv2xx/why_jpeg_is_like_a_photocopier_generation_loss/</guid>
+<pubDate>Wed, 04 May 2016 15:49:19 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/jonsneyers&quot;&gt; /u/jonsneyers &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://cloudinary.com/blog/why_jpeg_is_like_a_photocopier&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hv2xx/why_jpeg_is_like_a_photocopier_generation_loss/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>Scrapy Cloud 2.0: running web crawlers in the cloud</title>
-<link>http://www.reddit.com/r/programming/comments/4hvi9m/scrapy_cloud_20_running_web_crawlers_in_the_cloud/</link>
-<author>/u/stummj - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hvi9m/scrapy_cloud_20_running_web_crawlers_in_the_cloud/</guid>
-<pubDate>Wed, 04 May 2016 17:13:02 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/stummj&quot;&gt; /u/stummj &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://blog.scrapinghub.com/2016/05/04/introducing-scrapy-cloud-2-0/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hvi9m/scrapy_cloud_20_running_web_crawlers_in_the_cloud/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Adding Issue links on GitHub</title>
+<link>http://www.reddit.com/r/programming/comments/4hx342/adding_issue_links_on_github/</link>
+<author>/u/nunopinheiro - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hx342/adding_issue_links_on_github/</guid>
+<pubDate>Wed, 04 May 2016 22:45:54 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/nunopinheiro&quot;&gt; /u/nunopinheiro &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://blog.jetbrains.com/youtrack/2016/05/adding-youtrack-issue-links-on-github/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hx342/adding_issue_links_on_github/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>uvloop: Make Python Networking Great Again</title>
-<link>http://www.reddit.com/r/programming/comments/4hqd1b/uvloop_make_python_networking_great_again/</link>
-<author>/u/1st1 - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hqd1b/uvloop_make_python_networking_great_again/</guid>
-<pubDate>Tue, 03 May 2016 21:07:49 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/1st1&quot;&gt; /u/1st1 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://magic.io/blog/uvloop-make-python-networking-great-again/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hqd1b/uvloop_make_python_networking_great_again/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Walt Whitman — patriotic poet, gay iconoclast, shrewd marketing ploy, or all three?</title>
+<link>http://boingboing.net/2016/05/04/walt-whitman-patriotic-poe.html</link>
+<author>Ben Marks - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/04/walt-whitman-patriotic-poe.html</guid>
+<pubDate>Wed, 04 May 2016 22:37:56 +0000</pubDate>
+<description>&lt;p&gt;&lt;img width=&quot;800&quot; height=&quot;526&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/whitman.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;whitman&quot; srcset=&quot;http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/whitman.jpg?w=800 800w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/whitman.jpg?resize=300%2C197 300w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/whitman.jpg?resize=600%2C395 600w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/whitman.jpg?resize=768%2C505 768w&quot; sizes=&quot;(max-width: 800px) 100vw, 800px&quot; /&gt;&lt;/p&gt;&lt;p&gt;About four months ago, cigar boxes, matchbooks, and coffee tins bearing the name and likeness of 19th-century poet Walt Whitman began appearing on the Show &amp; Tell section of &lt;em&gt;Collectors Weekly&lt;/em&gt;. Turns out, as &lt;a href=&quot;http://www.collectorsweekly.com/articles/walt-whitman/&quot;&gt;Lisa Hix learned when she spoke to Ed Centeno&lt;/a&gt;, who posted the items from his personal collection, Whitman&apos;s name and bearded visage were once used to sell everything from tobacco products and booze to apple sauce. For the record, Whitman did not smoke, and as the son of an alcoholic father, he argued on behalf of Temperance causes. Presumably, Whitman ate apple sauce, but marketers never asked his permission to to sell stuff when he was alive (1819-1892), nor was Whitman ever compensated for the use of his good name.
+
+&lt;p&gt;All this advertising attention to Whitman is curious since, in general, poets don&apos;t make good marketing tools. The Whitman name is particularly problematic. While some people are inspired by his steadfast support of the Union cause during the Civil War, imperiling his own health to work as a nurse in a Washington, D.C., Army hospital, others see him as a very early champion of gay identity, as well as a hell of an erotic writer. Being patriotic and gay are obviously not incompatible, but the latter often gives those who would make money off the former pause.
+
+
+&lt;p&gt;Here&apos;s a snip:
+
+
+
+&lt;blockquote&gt;&lt;p&gt;During the Gilded Age, new industrial technology, particularly in chromolithography and tin-stamping, caused an explosion in product branding and advertising with colorful product labels, tin boxes, and tin signs. This new era of marketing meant familiar literary characters and beloved authors could be used to drum up excitement for an unknown products.
+
+&lt;p&gt;So when cigar maker Frank Hartmann bought the Spark Cigar Factory in Camden, New Jersey, in the late 1880s, the celebrated local bard was an obvious mascot. By 1890, his company introduced its Walt Whitman brand of cigars. But Hartmann wasn’t the only entrepreneur to have this idea: At least a few companies in the cigar manufacturing center of Binghamton, New York, started offering their own Walt Whitman cigars around the same time. The branding arrived as Whitman was facing his mortality and doubting whether Americans were truly touched by his life’s work. When Whitman disciple Horace Traubel presented the poet with an 1890 envelope advertising Walt Whitman cigars, he reported that Whitman exclaimed, “That is fame! … It is not so bad—not as bad as it might be: give the hat a little more height and it would not be such an offense.”&lt;/blockquote&gt;
+
+</description>
 </item>
 <item>
-<title>Important changes for programmers who use UpWork. UpWork doubled their pricing fees.</title>
-<link>http://www.reddit.com/r/programming/comments/4htx5q/important_changes_for_programmers_who_use_upwork/</link>
-<author>/u/ummahusla - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4htx5q/important_changes_for_programmers_who_use_upwork/</guid>
-<pubDate>Wed, 04 May 2016 10:45:44 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/ummahusla&quot;&gt; /u/ummahusla &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://edvinsantonovs.co.uk/upwork-just-doubled-their-fees/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4htx5q/important_changes_for_programmers_who_use_upwork/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Angelina Jolie on a secret hunger strike to call attention to Syrian refugees, and other tabloid stunners</title>
+<link>http://boingboing.net/2016/05/04/angelina-jolie-on-a-secret-hun.html</link>
+<author>Peter Sheridan - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/04/angelina-jolie-on-a-secret-hun.html</guid>
+<pubDate>Wed, 04 May 2016 22:31:31 +0000</pubDate>
+<description>&lt;p&gt;&lt;img width=&quot;1600&quot; height=&quot;890&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/02/bloids21111-2.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;bloids21111&quot; srcset=&quot;http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/02/bloids21111-2.jpg?w=1600 1600w, http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/02/bloids21111-2.jpg?resize=300%2C167 300w, http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/02/bloids21111-2.jpg?resize=600%2C334 600w, http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/02/bloids21111-2.jpg?resize=768%2C427 768w, http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/02/bloids21111-2.jpg?resize=930%2C517 930w&quot; sizes=&quot;(max-width: 1600px) 100vw, 1600px&quot; /&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;[My friend Peter Sheridan is a Los Angeles-based correspondent for British national newspapers. He has covered revolutions, civil wars, riots, wildfires, and Hollywood celebrity misdeeds for longer than he cares to remember. As part of his job, he must read all the weekly tabloids. For the past couple of years, he&apos;s been posting terrific weekly tabloid recaps on Facebook and has graciously given us permission to run them on Boing Boing. Enjoy! - Mark]&lt;/em&gt;
+
+&lt;p&gt;Pictures never lie, do they?
+
+&lt;p&gt;So there’s no arguing with the graphic video footage that the &lt;em&gt;National Enquirer&lt;/em&gt;’s latest edition offers showing singer Prince’s last moments dying in an elevator at his Minnesota mansion, and of a suicidal O.J. Simpson trying to hang himself in his prison cell.
+
+&lt;p&gt;Dramatic images indeed  -  if the video actually existed, and if the &lt;em&gt;Enquirer&lt;/em&gt; had it. Which it doesn’t.
+
+&lt;p&gt;But somehow that doesn’t stop the from littering its cover with photos of Prince sprawled lifeless on an elevator floor, and of prison guards cutting O.J. down from his hand-crafted noose (apparently an impromptu concoction of towels, sheets and old shirts like you might find at a Maker Faire run by Dr Kevorkian.)
+
+&lt;p&gt;Beneath the blazing “World Exclusive” headlines you have to look really closely to find the hidden words: “Photo Recreation” on these pictures. And it’s far from certain that they are recreating video that even exists. Prince had video surveillance at his home studio, but were there cameras in his elevator, and did they film his demise? Prison CCTV cameras may cover hallways, but rarely peer into individual cells. There’s some wild speculation at play here, which is business as usual in this week’s tabloids.
+
+&lt;p&gt;Katie Holmes is expecting Jamie Foxx’s love child, and singer Rihanna is pregnant with Leonardo DiCaprio’s baby, claims the &lt;em&gt;Enquirer&lt;/em&gt;. I don’t think we’ll have to wait nine months to discover the truth of these speculative allegations.
+
+&lt;p&gt;Imaginations simply run wild at the &lt;em&gt;Enquirer&lt;/em&gt; this week, where the ever-thin Angelina Jolie is now reported to be “on a hunger strike to call attention to the plight of Syrian refugees.” 
+
+&lt;p&gt;There’s only one small problem with that scenario: Jolie would have to be publicizing her hunger strike in order to draw worldwide attention to the refugee crisis. Having a hunger strike in secret defeats the object of the exercise. Or could this just be more wishful thinking on the part of the &lt;em&gt;Enquirer&lt;/em&gt;?
+
+&lt;p&gt;The &lt;em&gt;Globe&lt;/em&gt; claims to have uncovered Prince’s “tragic suicide note” in the vault at his Paisley Park home, allegedly writing about his loneliness and desire for someone in his life. 
+
+&lt;p&gt;But this purported note doesn’t include any mention of wanting to kill himself  -  traditionally the hallmark of a suicide note  -  and in fact sounds remarkably like what is known in the music industry as “ideas for a song.” The &lt;em&gt;Globe&lt;/em&gt; also boasts a remarkable photo of Prince laying dead on the autopsy table, though the small print says  -  you guessed it  -  “photo re-creation.”
+
+&lt;p&gt;Britain’s Prince Harry tells &lt;em&gt;People&lt;/em&gt; magazine “I don&apos;t play Xbox or PlayStation any more,”  and that “There’s been times I’ve been put off having children.” After all, why have children if you can’t be bothered to play Xbox games with them?
+
+&lt;p&gt;And &lt;em&gt;Us&lt;/em&gt; magazine reveals that Ashley Madekwe (Seriously  -  Who she, Ed?) wore it best, that Billy Idol was kicked out of the Boy Scouts at age ten, and that Cyndi Lauper carries Burberry perfume, Mac lipstick and a copy of Reza Aslan’s &lt;a href=&quot;http://amzn.to/1Y9nYW1&quot;&gt;Zealot&lt;/a&gt; (as if she didn’t know she’d be emptying her purse for a photoshoot and dumped the Jackie Collins novel) in her MZ Wallace tote. The stars are still just like us, says &lt;em&gt;Us&lt;/em&gt; mag: they sunbathe, walk their dogs, and carry bags. The revelations never end.
+
+&lt;p&gt;Thankfully the &lt;em&gt;National Examiner&lt;/em&gt; gives us two pages of photographs of dogs eating peanut butter  -  and why not?  -  and reveals that wooly mammoths will “walk the earth once more,” as “scientists use DNA to recreate massive mammoths for a real-life Jurassic Park in Russia.”
+
+&lt;p&gt;Who cares that this story first broke in March 2012, when even the BBC jumped on board? Some stories are simply too much fun not to repeat once everyone seems to have forgotten about them. Performing this experiment in Spielbergian cloning is the implausible-sounding Mammoth Museum in Yakutsk, which against all tabloid logic actually exists  -  which is more than can be said for Prince’s suicide note and video evidence of his death, O.J. Simpson’s suicide bid, and the pregnancies of Katie Holmes and Rihanna.
+
+&lt;p&gt;Onwards and downwards . . .</description>
 </item>
 <item>
-<title>My path to OpenAI</title>
-<link>http://www.reddit.com/r/programming/comments/4hsn5k/my_path_to_openai/</link>
-<author>/u/iamkeyur - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hsn5k/my_path_to_openai/</guid>
-<pubDate>Wed, 04 May 2016 03:12:00 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/iamkeyur&quot;&gt; /u/iamkeyur &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://blog.gregbrockman.com/my-path-to-openai&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hsn5k/my_path_to_openai/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
-</item>
-<item>
-<title>Using Java Generics to express variance of Collections and Functions</title>
-<link>http://www.reddit.com/r/programming/comments/4hvf7f/using_java_generics_to_express_variance_of/</link>
-<author>/u/dodiehun - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hvf7f/using_java_generics_to_express_variance_of/</guid>
-<pubDate>Wed, 04 May 2016 16:56:35 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/dodiehun&quot;&gt; /u/dodiehun &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://advancedweb.hu/2016/05/03/java_variance/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hvf7f/using_java_generics_to_express_variance_of/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
-</item>
-<item>
-<title>Remote code execution vulnerability in ImageMagick</title>
-<link>http://www.reddit.com/r/programming/comments/4hsn0e/remote_code_execution_vulnerability_in_imagemagick/</link>
-<author>/u/iamkeyur - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4hsn0e/remote_code_execution_vulnerability_in_imagemagick/</guid>
-<pubDate>Wed, 04 May 2016 03:11:01 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/iamkeyur&quot;&gt; /u/iamkeyur &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://imagetragick.com/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4hsn0e/remote_code_execution_vulnerability_in_imagemagick/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Kasich quits Republican race</title>
+<link>http://boingboing.net/2016/05/04/kasich-quits-republican-race.html</link>
+<author>Rob Beschizza - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/04/kasich-quits-republican-race.html</guid>
+<pubDate>Wed, 04 May 2016 21:30:21 +0000</pubDate>
+<description>&lt;p&gt;&lt;img width=&quot;1728&quot; height=&quot;972&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/kasich-reuters.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;Pic: Reuters&quot; srcset=&quot;http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/kasich-reuters.jpg?w=1728 1728w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/kasich-reuters.jpg?resize=300%2C169 300w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/kasich-reuters.jpg?resize=600%2C338 600w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/kasich-reuters.jpg?resize=768%2C432 768w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/kasich-reuters.jpg?resize=930%2C523 930w&quot; sizes=&quot;(max-width: 1728px) 100vw, 1728px&quot; /&gt;&lt;/p&gt;A day after Cruz threw in the towel, &lt;a href=&quot;http://www.bbc.com/news/world-us-canada-36201042&quot;&gt;John Kasich follows suit&lt;/a&gt;. Trump is not officially the Republican nominee--the Republican convention this summer is when he will be anointed (or somehow shivved) by the party--but this leaves him without a campaigning rival.
+
+
+&lt;blockquote&gt;
+Mr Kasich&apos;s announcement clears Mr Trump&apos;s path, although he was never a significant threat and only won his home state.
+Earlier on Wednesday, he had released a Star-Wars themed advert describing himself as the &quot;only hope&quot; against Donald Trump.&lt;/blockquote&gt;
+
+</description>
 </item>
 <item>
 <title>Trees &quot;eating&quot; things</title>
@@ -962,42 +1048,6 @@ Rick Friday has been the editorial cartoonist for &lt;a href=&quot;http://www.fa
  &lt;a href=&quot;http://boingboing.net/2016/05/04/after-advertiser-complaints-f.html#more-460243&quot; class=&quot;more-link&quot;&gt;(more&amp;hellip;)&lt;/a&gt;&lt;/p&gt;</description>
 </item>
 <item>
-<title>How to draw Islamic geometric patterns</title>
-<link>http://boingboing.net/2016/05/04/how-to-draw-islamic-geometric.html</link>
-<author>Mark Frauenfelder - Radar ATAM.</author>
-<guid isPermaLink="true">http://boingboing.net/2016/05/04/how-to-draw-islamic-geometric.html</guid>
-<pubDate>Wed, 04 May 2016 13:45:56 +0000</pubDate>
-<description>&lt;p&gt;&lt;img width=&quot;641&quot; height=&quot;433&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/pattern.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;pattern&quot; srcset=&quot;http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/pattern.jpg?w=641 641w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/pattern.jpg?resize=300%2C203 300w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/pattern.jpg?resize=600%2C405 600w&quot; sizes=&quot;(max-width: 641px) 100vw, 641px&quot; /&gt;&lt;/p&gt;&lt;p&gt;Over at the &lt;a href=&quot;http://www.rootsimple.com/2016/05/islamic-geometric-patterns/&quot;&gt;Root Simple&lt;/a&gt; website, Mr. Homegrown wrote about the fun he&apos;s been having learning how to draw Islamic geometric patterns from &lt;a href=&quot;http://amzn.to/1VJi2VP&quot;&gt;this book&lt;/a&gt; by Eric Broug. 
-
-&lt;blockquote&gt;
-&lt;p&gt;It’s a book of step by step drawing instructions. All you need is a ruler, compass, pencil and pen. While the geometry behind theses patterns is enormously sophisticated, actually drawing out the shapes is surprisingly easy and relaxing. It’s also a fun and painless lesson in geometry, especially for those of us not inclined towards math..&lt;/blockquote&gt;
-
-&lt;img src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/tiles.jpg&quot; alt=&quot;tiles&quot; width=&quot;668&quot; height=&quot;501&quot; class=&quot;alignnone size-full wp-image-460179&quot; /&gt;
-
-
-</description>
-</item>
-<item>
-<title>Chinese censorship: arbitrary rule changes are a form of powerful intermittent reinforcement</title>
-<link>http://boingboing.net/2016/05/04/chinese-censorship-arbitrary.html</link>
-<author>Cory Doctorow - Radar ATAM.</author>
-<guid isPermaLink="true">http://boingboing.net/2016/05/04/chinese-censorship-arbitrary.html</guid>
-<pubDate>Wed, 04 May 2016 13:40:44 +0000</pubDate>
-<description>&lt;p&gt;&lt;img width=&quot;720&quot; height=&quot;540&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/Cliff_side_road_to_Curral_das_Freiras-1.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;&quot; srcset=&quot;http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/05/Cliff_side_road_to_Curral_das_Freiras-1.jpg?w=720 720w, http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/05/Cliff_side_road_to_Curral_das_Freiras-1.jpg?resize=300%2C225 300w, http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/05/Cliff_side_road_to_Curral_das_Freiras-1.jpg?resize=600%2C450 600w&quot; sizes=&quot;(max-width: 720px) 100vw, 720px&quot; /&gt;&lt;/p&gt;&lt;p&gt;
-China&apos;s Internet censors are capricious and impossible to predict -- but this isn&apos;t because China&apos;s censors are incompetent, rather, they&apos;re tapping into one of the most powerful forms of conditioning, the uncertainty born of intermittent reinforcement.
- &lt;a href=&quot;http://boingboing.net/2016/05/04/chinese-censorship-arbitrary.html#more-460239&quot; class=&quot;more-link&quot;&gt;(more&amp;hellip;)&lt;/a&gt;&lt;/p&gt;</description>
-</item>
-<item>
-<title>US government and SCOTUS change cybercrime rules to let cops hack victims&apos; computers</title>
-<link>http://boingboing.net/2016/05/04/us-government-and-scotus-chang.html</link>
-<author>Cory Doctorow - Radar ATAM.</author>
-<guid isPermaLink="true">http://boingboing.net/2016/05/04/us-government-and-scotus-chang.html</guid>
-<pubDate>Wed, 04 May 2016 12:55:59 +0000</pubDate>
-<description>&lt;p&gt;&lt;img width=&quot;900&quot; height=&quot;622&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/CourtGavel.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;CourtGavel&quot; srcset=&quot;http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/05/CourtGavel.jpg?w=900 900w, http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/05/CourtGavel.jpg?resize=300%2C207 300w, http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/05/CourtGavel.jpg?resize=600%2C415 600w, http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/05/CourtGavel.jpg?resize=768%2C531 768w&quot; sizes=&quot;(max-width: 900px) 100vw, 900px&quot; /&gt;&lt;/p&gt;&lt;p&gt;
-The Supreme Court -- at the behest of the US government -- has announced changes to &quot;Rule 41,&quot; a crucial procedure of the US court system, which will give law enforcement sweeping powers to hack into computers anywhere in the world, including victims&apos; computers, with drastically reduced oversight. 
- &lt;a href=&quot;http://boingboing.net/2016/05/04/us-government-and-scotus-chang.html#more-460232&quot; class=&quot;more-link&quot;&gt;(more&amp;hellip;)&lt;/a&gt;&lt;/p&gt;</description>
-</item>
-<item>
 <title>edited by Hans D. Christ, Iris Dressler, Christine Peters – Acts of Voicing: The Poetics and Politics of the Voice</title>
 <link>http://neural.it/2016/05/edited-by-hans-d-christ-iris-dressler-christine-peters-acts-of-voicing-the-poetics-and-politics-of-the-voice/</link>
 <author>Aurelio Cianciotta - Radar ATAM.</author>
@@ -1005,6 +1055,67 @@ The Supreme Court -- at the behest of the US government -- has announced changes
 <pubDate>Wed, 04 May 2016 09:58:21 +0000</pubDate>
 <description>&lt;p&gt;&lt;strong class=&quot;pub-details&quot;&gt;Spector Books, ISBN-13: 978-3944669892, English/German, 558 pages, 2015, Germany&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The voice is our primary communication “device” and musical instrument, a volatile but powerful medium of expression, that takes on plenty of different roles. It has been used in artworks (especially &lt;a class=&quot;read-more&quot; href=&quot;http://neural.it/2016/05/edited-by-hans-d-christ-iris-dressler-christine-peters-acts-of-voicing-the-poetics-and-politics-of-the-voice/&quot;&gt;&#8594;&lt;/a&gt;</description>
+</item>
+<item>
+<title>Bash script to backup a MySQL RDS dump to S3</title>
+<link>http://www.andyjarrett.co.uk/2016/05/04/script-to-backup-rds-to-s3/</link>
+<author>Andy Jarrett - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.andyjarrett.co.uk/2016/05/04/script-to-backup-rds-to-s3/</guid>
+<pubDate>Wed, 04 May 2016 21:15:12 GMT</pubDate>
+<description>&lt;p&gt;Amazon RDS has nice backup plan in place but you don&apos;t have access to these and its a good pratice to store a &quot;dump&quot; yourself.  This simple script does that by running MySQLDump via CRON to get the data out of the RDS, GZips it up, and stores it on S3. &lt;/p&gt;
+
+&lt;p&gt;1) Install &lt;strong&gt;&lt;em&gt;s3cmd&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install -y s3cmd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2) Configure s3cmd&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ s3cmd --configure
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3) Create your new script&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo nano mysqlBackUp.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;4) Add this to &lt;em&gt;mysqlBackUp.sh&lt;/em&gt;  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+SQLDUMP=&quot;$(date +&apos;%Y%m%d%H%M&apos;).sql.gz&quot;
+
+echo &quot;Creating backup of database to $SQLDUMP&quot;  
+mysqldump --host x.xx-xx-x.rds.amazonaws.com -u Username -pPassword --databases YourDatabaseName | gzip -9 &amp;gt; $SQLDUMP
+
+echo &quot;Dump Zipped up&quot;
+
+echo &quot;Uploading zipped dump to the Amazon S3 bucket…&quot;  
+s3cmd put $BACKUPNAME s3://bucketname/backup/folder/$BACKUPNAME
+
+echo &quot;Removing the backup file $SQLDUMP&quot;  
+rm $BACKUPNAME
+
+echo &quot;WooHoo! All done&quot;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;5) Make it executable&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo chmod 700 mysqlBackUp.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;6) Create a root &lt;strong&gt;&lt;em&gt;CRON&lt;/em&gt;&lt;/strong&gt; job&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo crontab -e
+# Add the following to CRON to run daily at midnight
+* 0 * * * /path/to/backup.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;6.a) You might need to copy the .s3cfg to /root/ for Cron to run properly&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo cp .s3cfg /root/.s3cfg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&apos;s it you&apos;re all set.&lt;/p&gt;</description>
 </item>
 </channel>
 </rss>
