@@ -21,6 +21,7 @@ $feedsJson = file_get_contents("../hoy.json");
 //var_dump($feedsJson);
 $feeds = json_decode($feedsJson,true); // 'true' devuelve  array
 
+// var_dump($feeds);
 
 /*	Render	*/
 
