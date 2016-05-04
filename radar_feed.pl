@@ -92,6 +92,7 @@ Al final se pasa el hasref a un json!
 =cut
 
 my %fs = ( feeds => \@HOY );
+$fs{'timestamp'} = $hoy->epoch();
 my $C = \%fs;
 my $AA = to_json( $C , { 
     #utf8 => 1, 
@@ -162,7 +163,7 @@ sub url_getter {
 				$entries_hoy{'link'}    = decode_shits($entry->link);
 				$entries_hoy{'content'} = decode_shits($entry->description);
 				$entries_hoy{'time'}    = tiempo_lindo($entry->pubDate);
-                $entries_hoy{'feed_categories'} = $RSS{$uri_rss}; # ArrayRef !!
+                #$entries_hoy{'feed_categories'} = $RSS{$uri_rss}; # ArrayRef !!
                 $es_de_hoy++;
                 # Guardar al feed de salida
                 print $entry->link if $debug;
@@ -180,7 +181,7 @@ sub url_getter {
             }
 		}
         if ($nro >= 1){
-            my %hash_pal_key = (    name =>$feed->title, url =>$feed->link  );
+            my %hash_pal_key = (    name =>$feed->title, url =>$feed->link, feed_categories => $RSS{$uri_rss}  );
             $hash_pal_key{entries} = \@entries;
             my $HK = \%hash_pal_key;
             push (@HOY,$HK);
