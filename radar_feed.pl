@@ -194,8 +194,6 @@ sub decode_shits {
 	my $coso_sin_codificar  = XML::Entities::decode('all', decode_entities($shit));
     my $puto  = 'Â';
     $coso_sin_codificar     =~ s/\Q$puto\E//g;
-    my $puto2  = 'â';
-    $coso_sin_codificar     =~ s/\Q$puto\E/'/g;
 	return $coso_sin_codificar;
 }
 
