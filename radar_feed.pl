@@ -19,6 +19,7 @@ use DateTime::Format::W3CDTF;
 use XML::Entities;
 use HTML::Entities  "decode_entities";
 use JSON            "to_json";
+use List::MoreUtils "uniq";
 use utf8;
 
 # O P T s
@@ -54,6 +55,7 @@ my @uri_rss_all     = ();
 my %RSS             = ();
 my @HOY             = ();
 my $hoy             = DateTime->now(@_)->truncate( to => 'minute' );
+my @feed_categories_gral = ();
 
 
 ######################################################################
@@ -93,7 +95,13 @@ Al final se pasa el hasref a un json!
 
 my %fs = ( feeds => \@HOY );
 $fs{'timestamp'} = $hoy->epoch();
+
+my @CATEGORIAS = uniq(@feed_categories_gral);
+my $ArefC = \@CATEGORIAS;
+$fs{'categories_main'} = $ArefC;
+
 my $C = \%fs;
+
 my $AA = to_json( $C , { 
     #utf8 => 1, 
     pretty => 1 } 
@@ -120,10 +128,11 @@ sub feeds_list {
 	foreach my $ln (@datas){
 		chomp($ln);
 		my @r = split(/,/,$ln);
-		print Dumper(@r) if $debug;
+		#print Dumper(@r) if $debug;
         my $pri = shift @r;
 		$RSS{$pri} = \@r;
 		push (@uri_rss_all,$pri);
+        push (@feed_categories_gral,@r);
 		$n++;
 	}
 }
