@@ -170,6 +170,7 @@ sub url_getter {
 				$entries_hoy{'title'}   = decode_shits($entry->title);
 				$entries_hoy{'author'}  = decode_shits($entry->author);
 				$entries_hoy{'link'}    = decode_shits($entry->link);
+				$entries_hoy{'category'}= decode_shits($entry->category);
 				$entries_hoy{'content'} = decode_shits($entry->description);
 				$entries_hoy{'time'}    = tiempo_lindo($entry->pubDate);
                 #$entries_hoy{'feed_categories'} = $RSS{$uri_rss}; # ArrayRef !!
