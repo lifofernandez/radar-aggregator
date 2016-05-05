@@ -99,6 +99,10 @@
 				color: #007C85;
 				/*font-weight: 700;*/
 			}
+
+			footer{
+				padding:50px 0;
+			}
 		</style>
 
 	</head>
@@ -119,7 +123,7 @@
 			<div class="column column-25 ">
 				
 				<nav class="pinned"> 
-					  <ul><strong>Canales:</strong>
+					<ul><strong>Canales:</strong>
 						{% for feed in feeds %}
 							
 							<li {% for cat in cats %}{% if cat  in feed.feed_categories %}class="resaltado"{% endif %}{% endfor %} >
@@ -129,7 +133,13 @@
 							</li>
 							
 						{% endfor %}
-					  </ul>
+					</ul>
+					  
+					<strong>Categorias:</strong><br>
+					{% for cat in categories_main %}
+						<span {% if cat  in cats %}class="resaltado"{% endif %} ><a  href="?categoria={{ cat|raw }}">{{ cat|raw }}</a></span>,
+					{% endfor %}.
+
 				</nav>
 
 			</div> <!-- cierra .column-25 -->
