@@ -191,7 +191,7 @@ sub url_getter {
             }
 		}
         if ($nro >= 1){
-            my %hash_pal_key = (    name =>$feed->title, url =>$feed->link, feed_categories => $RSS{$uri_rss}  );
+            my %hash_pal_key = (    name =>$feed->title, url =>$feed->link, categories => $RSS{$uri_rss}  );
             $hash_pal_key{entries} = \@entries;
             my $HK = \%hash_pal_key;
             push (@HOY,$HK);
