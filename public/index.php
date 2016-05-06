@@ -13,12 +13,13 @@
 //	esto va si: composer require twig/twig:~1.0
 require_once '../vendor/autoload.php';
 
+
 /* Params 	*/
-$categoria = "all";
 if(isset($_GET["categoria"])){
 	$categoria = $_GET["categoria"];
 }
 // $tag = $_GET["tag"];
+
 
 /*	Twig 	*/
 
@@ -39,7 +40,7 @@ $feeds = json_decode($feedsJson,true); // 'true' devuelve  array
 /* Filtro 	*/
 #?categoria[]=arte&categoria[]=web&categoria[]=videogames
 
-// if(isset($categoria)){
+if(isset($categoria)){
 		if(!is_array($categoria)){
 			$categoria = array($categoria);
 		}
@@ -47,13 +48,13 @@ $feeds = json_decode($feedsJson,true); // 'true' devuelve  array
 		if (array_intersect($categoria, $feeds["categories_main"])) {
 		    $twig->addGlobal('cats', $categoria);
 		}
-// }
-
+}
 
 
 /*	Render	*/
 
 echo $template->render($feeds);
+
 
 /*	Leesto!	*/
 
