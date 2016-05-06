@@ -19,7 +19,7 @@ require_once '../vendor/autoload.php';
 if(isset($_GET["categoria"])){
 	$categoria = $_GET["categoria"];
 }
-// $tag = $_GET["tag"];
+
 
 
 /*	Twig 	*/
@@ -43,13 +43,16 @@ $feeds = json_decode($feedsJson,true); // 'true' devuelve  array
 #?categoria[]=arte&categoria[]=web&categoria[]=videogames
 
 if(isset($categoria)){
-		if(!is_array($categoria)){
-			$categoria = array($categoria);
-		}
+	if(!is_array($categoria)){
+		$categoria = array($categoria);
+	}
 
-		if (array_intersect($categoria, $feeds["categories_main"])) {
-		    $twig->addGlobal('cats', $categoria);
-		}
+	if (array_intersect($categoria, $feeds["categories_main"])) {
+		$twig->addGlobal('cats', $categoria);
+	}
+
+}else{
+	$twig->addGlobal('cats', array("all"));
 }
 
 
