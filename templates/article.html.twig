@@ -1,0 +1,28 @@
+<article id="{{entry.link}}">
+
+	<header>
+		<h4>
+			<a target="_BLANK" href="{{entry.link}}">
+				{{entry.title}}
+			</a>
+			<span class="anchor">
+				<a href="#{{entry.link}}">
+					#</a>
+			</span>
+		</h4>
+	</header>
+
+	<div class="content">
+		{{ entry.content|raw }}
+	</div>
+
+	<footer>
+		<span class="fecha">en
+			<a target="_blank" href="{{ feed.url }}">
+				{{ feed.name|raw }}
+			</a>
+			{{entry.time|date("d/m/y H:i")}}
+		</span>
+	</footer>
+
+</article>
