@@ -6,16 +6,21 @@
 //
 //	Esto va si se isntala de github
 //	require_once '../vendor/Twig-1.24.0/lib/Twig/Autoloader.php';
-// 	Twig_Autoloader::register(); 
+// 	Twig_Autoloader::register();
 
 //////////////
 //
 //	esto va si: composer require twig/twig:~1.0
 require_once '../vendor/autoload.php';
 
+
 /* Params 	*/
-$categoria = $_GET["categoria"];
-$tag = $_GET["tag"];
+
+if(isset($_GET["categoria"])){
+	$categoria = $_GET["categoria"];
+}
+// $tag = $_GET["tag"];
+
 
 /*	Twig 	*/
 
@@ -34,19 +39,24 @@ $feeds = json_decode($feedsJson,true); // 'true' devuelve  array
 
 
 /* Filtro 	*/
+
 #?categoria[]=arte&categoria[]=web&categoria[]=videogames
 
-if(!is_array($categoria)){
-	$categoria = array($categoria);
+if(isset($categoria)){
+		if(!is_array($categoria)){
+			$categoria = array($categoria);
+		}
+
+		if (array_intersect($categoria, $feeds["categories_main"])) {
+		    $twig->addGlobal('cats', $categoria);
+		}
 }
 
-if (array_intersect($categoria, $feeds["categories_main"])) {
-    $twig->addGlobal('cats', $categoria);
-}
 
 /*	Render	*/
 
 echo $template->render($feeds);
+
 
 /*	Leesto!	*/
 

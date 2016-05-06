@@ -3,9 +3,9 @@
 	<head>
 
 		<meta charset="UTF-8" />
-		
 
-		
+
+
 		<title>RAM | Radar de noticias de Artes Multimediales</title>
 
 		<!-- Google Fonts -->
@@ -13,7 +13,7 @@
 		<!-- CSS Reset -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" type="text/css">
 
-		
+
 		<!-- Milligram CSS minified -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css" type="text/css">
 		<!-- Milligram CSS minified -->
@@ -26,17 +26,23 @@
 
 
 		<style type="text/css">
+
+
+
 			body{
 				font-family: "Roboto Mono", Courrier, monospace;
 			}
 			nav{
-				padding-top: 15px;
+				/*padding-top: 15px;*/
 			}
 			nav ul li{
 				list-style: none;
-				font-size: 1.3rem;
-				margin-bottom: .5rem;
-				padding: 3px 0px;
+				font-size: 1rem;
+				/*margin-bottom: .5rem;*/
+				/*padding: 3px 0px;*/
+			}
+			nav a{
+				font-size: 1rem;
 			}
 			body > header,
 			section,
@@ -44,24 +50,24 @@
 				/*width: 680px;margin: 0px auto;*/
 			}
 			section{
-				margin-bottom: 100px;
+				/*margin-bottom: 100px;*/
 			}
 
 			article{
 				/*width: 680px;*/
 				margin: 40px 0;
 				border-bottom: 1px solid #d3d3d3;
-				padding-bottom: 20px;
+
 			}
-			section article:last-child{
-				border-bottom-width: 0px; 
-			}
+		/*	section article:last-child{
+				border-bottom-width: 0px;
+			}*/
 			article .content{
 				font-weight: 300;
 			}
 			header h4 {
-				font-weight: 700; 
-			} 
+				font-weight: 700;
+			}
 			a{
 				color: #007C85;
 			}
@@ -75,6 +81,8 @@
 				height: auto;
 			}
 			article > footer{
+				margin-top: 20px;
+				padding: 5px 0;
 				text-align: right;
 				/*background: #007C85;*/
 				/*color: white;*/
@@ -84,113 +92,162 @@
 			}
 
 			.subrrayado{
-				border-bottom: 2px solid #606c76;
+				border-bottom: 2px solid #d3d3d3;
 				padding-bottom: 5px;
 			}
 			.anchor a{
 				font-size: 2rem;
 				color: #d3d3d3;
 			}
-			.resaltado a,.resaltado {
+			/*.resaltado a,.resaltado {
 				color:red;
-			}
+			}*/
 			.subtitulo{
 				font-size: 2rem;
 				color: #007C85;
 				/*font-weight: 700;*/
 			}
 
-			footer{
+			body > footer{
 				padding:50px 0;
 			}
+			{# aca agrego css segun params #}
+			.{{ cats|join(', .') }}{
+				color: red;
+			}
+
+
+			/*ajusterelacion entre los titulos*/
+			h2 {
+				font-size: 3.6rem; /*	originalmente de h3 */
+			}
+			h3 {
+				font-size: 3.2rem; /*	originalmente de h4 */
+			}
+			/*hueevaa*/
+			.row{
+				height: 100%;
+			}
+			.column{
+				height: 100%;
+				background: #d3d3d3;
+			}
+			section{
+				background: white;
+				margin: 0px -1rem;
+				padding: 0px 1rem;
+				padding-bottom: 100px;
+			}
+
 		</style>
 
 	</head>
 
 	<body class="container">
+			{{ cats|join(' -') }}
 
-			 
 		<header>
-			<h1>RAM</h1>
-			<p>Radar de noticias de Artes Multimediales<br>
-			<small>Los contenidos a continuación fueron publicados en el día <em>{{ timestamp|localizeddate("J d \\d\\e M \\d\\e Y","none", locale) }}</em> en sus respectivos canales, su recopilacion en esta página es sin fines de lucro y no tiene otro motivo que la divulgación de temas ralacionados con la carrera.</small>
-			</p>
+
 		</header >
 
 		<div class="row">
 
-			
-			<div class="column column-25 ">
-				
-				<nav class="pinned"> 
+			<div class="column column-25">
+
+				<header class="pinned fondeado">
+				<nav>
+					<h1>RAM</h1>
+
 					<ul><strong>Canales:</strong>
 						{% for feed in feeds %}
-							
-							<li {% for cat in cats %}{% if cat  in feed.feed_categories %}class="resaltado"{% endif %}{% endfor %} >
-								<a title="{{ feed.url }}"  href="#{{ feed.name|lower|replace({' ': '-'})|raw }}">
+							<li>
+								<a class="{{ feed.feed_categories|join(' ') }}" title="{{ feed.url }}"
+									href="/#{{ feed.name|lower|replace({' ': '-'})|raw }}">
 									{{ feed.name|raw }}
 								</a> [{{ feed.entries|length }}]
 							</li>
-							
 						{% endfor %}
 					</ul>
-					  
+
 					<strong>Categorias:</strong><br>
-					{% for cat in categories_main %}
-						<span {% if cat  in cats %}class="resaltado"{% endif %} ><a  href="?categoria={{ cat|raw }}">{{ cat|raw }}</a></span>,
-					{% endfor %}.
+					<p>
+						{% for cat in categories_main %}
+							<a  class="{{ cat|raw }}" href="/?categoria={{ cat|raw }}">
+							{{ cat|raw }}</a>
+						{% endfor %}
+						<br><br><br>
+					</p>
 
 				</nav>
 
+				</header>
 			</div> <!-- cierra .column-25 -->
-				
+
+
 
 
 			<!-- <div class="column column-75"> -->
 
-				
+
 				<main id="content" class="group column column-75" role="main">
-					
+					<header>
+						<h2>Radar de noticias de Artes Multimediales</h2><br>
+						<p><small>Los contenidos a continuación fueron publicados en el día <em>
+						{# timestamp|localizeddate("J d \\d\\e M \\d\\e Y","none", locale) #}</em>
+						en sus respectivos canales, su recopilacion en esta página es sin fines de
+						lucro y no tiene otro motivo que la divulgación de temas ralacionados con
+						la carrera.</small></p>
+
+
+				</header >
 					{% for feed in feeds %}
-						
-						<section 
+						{# filtro por categorias #}
+						{% for cat in cats %}
+							{% if cat in feed.feed_categories %}
+							<!-- pasar a tmpl y hacer bien el ifelse -->
+						<section
 							id="{{ feed.name|lower|replace({' ': '-'})|raw }}"
 							class="{{ entry.feed_categories|join(' ')|lower }}"
 						>
-							
+
 							<header>
-								<h2 class="subrrayado">
-									<span {% for cat in cats %}{% if cat  in feed.feed_categories %}class="resaltado"{% endif %}{% endfor %} >
+								<h3 class="subrrayado">
+									<span class="name {# feed.feed_categories|join(' ')|escape  #}" >
 										{{ feed.name|raw }}
 									</span>
-									<span class="subtitulo">[{{ feed.feed_categories|join(', ')|escape }}]</span>
+									<span class="subtitulo">
+										[{{ feed.feed_categories|join(', ')|escape }}]
+									</span>
 								</h2>
-								
+
 							</header>
 
 							{% for entry in feed.entries %}
 
 								<article id="{{ entry.title|lower|replace({' ': '-'})|raw  }}">
-									
+
 									<header>
-										 
+
 										<h5>
 											<a target="_BLANK" href="{{entry.link}}">
 												{{entry.title}}
 											</a>
 											<span class="anchor">
-											<a href="#{{ entry.title|lower|replace({' ': '-'})|raw  }}">#</a></span>
+											<a href="#{{ entry.title|lower|replace({' ': '-'})|raw  }}">
+												#</a></span>
 
 										</h5>
-										
+
 									</header>
-									
+
 									<div class="content">
 										{{ entry.content|raw }}
 									</div>
-									
+
 									<footer>
-										<span class="fecha">por {{ feed.name|raw }} el {{entry.time|date("d/m/y \\a \\l\\a\\s H:i")}}hs.</span> 
+										<span class="fecha">por
+											<a target="_blank" href="{{ feed.url }}">{{ feed.name|raw }}</a>
+											{{entry.time|date("d/m/y-H:i")}}</span>
 									</footer>
 
 								</article>
@@ -198,9 +255,11 @@
 							{% endfor %}
 
 						</section>
+							{% endif %}
+						{% endfor %}
 					{% endfor %}
-				
-				</main>
+
+				</main> <!-- cierra .column-75 -->
 
 			<!-- </div> --> <!-- cierra .column-75 -->
 
@@ -215,22 +274,21 @@
 				Área Transdepartamental de Artes Multimediales
 			</a>
 		</footer>
-		
+
 		<!-- Include jQuery and jquery.pin -->
-	    <script
-			  src="http://code.jquery.com/jquery-2.2.3.min.js"
-			  integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-			  crossorigin="anonymous"></script>
-	    <script src="https://cdn.jsdelivr.net/jquery.pin/1.0.3/jquery.pin.min.js"></script>
+		<script
+			src="http://code.jquery.com/jquery-2.2.3.min.js"
+			integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.pin/1.0.3/jquery.pin.min.js">
+			</script>
 
 
-	    <!-- PIN ALL THE THINGS! -->
-	    <script>
-	      $(".pinned").pin({containerSelector: ".row"});
-	    </script>
-	    <!-- That's all - pretty easy, right? -->
+		<!-- PIN ALL THE THINGS! -->
+		<script>
+			$(".pinned").pin({containerSelector: ".row"});
+		</script>
+		<!-- That's all - pretty easy, right? -->
 
 	</body>
 </html>
-
-
