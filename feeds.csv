@@ -17,7 +17,7 @@ http://www.aec.at/news/en/feed/,arte,festivales
 http://feeds.feedburner.com/visualcomplexity,dataviz
 http://feeds.feedburner.com/colourlovers,imagen
 http://hackaday.com/blog/feed/,actualidad
-http://feeds.feedburner.com/gamasutraseriousnews,videogames
+http://feeds.feedburner.com/GamasutraNews,videogames
 http://feeds.infosthetics.com/infosthetics.com,dataviz
 http://flowingdata.com/feed,dataviz
 http://feeds.feedburner.com/generatorx,dataviz
@@ -29,9 +29,10 @@ http://www.reddit.com/r/programming/.rss,programación
 http://boingboing.net/feed,miscelánea
 http://www.digicult.it/feed/atom/,actualidad
 http://www.futurefeeder.com/feed/,actualidad
-http://neural.it/feed/,actualidad
+http://neural.it/customfeed/articles_issues_microposts.php,actualidad
 http://www.andyjarrett.co.uk/rss/,referentes,web
 http://www.booooooom.com/feed/,miscelánea
+https://opensource.com/feed,código-abierto
 https://www.brainpickings.org/feed/,creatividad,miscelánea
 http://benfry.com/writing/feed,referentes
 http://dma.ucla.edu/feed.php?type=news&format=rss,instituciones

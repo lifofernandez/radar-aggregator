@@ -75,7 +75,7 @@ if ($opts{f}){
 my $rss_out = XML::FeedPP::RSS->new();
 my $w3m_ahora = DateTime::Format::W3CDTF->new;
 my $tw3 = $w3m_ahora->format_datetime($hoy);
-$rss_out->title("Radar de noticias - ATAM");
+$rss_out->title("RAM | Radar de noticias de Artes Multimediales");
 $rss_out->link("http://multimediales.com.ar");
 $rss_out->pubDate($tw3);
 #Las entradas se agregan desde url_getter

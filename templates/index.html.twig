@@ -7,7 +7,7 @@
 
 
 	<title>RAM | Radar de noticias de Artes Multimediales</title>
-  <link rel="shortcut icon" href="/favicon.ico" />
+ 	<link rel="shortcut icon" href="/favicon.ico" />
 
 	<!-- Google Fonts -->
 	<link
@@ -15,12 +15,7 @@
 		href="https://fonts.googleapis.com/css?
 			family=Roboto+Mono:400,100,300,400italic,500,700">
 
-	<!-- <link
-		href='https://fonts.googleapis.com/css?
-			family=Source+Code+Pro:400,700,500,200,300,600,900'
-		rel='stylesheet'
-	 	type='text/css'> -->
-
+	
 	<!-- CSS Reset -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" type="text/css">
 
@@ -35,37 +30,41 @@
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://multimediales.com.ar/rss">
 
 
-	{% include 'overrides.css.twig' %}
+	<!-- Iconos -->
+	<link rel="stylesheet" href="icons/style.css" type="text/css">
+
+	<!-- Static Overrides -->
+	<link rel="stylesheet" href="static-overrides.css" type="text/css">
+
+	<!-- Dynamic Overrides -->
+	{% include 'dynamic-overrides.css.twig' %}
+
 
 
 </head>
 
 <body class="container">
 
-	<!-- <header></header > -->
-
 	<div class="row">
 
 		<div class="column column-25">
 
-			<header class="pinned fondeado">
+			<header class="pinned">
+			
 			<nav>
 				<h1 class="title"><a href="/">RAM</a></h1>
 
 				<ul class="menu canales"><strong>Canales:</strong>
 					{% for feed in feeds %}
-
 						<li>
 							{% spaceless %}<a
 								class="{{feed.categories|join(' ')}}"
 								title="{{feed.url}}"
 								href="/#{{feed.name|slug}}">
-								{{ feed.name|raw }}</a>{% endspaceless %}
-								[{{ feed.entries|length }}]
+								{{ feed.name|raw }}</a>
+								{% endspaceless %} [{{ feed.entries|length }}]
 						</li>
-
 					{% endfor %}
-
 				</ul>
 
 
@@ -73,29 +72,26 @@
 				<p class="menu categorias">
 				<strong>Categorias:</strong><br>
 					{% for cat in categories_main %}
-
-						{# actualizo el estado de la categoria si es que tiene contenido #}
+						{# ver si tienen contenido	#}				
 						{% set estado = 'empty' %}
 						{% for feed in feeds %}
 							{% if cat in feed.categories %}
-
-							{% set estado = 'full' %}
-
+								{% set estado = 'full' %}
 							{% endif %}
 						{% endfor %}
 
-						{# imprimo categorias #}
-
-						{% if estado == 'full' %}
-						<a  class="categoria {{ cat|raw }} {{estado}}" href="/?categoria={{ cat|raw }}">
-								{{ cat|raw }}</a>
-						{% else %}
-							<span class="categoria">{{ cat|raw }}</span>
-						{% endif %}
-
+						{% spaceless %}
+							{% if estado == 'full' %}
+							<a  class="categoria {{ cat|raw }} {{estado}}" href="/?categoria={{ cat|raw }}">
+									{{ cat|raw }}</a>
+							{% else %}
+								<span class="categoria">{{ cat|raw }}</span>
+							{% endif %}
+						{% endspaceless %}
 					{% endfor %}
 				</p>
 
+				
 			</nav>
 
 			</header>
@@ -103,39 +99,42 @@
 		</div> <!-- cierra .column-25 -->
 
 
+		<main id="content" class="group column column-75" role="main">
 
+			<header>
+				<div class="social">
+					<a href="https://twitter.com/UNAmultimedial">
+						<span class="icon icon-twitter"></span>
+					</a>
+					<a href="https://facebook.com/una.multimediales">
+						<span class="icon icon-facebook"></span>
+					</a>
+				</div>
+				
 
-		<!-- <div class="column column-75"> -->
+				<h2>Radar de noticias de Artes Multimediales</h2><br>
+				<p><small>Los artículos a continuación fueron publicados
+				en sus respectivos canales, el contenido del mismo y las opiniones
+				expresadas son de exclusiva responsabilidad de los autores; su
+				recopilación en esta página es sin fines de lucro y no tiene otro motivo que la divulgación de temas relacionados a la carrera.
+				{# timestamp|localizeddate("J d \\d\\e M \\d\\e Y","none", locale) #}
+				</small></p>
+			</header >
 
+			{% for feed in feeds %}
 
-			<main id="content" class="group column column-75" role="main">
-
-				<header>
-					<h2>Radar de noticias de Artes Multimediales</h2><br>
-					<p><small>Los artículos a continuación fueron publicados
-					en sus respectivos canales, el contenido del mismo y las opiniones
-					expresadas son de exclusiva responsabilidad de los autores; su
-					recopilación en esta página es sin fines de lucro y no tiene otro motivo que la divulgación de temas relacionados a la carrera.
-					{# timestamp|localizeddate("J d \\d\\e M \\d\\e Y","none", locale) #}
-					</small></p>
-				</header >
-
-				{% for feed in feeds %}
-
-					{# filtro por categorias #}
-					{% for cat in cats %}
-						{% if ( cat in feed.categories ) or ( cat == "all" ) %}
-
+				{% for cat in cats %}
+					{% if ( cat in feed.categories ) or ( cat == "all" ) %}
+						
+						{% block section %}
 							{% include 'section.html.twig' %}
-							{# include 'template.html' with vars #}
+						{% endblock %}
 
-						{% endif %}
-					{% endfor %}
+					{% endif %}
 				{% endfor %}
+			{% endfor %}
 
-			</main> <!-- cierra .column-75 -->
-
-		<!-- </div> --> <!-- cierra .column-75 -->
+		</main> <!-- cierra .column-75 -->
 
 	</div> <!-- cierra .row -->
 
@@ -152,9 +151,11 @@
 	<script
 		src="http://code.jquery.com/jquery-2.2.3.min.js"
 		integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-		crossorigin="anonymous"></script>
+		crossorigin="anonymous">
+	</script>
 	<script
-		src="https://cdn.jsdelivr.net/jquery.pin/1.0.3/jquery.pin.min.js"></script>
+		src="https://cdn.jsdelivr.net/jquery.pin/1.0.3/jquery.pin.min.js">
+	</script>
 
 	<script>
 		$(".pinned").pin({containerSelector: ".row"});

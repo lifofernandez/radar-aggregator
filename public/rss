@@ -3,7 +3,28 @@
 <channel>
 <title>Radar de noticias - ATAM</title>
 <link>http://multimediales.com.ar</link>
-<pubDate>Mon, 09 May 2016 17:07:00 GMT</pubDate>
+<pubDate>Mon, 09 May 2016 19:36:00 GMT</pubDate>
+<item>
+<title>Your unconscious meat body plays this online drum machine</title>
+<link>http://createdigitalmusic.com/2016/05/your-unconscious-meat-body-plays-this-online-drum-machine/</link>
+<author>Peter Kirn - Radar ATAM.</author>
+<guid isPermaLink="true">http://createdigitalmusic.com/2016/05/your-unconscious-meat-body-plays-this-online-drum-machine/</guid>
+<pubDate>Mon, 09 May 2016 15:58:17 +0000</pubDate>
+<description>&lt;p&gt;I am a damp rag of exposed flesh, my limbs ill-defined blobs drifting in some undetermined direction as I float through space &#8211; wet steak in a wormhole. But then there&#8217;s a parade of translucent boxes against this surrealist-nightmare distorted planet, and a triumphant series of chime rings out. A clear pattern is articulated from the murk, a rhythm emerging from the disarray. No, no &#8211; hold on, don&#8217;t stop reading, I&#8217;m fine. I am actually describing to the best of my ability the experience of using one #$(&#038;*ing insane browser music toy created by our friend Sam Rolfes. It&#8217;s ...&lt;/p&gt;
+&lt;p&gt;The post &lt;a rel=&quot;nofollow&quot; href=&quot;http://createdigitalmusic.com/2016/05/your-unconscious-meat-body-plays-this-online-drum-machine/&quot;&gt;Your unconscious meat body plays this online drum machine&lt;/a&gt; appeared first on &lt;a rel=&quot;nofollow&quot; href=&quot;http://createdigitalmusic.com&quot;&gt;cdm createdigitalmusic&lt;/a&gt;.&lt;/p&gt;
+</description>
+</item>
+<item>
+<title>Bisecting a triangular cake</title>
+<link>http://datagenetics.com/blog/may12016/index.html</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://datagenetics.com/blog/may12016/index.html</guid>
+<pubDate>Mon, 09 May 2016 00:00:00 GMT</pubDate>
+<description>
+&lt;p&gt;What is shortest cut on a triangular cake to make two equal sized pieces?&lt;/p&gt;
+&lt;img src=&apos;http://DataGenetics.com/bpics/may12016.jpg&apos;&gt;
+</description>
+</item>
 <item>
 <title>Recent Searches</title>
 <link>http://xkcd.com/1678/</link>
@@ -20,6 +41,15 @@
 <guid isPermaLink="true">http://feeds.we-make-money-not-art.com/~r/wmmna/~3/MKbnatRlrAo/</guid>
 <pubDate>Mon, 09 May 2016 13:50:52 +0000</pubDate>
 <description>Bruce Gilden, Factory in the Midlands, from the series The Black Country, 2014 Evelyn Hofer, Crossing Guard, London, [&#8230;]</description>
+</item>
+<item>
+<title>If You See Anything, Say Something? Math on a Plane</title>
+<link>http://hackaday.com/2016/05/09/if-you-see-anything-say-something-math-on-a-plane/</link>
+<author>Al Williams - Radar ATAM.</author>
+<guid isPermaLink="true">http://hackaday.com/2016/05/09/if-you-see-anything-say-something-math-on-a-plane/</guid>
+<pubDate>Mon, 09 May 2016 18:31:18 +0000</pubDate>
+<description>&lt;p&gt;Remember September &lt;del&gt;2016&lt;/del&gt; 2015? That was the month that [Ahmed Mohamed] brought a modified clock to school and was accused of being a terrorist. The event divided people with some feeling like it was ignorance on the part of the school, some felt the school had to be cautious, some felt it was racial profiling, and others thought it was a deliberate provocation from his possibly politically active parents. In the end, [Ahmed] moved to Qatar.&lt;/p&gt;
+&lt;p&gt;Regardless of the truth behind the affair, this month we&#8217;ve seen something that is probably even less ambiguous. The Washington Post reports that a  &lt;a href=&quot;http://hackaday.com/2016/05/09/if-you-see-anything-say-something-math-on-a-plane/&quot; class=&quot;read_more&quot;&gt;&#8230;read more&lt;/a&gt;&lt;/p&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://pixel.wp.com/b.gif?host=hackaday.com&#038;blog=4779443&#038;post=204150&#038;subd=hackadaycom&#038;ref=&#038;feed=1&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</description>
 </item>
 <item>
 <title>Minimal MQTT: Building a Broker</title>
@@ -75,14 +105,100 @@
 &lt;p&gt;[Patrick] started by researching for  &lt;a href=&quot;http://hackaday.com/2016/05/08/raimis-bionic-arm/&quot; class=&quot;read_more&quot;&gt;&#8230;read more&lt;/a&gt;&lt;/p&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://pixel.wp.com/b.gif?host=hackaday.com&#038;blog=4779443&#038;post=203478&#038;subd=hackadaycom&#038;ref=&#038;feed=1&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</description>
 </item>
 <item>
-<title>3D Printer Prints Sound</title>
-<link>http://hackaday.com/2016/05/08/3d-printer-prints-sound/</link>
-<author>Al Williams - Radar ATAM.</author>
-<guid isPermaLink="true">http://hackaday.com/2016/05/08/3d-printer-prints-sound/</guid>
-<pubDate>Mon, 09 May 2016 02:01:04 +0000</pubDate>
-<description>&lt;p&gt;People like music, but they are also visual creatures. Perhaps that&#8217;s why music visualization is such a common project. Usually, you think of music visualization as using LEDs or a computer screen. However, [Gieeel] did his music visualization using a 3D printer.&lt;/p&gt;
-&lt;p&gt;Sure, the visualization is a little static compared to LEDs, but it does make an interesting conversation piece. The actual process isn&#8217;t very difficult, once you have the idea. [Gieeel] captured the waveform in Audacity, did a screen capture, and then converts the image to an SVG file using Inkscape.&lt;/p&gt;
-&lt;p&gt;From there, you can use many different CAD  &lt;a href=&quot;http://hackaday.com/2016/05/08/3d-printer-prints-sound/&quot; class=&quot;read_more&quot;&gt;&#8230;read more&lt;/a&gt;&lt;/p&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://pixel.wp.com/b.gif?host=hackaday.com&#038;blog=4779443&#038;post=202696&#038;subd=hackadaycom&#038;ref=&#038;feed=1&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</description>
+<title>Blog: AI isn&apos;t a subsystem</title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/NpeXBJDoK4M/AI_Isnt_a_Subsystem.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/NpeXBJDoK4M/AI_Isnt_a_Subsystem.php</guid>
+<pubDate>Mon, 09 May 2016 14:49:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272163/grass-lawn-green-wooden-6069-large.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;&quot;Many first-time video game creators tend to save AI for last because it is the least obvious how to go about doing so. Viewing AI as extensions of other systems is a simple way to demystify it.&quot;                                       ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/NpeXBJDoK4M&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
+</item>
+<item>
+<title>Virtual spraypaint: Take a look at graffitti simulator Kingspray</title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/nRlSZ3CNExs/Virtual_spraypaint_Take_a_look_at_graffitti_simulator_Kingspray.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/nRlSZ3CNExs/Virtual_spraypaint_Take_a_look_at_graffitti_simulator_Kingspray.php</guid>
+<pubDate>Mon, 09 May 2016 14:30:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272261/image_2016-05-04-04-15-09_5729774d38538.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;VR is opening us up to new experiences, and allowing interactions that didn&apos;t make sense in traditional games. Here&apos;s another appealing example: Graffitti simulation.                                                    ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/nRlSZ3CNExs&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
+</item>
+<item>
+<title>Vive maker HTC hits rocky waters in latest results</title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/UorLTU8onsM/Vive_maker_HTC_hits_rocky_waters_in_latest_results.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/UorLTU8onsM/Vive_maker_HTC_hits_rocky_waters_in_latest_results.php</guid>
+<pubDate>Mon, 09 May 2016 14:10:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272260/Screen-Shot-2016-05-09-at-11.08.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;The financial state of the mobile phone maker has declined considerably in the last year, and as the Vive takes off, the company needs a new hit product.                                                ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/UorLTU8onsM&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
+</item>
+<item>
+<title>Running for a niche: Why and how I made a horse racing game</title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/XBSvwUP2iUM/The_making_of_mobile_game_Photo_Finish_Horse_Racing_part_1.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/XBSvwUP2iUM/The_making_of_mobile_game_Photo_Finish_Horse_Racing_part_1.php</guid>
+<pubDate>Mon, 09 May 2016 13:06:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272162/iphone_6_plus_screenshot-3.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;&quot;Having worked at EA and Zynga and seeing how aggressive big companies can be when you compete with them, I wanted absolutely nothing to do with any business that they would be interested in.&quot;                                          ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/XBSvwUP2iUM&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
+</item>
+<item>
+<title>Street Fighter V ships 1.4 million copies, misses sales target</title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/ADvIeaLom3Q/Street_Fighter_V_ships_14_million_copies_misses_sales_target.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/ADvIeaLom3Q/Street_Fighter_V_ships_14_million_copies_misses_sales_target.php</guid>
+<pubDate>Mon, 09 May 2016 12:07:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272252/sfv.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;Since launching in February, Street Fighter V has sold 1.4 million copies - or rather, 600,000 fewer copies than Capcom initially predicted.                                                       ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/ADvIeaLom3Q&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
+</item>
+<item>
+<title>Sales and profits up at Capcom as key franchises continue to perform</title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/FrfNes7euUo/Sales_and_profits_up_at_Capcom_as_key_franchises_continue_to_perform.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/FrfNes7euUo/Sales_and_profits_up_at_Capcom_as_key_franchises_continue_to_perform.php</guid>
+<pubDate>Mon, 09 May 2016 11:43:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272249/capcom.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;Franchises such as Monster Hunter, along with steady digital sales, have helped Capcom end the financial year on a high.                                                        ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/FrfNes7euUo&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
+</item>
+<item>
+<title>The future of the action RPG, according to Diablo designer Stieg Hedlund</title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/g61zziy4OEU/The_Future_of_the_ARPG.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/g61zziy4OEU/The_Future_of_the_ARPG.php</guid>
+<pubDate>Mon, 09 May 2016 11:34:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272161/wall2-1680x1050.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;Diablo and Diablo II designer Stieg Hedlund: &quot;Recent conversations with colleagues caused me to contemplate where this category is headed and in doing so, where it has been.&quot;                                                ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/g61zziy4OEU&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
+</item>
+<item>
+<title>Microsoft&apos;s new haptic VR tech blurs the lines between realities</title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/9Eg7OrcTAMM/Microsofts_new_haptic_VR_tech_blurs_the_lines_between_realities.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/9Eg7OrcTAMM/Microsofts_new_haptic_VR_tech_blurs_the_lines_between_realities.php</guid>
+<pubDate>Mon, 09 May 2016 10:04:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272242/haptic.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;&quot;We have created a framework for repurposing passive haptics, called haptic retargeting, that leverages the dominance of vision when our senses conflict.&quot;                                                      ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/9Eg7OrcTAMM&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
+</item>
+<item>
+<title>Photoshop as a game editor</title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/FCerQbHNf7k/Photoshop_as_game_editor.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/FCerQbHNf7k/Photoshop_as_game_editor.php</guid>
+<pubDate>Mon, 09 May 2016 09:45:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272157/demodrop_psd.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;An overview of advanced features in Photoshop that make the popular image editing tool much more robust for game development.                                                        ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/FCerQbHNf7k&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
+</item>
+<item>
+<title>Messing with perception: Gameplay and rendering experiments in VR </title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/Vzt4wdGkZBM/Stop_Asking_Me_Unity_VR_questions_The_Hidden_in_Plain_Sight_PostMortem.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/Vzt4wdGkZBM/Stop_Asking_Me_Unity_VR_questions_The_Hidden_in_Plain_Sight_PostMortem.php</guid>
+<pubDate>Mon, 09 May 2016 07:02:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272155/LudumDareThumb.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;&quot;While our experimentation time is serving us well in identifying some issues early, it failed to find other problems that became more obvious once the levels were laid out.&quot;                                               ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/Vzt4wdGkZBM&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
+</item>
+<item>
+<title>The importance of showing gameplay video when demoing your Gear VR game</title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/Wr1c88ffHbk/On_the_importance_of_showing_gameplay_video_when_demoing_your_Gear_VR_game.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/Wr1c88ffHbk/On_the_importance_of_showing_gameplay_video_when_demoing_your_Gear_VR_game.php</guid>
+<pubDate>Mon, 09 May 2016 04:03:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272154/static1.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;&quot;Unlike other virtual reality devices, the Gear VR is self-contained. Every single person who watched the video during another player&apos;s play session told us they thought the video was of live gameplay. Every. Single. Person.&quot;                                         ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/Wr1c88ffHbk&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
+</item>
+<item>
+<title>Making waves: The organic process of creating Quantum Break&apos;s score</title>
+<link>http://feedproxy.google.com/~r/GamasutraNews/~3/rROJ13QVZ_0/Making_waves_The_organic_process_of_creating_Quantum_Breaks_score.php</link>
+<author> - Radar ATAM.</author>
+<guid isPermaLink="true">http://feedproxy.google.com/~r/GamasutraNews/~3/rROJ13QVZ_0/Making_waves_The_organic_process_of_creating_Quantum_Breaks_score.php</guid>
+<pubDate>Mon, 09 May 2016 04:02:00 -0400</pubDate>
+<description>&lt;p&gt;&lt;img src=&quot;http://www.gamasutra.com/db_area/images/news/2016/May/272143/Quantum Break S.jpg&quot; align=&quot;left&quot; hspace=&quot;5&quot;/&gt;&quot;With longer projects, it is incredibly easy to lose control and get lost in the swamps of &apos;music for the dolphins.&apos; You keep making changes to a cue that nobody will ever hear.&quot;                                           ...&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/GamasutraNews/~4/rROJ13QVZ_0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;</description>
 </item>
 <item>
 <title>Sponsor: AnyChart &#8594;</title>
@@ -101,14 +217,12 @@
 <description>&lt;p&gt;&lt;a href=&quot;http://flowingdata.com/2016/05/09/nfl-draft-pick-quality-for-your-team/&quot;&gt;&lt;img width=&quot;720&quot; height=&quot;404&quot; src=&quot;http://i0.wp.com/flowingdata.com/wp-content/uploads/2016/04/Pick-and-draft-value.png?fit=720%2C404&quot; class=&quot;attachment-medium size-medium wp-post-image&quot; alt=&quot;Pick and draft value&quot; srcset=&quot;http://i0.wp.com/flowingdata.com/wp-content/uploads/2016/04/Pick-and-draft-value.png?w=997 997w, http://i0.wp.com/flowingdata.com/wp-content/uploads/2016/04/Pick-and-draft-value.png?resize=210%2C118 210w, http://i0.wp.com/flowingdata.com/wp-content/uploads/2016/04/Pick-and-draft-value.png?resize=720%2C404 720w, http://i0.wp.com/flowingdata.com/wp-content/uploads/2016/04/Pick-and-draft-value.png?resize=768%2C431 768w&quot; sizes=&quot;(max-width: 720px) 100vw, 720px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;Despite what commentators and sports analysts might have you think, picking great players in a sports draft is full of uncertainty. A player might be great in college, but the&#8230;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; &lt;a href=&quot;http://flowingdata.com/tag/sports/&quot; rel=&quot;tag&quot;&gt;sports&lt;/a&gt;, &lt;a href=&quot;http://flowingdata.com/tag/washington-post/&quot; rel=&quot;tag&quot;&gt;Washington Post&lt;/a&gt;&lt;/p&gt;</description>
 </item>
 <item>
-<title>Your unconscious meat body plays this online drum machine</title>
-<link>http://createdigitalmusic.com/2016/05/your-unconscious-meat-body-plays-this-online-drum-machine/</link>
-<author>Peter Kirn - Radar ATAM.</author>
-<guid isPermaLink="true">http://createdigitalmusic.com/2016/05/your-unconscious-meat-body-plays-this-online-drum-machine/</guid>
-<pubDate>Mon, 09 May 2016 15:58:17 +0000</pubDate>
-<description>&lt;p&gt;I am a damp rag of exposed flesh, my limbs ill-defined blobs drifting in some undetermined direction as I float through space &#8211; wet steak in a wormhole. But then there&#8217;s a parade of translucent boxes against this surrealist-nightmare distorted planet, and a triumphant series of chime rings out. A clear pattern is articulated from the murk, a rhythm emerging from the disarray. No, no &#8211; hold on, don&#8217;t stop reading, I&#8217;m fine. I am actually describing to the best of my ability the experience of using one #$(&#038;*ing insane browser music toy created by our friend Sam Rolfes. It&#8217;s ...&lt;/p&gt;
-&lt;p&gt;The post &lt;a rel=&quot;nofollow&quot; href=&quot;http://createdigitalmusic.com/2016/05/your-unconscious-meat-body-plays-this-online-drum-machine/&quot;&gt;Your unconscious meat body plays this online drum machine&lt;/a&gt; appeared first on &lt;a rel=&quot;nofollow&quot; href=&quot;http://createdigitalmusic.com&quot;&gt;cdm createdigitalmusic&lt;/a&gt;.&lt;/p&gt;
-</description>
+<title>Introducing Banshee 3D - C++14 open source game engine (I&apos;m making a game engine)</title>
+<link>http://www.reddit.com/r/programming/comments/4ijeh4/introducing_banshee_3d_c14_open_source_game/</link>
+<author>/u/BearishSun - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ijeh4/introducing_banshee_3d_c14_open_source_game/</guid>
+<pubDate>Mon, 09 May 2016 12:51:31 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/BearishSun&quot;&gt; /u/BearishSun &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://github.com/bearishsun/bansheeengine&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ijeh4/introducing_banshee_3d_c14_open_source_game/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
 <title>Second Oracle v. Google trial could lead to huge headaches for developers</title>
@@ -117,14 +231,6 @@
 <guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4iiagx/second_oracle_v_google_trial_could_lead_to_huge/</guid>
 <pubDate>Mon, 09 May 2016 05:51:15 +0000</pubDate>
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/abcrink&quot;&gt; /u/abcrink &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://arstechnica.com/tech-policy/2016/05/round-2-of-oracle-v-google-is-an-unpredictable-trial-over-api-fair-use/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4iiagx/second_oracle_v_google_trial_could_lead_to_huge/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
-</item>
-<item>
-<title>Introducing Banshee 3D - C++14 open source game engine (I&apos;m making a game engine)</title>
-<link>http://www.reddit.com/r/programming/comments/4ijeh4/introducing_banshee_3d_c14_open_source_game/</link>
-<author>/u/BearishSun - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ijeh4/introducing_banshee_3d_c14_open_source_game/</guid>
-<pubDate>Mon, 09 May 2016 12:51:31 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/BearishSun&quot;&gt; /u/BearishSun &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://github.com/bearishsun/bansheeengine&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ijeh4/introducing_banshee_3d_c14_open_source_game/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
 <title>Perl 5.24 is available</title>
@@ -159,14 +265,6 @@
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/iamkeyur&quot;&gt; /u/iamkeyur &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.gnu.org/software/emacs/index.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4igj0t/new_gnu_emacs_website/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>Why you&apos;re always at least two steps down your HTTPS certificate chain</title>
-<link>http://www.reddit.com/r/programming/comments/4iiy8m/why_youre_always_at_least_two_steps_down_your/</link>
-<author>/u/yerkyerkington - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4iiy8m/why_youre_always_at_least_two_steps_down_your/</guid>
-<pubDate>Mon, 09 May 2016 10:17:29 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/yerkyerkington&quot;&gt; /u/yerkyerkington &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://certsimple.com/blog/https-certificate-chains&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4iiy8m/why_youre_always_at_least_two_steps_down_your/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
-</item>
-<item>
 <title>HTTP/2 under realistic test scenarios</title>
 <link>http://www.reddit.com/r/programming/comments/4ijhsc/http2_under_realistic_test_scenarios/</link>
 <author>/u/esherone - Radar ATAM.</author>
@@ -183,52 +281,36 @@
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/ionelmc&quot;&gt; /u/ionelmc &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://blog.ionelmc.ro/2016/05/07/dealing-with-docker/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4iis2f/dealing_with_docker/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>Using AutoMapper with StructureMap in ASP.NET Web API</title>
-<link>http://www.reddit.com/r/programming/comments/4iiuze/using_automapper_with_structuremap_in_aspnet_web/</link>
-<author>/u/one_eyed_golfer - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4iiuze/using_automapper_with_structuremap_in_aspnet_web/</guid>
-<pubDate>Mon, 09 May 2016 09:41:16 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/one_eyed_golfer&quot;&gt; /u/one_eyed_golfer &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.exceptionnotfound.net/using-automapper-with-structuremap-in-asp-net-web-api/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4iiuze/using_automapper_with_structuremap_in_aspnet_web/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Microsoft Edge vs. Chrome vs. Firefox: What Should Matter to Users and Developers?</title>
+<link>http://www.reddit.com/r/programming/comments/4ikrtn/microsoft_edge_vs_chrome_vs_firefox_what_should/</link>
+<author>/u/dabshitty - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ikrtn/microsoft_edge_vs_chrome_vs_firefox_what_should/</guid>
+<pubDate>Mon, 09 May 2016 17:55:03 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/dabshitty&quot;&gt; /u/dabshitty &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.programmableweb.com/news/microsoft-edge-vs.-chrome-vs.-firefox-what-should-matter-to-users-and-developers/analysis/2016/05/05&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ikrtn/microsoft_edge_vs_chrome_vs_firefox_what_should/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>Massive Throughput Database Queries with LLVM on GPUs</title>
-<link>http://www.reddit.com/r/programming/comments/4ii2nk/massive_throughput_database_queries_with_llvm_on/</link>
-<author>/u/vladmihalcea - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ii2nk/massive_throughput_database_queries_with_llvm_on/</guid>
-<pubDate>Mon, 09 May 2016 04:39:46 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/vladmihalcea&quot;&gt; /u/vladmihalcea &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.mapd.com/blog/2016/04/27/massive-throughput-database-queries-with-llvm-on-gpus/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ii2nk/massive_throughput_database_queries_with_llvm_on/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>How to Rebase in Git</title>
+<link>http://www.reddit.com/r/programming/comments/4ikuf2/how_to_rebase_in_git/</link>
+<author>/u/unquietwiki - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ikuf2/how_to_rebase_in_git/</guid>
+<pubDate>Mon, 09 May 2016 18:09:22 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/unquietwiki&quot;&gt; /u/unquietwiki &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.linux.com/learn/how-rebase-git&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ikuf2/how_to_rebase_in_git/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>MUM hash -- a fast non-cryptographic hash function</title>
-<link>http://www.reddit.com/r/programming/comments/4ihylr/mum_hash_a_fast_noncryptographic_hash_function/</link>
-<author>/u/redditprogrammingfan - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ihylr/mum_hash_a_fast_noncryptographic_hash_function/</guid>
-<pubDate>Mon, 09 May 2016 04:05:36 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/redditprogrammingfan&quot;&gt; /u/redditprogrammingfan &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://github.com/vnmakarov/mum-hash&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ihylr/mum_hash_a_fast_noncryptographic_hash_function/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Why you&apos;re always at least two steps down your HTTPS certificate chain</title>
+<link>http://www.reddit.com/r/programming/comments/4iiy8m/why_youre_always_at_least_two_steps_down_your/</link>
+<author>/u/yerkyerkington - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4iiy8m/why_youre_always_at_least_two_steps_down_your/</guid>
+<pubDate>Mon, 09 May 2016 10:17:29 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/yerkyerkington&quot;&gt; /u/yerkyerkington &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://certsimple.com/blog/https-certificate-chains&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4iiy8m/why_youre_always_at_least_two_steps_down_your/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>Descubre Wave Engine: tutoriales (Channel 9)</title>
-<link>http://www.reddit.com/r/programming/comments/4ikh7v/descubre_wave_engine_tutoriales_channel_9/</link>
-<author>/u/waveengineteam - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ikh7v/descubre_wave_engine_tutoriales_channel_9/</guid>
-<pubDate>Mon, 09 May 2016 16:55:57 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/waveengineteam&quot;&gt; /u/waveengineteam &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://channel9.msdn.com/Series/Descubre-Wave-Engine-tutorialess&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ikh7v/descubre_wave_engine_tutoriales_channel_9/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
-</item>
-<item>
-<title>Google&apos;s ML Framework Tensorflow wins</title>
-<link>http://www.reddit.com/r/programming/comments/4ijeqi/googles_ml_framework_tensorflow_wins/</link>
-<author>/u/mjhirn - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ijeqi/googles_ml_framework_tensorflow_wins/</guid>
-<pubDate>Mon, 09 May 2016 12:53:14 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/mjhirn&quot;&gt; /u/mjhirn &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://medium.com/@mjhirn/tensorflow-wins-89b78b29aafb#.xzx4e3qc8&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ijeqi/googles_ml_framework_tensorflow_wins/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
-</item>
-<item>
-<title>Brilliant demo for &apos;Viv&apos; - Siri&apos;s successor</title>
-<link>http://www.reddit.com/r/programming/comments/4ikb5e/brilliant_demo_for_viv_siris_successor/</link>
-<author>/u/aakdevil - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ikb5e/brilliant_demo_for_viv_siris_successor/</guid>
-<pubDate>Mon, 09 May 2016 16:20:06 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/aakdevil&quot;&gt; /u/aakdevil &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://twitter.com/TechCrunch/status/729698387260383234&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ikb5e/brilliant_demo_for_viv_siris_successor/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Inside ImageTragick: The Real Payloads Being Used to Hack Websites</title>
+<link>http://www.reddit.com/r/programming/comments/4ik0qw/inside_imagetragick_the_real_payloads_being_used/</link>
+<author>/u/pimterry - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ik0qw/inside_imagetragick_the_real_payloads_being_used/</guid>
+<pubDate>Mon, 09 May 2016 15:20:09 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/pimterry&quot;&gt; /u/pimterry &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://blog.cloudflare.com/inside-imagetragick-the-real-payloads-being-used-to-hack-websites-2/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ik0qw/inside_imagetragick_the_real_payloads_being_used/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
 <title>Hardening the media stack on Android</title>
@@ -247,12 +329,28 @@
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/kiwigod170&quot;&gt; /u/kiwigod170 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://lifeimitatescode.com/programmings-three-life-lessons&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ijntv/programmings_three_life_lessons/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>What should you learn to get a [better] coding job</title>
-<link>http://www.reddit.com/r/programming/comments/4iguqx/what_should_you_learn_to_get_a_better_coding_job/</link>
-<author>/u/swizec - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4iguqx/what_should_you_learn_to_get_a_better_coding_job/</guid>
-<pubDate>Sun, 08 May 2016 23:10:13 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/swizec&quot;&gt; /u/swizec &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://medium.com/swizec-s-nightowls/what-should-you-learn-to-get-a-better-coding-job-6453ef083597&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4iguqx/what_should_you_learn_to_get_a_better_coding_job/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Solr Streaming Expressions for Collection auto-updating</title>
+<link>http://www.reddit.com/r/programming/comments/4ikhq0/solr_streaming_expressions_for_collection/</link>
+<author>/u/seti321 - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ikhq0/solr_streaming_expressions_for_collection/</guid>
+<pubDate>Mon, 09 May 2016 16:59:03 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/seti321&quot;&gt; /u/seti321 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://sematext.com/blog/2016/05/09/solr-streaming-expressions-reindexing/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ikhq0/solr_streaming_expressions_for_collection/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>How we deploy Twitter’s large scale distributed database</title>
+<link>http://www.reddit.com/r/programming/comments/4ikh7b/how_we_deploy_twitters_large_scale_distributed/</link>
+<author>/u/dabshitty - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ikh7b/how_we_deploy_twitters_large_scale_distributed/</guid>
+<pubDate>Mon, 09 May 2016 16:55:52 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/dabshitty&quot;&gt; /u/dabshitty &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://blog.twitter.com/2016/manhattan-software-deployments-how-we-deploy-twitter-s-large-scale-distributed-database&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ikh7b/how_we_deploy_twitters_large_scale_distributed/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>Brilliant demo for &apos;Viv&apos; - Siri&apos;s successor</title>
+<link>http://www.reddit.com/r/programming/comments/4ikb5e/brilliant_demo_for_viv_siris_successor/</link>
+<author>/u/aakdevil - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ikb5e/brilliant_demo_for_viv_siris_successor/</guid>
+<pubDate>Mon, 09 May 2016 16:20:06 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/aakdevil&quot;&gt; /u/aakdevil &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://twitter.com/TechCrunch/status/729698387260383234&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ikb5e/brilliant_demo_for_viv_siris_successor/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
 <title>Face Averaging : A C++ / Python Tutorial</title>
@@ -263,36 +361,198 @@
 <description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/spmallick&quot;&gt; /u/spmallick &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.learnopencv.com/average-face-opencv-c-python-tutorial/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ijnkh/face_averaging_a_c_python_tutorial/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>REST</title>
-<link>http://www.reddit.com/r/programming/comments/4ihutq/rest/</link>
-<author>/u/ThisIs_MyName - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ihutq/rest/</guid>
-<pubDate>Mon, 09 May 2016 03:36:10 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/ThisIs_MyName&quot;&gt; /u/ThisIs_MyName &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://mikehadlow.blogspot.com/2012/08/rest-epic-semantic-fail.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ihutq/rest/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Google&apos;s ML Framework Tensorflow wins</title>
+<link>http://www.reddit.com/r/programming/comments/4ijeqi/googles_ml_framework_tensorflow_wins/</link>
+<author>/u/mjhirn - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ijeqi/googles_ml_framework_tensorflow_wins/</guid>
+<pubDate>Mon, 09 May 2016 12:53:14 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/mjhirn&quot;&gt; /u/mjhirn &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://medium.com/@mjhirn/tensorflow-wins-89b78b29aafb#.xzx4e3qc8&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ijeqi/googles_ml_framework_tensorflow_wins/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>13 Line Nondeterministic Finite Automata in Haskell</title>
-<link>http://www.reddit.com/r/programming/comments/4ihpat/13_line_nondeterministic_finite_automata_in/</link>
-<author>/u/SSchlesinger - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ihpat/13_line_nondeterministic_finite_automata_in/</guid>
-<pubDate>Mon, 09 May 2016 02:54:01 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/SSchlesinger&quot;&gt; /u/SSchlesinger &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://github.com/SamuelSchlesinger/AutomataTheory/blob/master/NFA.hs&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ihpat/13_line_nondeterministic_finite_automata_in/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>MUM hash -- a fast non-cryptographic hash function</title>
+<link>http://www.reddit.com/r/programming/comments/4ihylr/mum_hash_a_fast_noncryptographic_hash_function/</link>
+<author>/u/redditprogrammingfan - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ihylr/mum_hash_a_fast_noncryptographic_hash_function/</guid>
+<pubDate>Mon, 09 May 2016 04:05:36 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/redditprogrammingfan&quot;&gt; /u/redditprogrammingfan &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://github.com/vnmakarov/mum-hash&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ihylr/mum_hash_a_fast_noncryptographic_hash_function/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>Monty Hall: the Complete and Definitive Solution</title>
-<link>http://www.reddit.com/r/programming/comments/4iidum/monty_hall_the_complete_and_definitive_solution/</link>
-<author>/u/loup-vaillant - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4iidum/monty_hall_the_complete_and_definitive_solution/</guid>
-<pubDate>Mon, 09 May 2016 06:24:56 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/loup-vaillant&quot;&gt; /u/loup-vaillant &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://loup-vaillant.fr/tutorials/monty-hall&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4iidum/monty_hall_the_complete_and_definitive_solution/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Using AutoMapper with StructureMap in ASP.NET Web API</title>
+<link>http://www.reddit.com/r/programming/comments/4iiuze/using_automapper_with_structuremap_in_aspnet_web/</link>
+<author>/u/one_eyed_golfer - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4iiuze/using_automapper_with_structuremap_in_aspnet_web/</guid>
+<pubDate>Mon, 09 May 2016 09:41:16 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/one_eyed_golfer&quot;&gt; /u/one_eyed_golfer &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.exceptionnotfound.net/using-automapper-with-structuremap-in-asp-net-web-api/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4iiuze/using_automapper_with_structuremap_in_aspnet_web/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
 </item>
 <item>
-<title>Xamarin Evolve 2016 Keynote (link to all sessions in comments)</title>
-<link>http://www.reddit.com/r/programming/comments/4ij3xv/xamarin_evolve_2016_keynote_link_to_all_sessions/</link>
-<author>/u/michalg82 - Radar ATAM.</author>
-<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ij3xv/xamarin_evolve_2016_keynote_link_to_all_sessions/</guid>
-<pubDate>Mon, 09 May 2016 11:18:09 +0000</pubDate>
-<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/michalg82&quot;&gt; /u/michalg82 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jgXCB51e4ak&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ij3xv/xamarin_evolve_2016_keynote_link_to_all_sessions/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+<title>Massive Throughput Database Queries with LLVM on GPUs</title>
+<link>http://www.reddit.com/r/programming/comments/4ii2nk/massive_throughput_database_queries_with_llvm_on/</link>
+<author>/u/vladmihalcea - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ii2nk/massive_throughput_database_queries_with_llvm_on/</guid>
+<pubDate>Mon, 09 May 2016 04:39:46 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/vladmihalcea&quot;&gt; /u/vladmihalcea &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://www.mapd.com/blog/2016/04/27/massive-throughput-database-queries-with-llvm-on-gpus/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ii2nk/massive_throughput_database_queries_with_llvm_on/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>Descubre Wave Engine: tutoriales (Channel 9)</title>
+<link>http://www.reddit.com/r/programming/comments/4ikh7v/descubre_wave_engine_tutoriales_channel_9/</link>
+<author>/u/waveengineteam - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ikh7v/descubre_wave_engine_tutoriales_channel_9/</guid>
+<pubDate>Mon, 09 May 2016 16:55:57 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/waveengineteam&quot;&gt; /u/waveengineteam &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://channel9.msdn.com/Series/Descubre-Wave-Engine-tutorialess&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ikh7v/descubre_wave_engine_tutoriales_channel_9/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>/r/MechanicalComputing - Processing without electrons</title>
+<link>http://www.reddit.com/r/programming/comments/4ijjkc/rmechanicalcomputing_processing_without_electrons/</link>
+<author>/u/wyldcraft - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ijjkc/rmechanicalcomputing_processing_without_electrons/</guid>
+<pubDate>Mon, 09 May 2016 13:30:15 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/wyldcraft&quot;&gt; /u/wyldcraft &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/mechanicalcomputing&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ijjkc/rmechanicalcomputing_processing_without_electrons/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>I&apos;m a good engineer but I suck at building stuff</title>
+<link>http://www.reddit.com/r/programming/comments/4ikrwn/im_a_good_engineer_but_i_suck_at_building_stuff/</link>
+<author>/u/iwas - Radar ATAM.</author>
+<guid isPermaLink="true">http://www.reddit.com/r/programming/comments/4ikrwn/im_a_good_engineer_but_i_suck_at_building_stuff/</guid>
+<pubDate>Mon, 09 May 2016 17:55:35 +0000</pubDate>
+<description>&#32; submitted by &#32; &lt;a href=&quot;http://www.reddit.com/user/iwas&quot;&gt; /u/iwas &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;http://lionelbarrow.com/2016/05/08/i-suck-at-building-stuff/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &#32; &lt;span&gt;&lt;a href=&quot;http://www.reddit.com/r/programming/comments/4ikrwn/im_a_good_engineer_but_i_suck_at_building_stuff/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</description>
+</item>
+<item>
+<title>Exploring Calvin and Hobbes – For fans interested in the history and inspiration behind a boy and his tiger</title>
+<link>http://boingboing.net/2016/05/09/exploring-calvin-and-hobbes.html</link>
+<author>Wink - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/09/exploring-calvin-and-hobbes.html</guid>
+<pubDate>Mon, 09 May 2016 19:08:11 +0000</pubDate>
+<description>&lt;p&gt;&lt;img width=&quot;600&quot; height=&quot;447&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/calvin-and-hobbes-exhibition.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;calvin-and-hobbes-exhibition&quot; srcset=&quot;http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/calvin-and-hobbes-exhibition.jpg?w=600 600w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/calvin-and-hobbes-exhibition.jpg?resize=300%2C224 300w&quot; sizes=&quot;(max-width: 600px) 100vw, 600px&quot; /&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://winkbooks.net/&quot;&gt;See sample pages from this book at Wink.&lt;/a&gt;
+
+&lt;p&gt;&lt;em&gt;Exploring Calvin and Hobbes: An Exhibition Catalogue&lt;/em&gt;
+
+&lt;br&gt;Bill Watterson and Robb Jenny
+
+&lt;br&gt;Andrews McMeel Publishing
+
+&lt;br&gt;2016, 160 pages, 8.5 x 11 x 0.6 inches (softcover)
+
+&lt;br&gt;$15 
+&lt;a class=&quot;amazon-button&quot; href=&quot;http://www.amazon.com/exec/obidos/ASIN/1449460364/thebooklab-20&quot;&gt;Buy a copy on Amazon&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I like many grew up on &lt;em&gt;Calvin and Hobbes&lt;/em&gt;. I don’t know if there’s a comic, book, film, or any other piece of art that better captures a childhood. I read every Sunday strip, most of the dailies, and the ones that I missed I would read in dog-eared collection books checked out from the library. As I got older, I wanted to know more about the strip’s creation. When I picked up the &lt;em&gt;Complete Calvin and Hobbes&lt;/em&gt;, a 14-pound tomb, I was a little disappointed. Other than an introduction, there was very little information about the mysterious creator Bill Watterson. Thankfully, &lt;em&gt;Exploring Calvin and Hobbes: An Exhibition Catalogue&lt;/em&gt; makes up for that. 
+
+&lt;/p&gt;&lt;p&gt;This is the Blu-Ray extras that &lt;em&gt;Calvin &amp;amp; Hobbes&lt;/em&gt; fans have been waiting for. It’s not for those casually interested in reading the strip. There are plenty of other books for that. But if you’re interested in process, history, and the inspiration behind a boy and his tiger, you’re going to love this book. 
+
+&lt;/p&gt;&lt;p&gt;The book explores an exhibit of Watterson’s work at the Billy Ireland Cartoon Museum. It also includes one of the most in-depth interviews he’s ever given. In it you get a rare look at his early work, the tools Watterson used, the struggles he went through, and the wonderful comic that he created. You get a real sense of the artistry that Watterson put into the strip, and how it evolved over the years. It’s great to relive and learn about something that had such an influence on me. This book is definitely a must-have for &lt;em&gt;Calvin and Hobbes&lt;/em&gt; fans. 
+
+&lt;em&gt;– JP LeRoux&lt;/em&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>I fixed my coffee maker in a bad way, then in an awesome way</title>
+<link>http://boingboing.net/2016/05/09/i-fixed-my-coffee-maker-in-a-b.html</link>
+<author>Mark Frauenfelder - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/09/i-fixed-my-coffee-maker-in-a-b.html</guid>
+<pubDate>Mon, 09 May 2016 19:03:33 +0000</pubDate>
+<description>&lt;p&gt;&lt;img width=&quot;1200&quot; height=&quot;900&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/moka.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;moka&quot; srcset=&quot;http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/moka.jpg?w=1200 1200w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/moka.jpg?resize=300%2C225 300w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/moka.jpg?resize=600%2C450 600w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/moka.jpg?resize=768%2C576 768w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/moka.jpg?resize=930%2C698 930w&quot; sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot; /&gt;&lt;/p&gt;&lt;p&gt;My &lt;a href=&quot;http://www.amazon.com/exec/obidos/ASIN/B00IEHKWY0/boingboing&quot;&gt;orange Bialetti Moka Express Stovetop Percolator&lt;/a&gt; is my version of the &lt;a href=&quot;https://youtu.be/Vd4fj9Efl4s&quot;&gt;red stapler&lt;/a&gt;. (I have a real &lt;a href=&quot;http://www.amazon.com/exec/obidos/ASIN/B0006HUQZ6/boingboing&quot;&gt;red stapler&lt;/a&gt;, too.)
+
+&lt;p&gt;Over the years, I&apos;ve tried to keep my Moka in pristine condition, but my family members don&apos;t care about it as much as I do. They would leave it on the burner after the water boiled up from the lower chamber to the upper chamber, which caused the bottom part to overheat and turn black. 
+
+&lt;p&gt;The final straw dropped on Saturday when one of my family members forgot to put water in it *and* forgot about it on the burner. I was in another room and when I smelled burning plastic, I knew what had happened. I ran into the kitchen and grabbed the handle with a dish rag. It stretched like taffy. Even the plastic knob on the lid was melted. Disgusted, I threw  the coffee maker in the trash. 
+
+&lt;p&gt;An hour later I pulled it out of the trash. I decided I could make a new handle. That was a good idea, but I idiotically thought I could get away with making a handle on a 3D printer. I &lt;a href=&quot;https://tinkercad.com/things/j4UmH44PXg4&quot;&gt;designed the handle&lt;/a&gt; on Tinkercad (a fantastic web-based 3D modeling application):
+
+&lt;p&gt;&lt;img src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/t725-9.png&quot;&gt;
+
+&lt;p&gt;I also designed a knob for the lid. It took about an hour to print out both pieces. While it was printing, I used a Dremel tool to remove the carbonized black stuff off of alternating facets of the octagonal boiler chamber. I was pleased with my new orange/green/black/silver Moka and posted a photo of it to &lt;a href=&quot;https://www.instagram.com/frauenfelder/&quot;&gt;my Instagram feed&lt;/a&gt;:
+
+&lt;blockquote class=&quot;instagram-media&quot; data-instgrm-captioned data-instgrm-version=&quot;6&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:8px;&quot;&gt; &lt;div style=&quot; background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;&quot;&gt; &lt;div style=&quot; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;&quot;&gt;&lt;/div&gt;&lt;/div&gt; &lt;p style=&quot; margin:8px 0 0 0; padding:0 4px;&quot;&gt; &lt;a href=&quot;https://www.instagram.com/p/BFIWLixie-3/&quot; style=&quot; color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;&quot; target=&quot;_blank&quot;&gt;The espresso maker that wouldn&#39;t die.&lt;/a&gt;&lt;/p&gt; &lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;A photo posted by Mark Frauenfelder (@frauenfelder) on &lt;time style=&quot; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&quot; datetime=&quot;2016-05-08T03:00:57+00:00&quot;&gt;May 7, 2016 at 8:00pm PDT&lt;/time&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;
+&lt;script async defer src=&quot;//platform.instagram.com/en_US/embeds.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;A few minutes later, I tried making coffee with it and the handle melted immediately. What was I thinking? I guess I&apos;d hoped the water in the boiler would absorb the heat so the handle wouldn&apos;t get hot enough to melt. Live and learn.
+
+&lt;p&gt;As a believer in the sunk cost fallacy, I didn&apos;t want to give up on making this thing work. I found a little bamboo cutting board that we don&apos;t use much (part of a &lt;a href=&quot;http://www.amazon.com/exec/obidos/ASIN/B00MI6GQFW/boingboing&quot;&gt;3-piece set&lt;/a&gt; I bought last year). I eyeballed a pencil outline for the handle on the board and cut it on a bandsaw. I made a knob from a scrap of 0.75-inch square lumber. The whole process took less than 20 minutes. I like the finished result so much that now I&apos;m happy my family member melted the handle and knob. I like my Moka now more than ever, and it seems to be working just fine (bamboo doesn&apos;t melt, and I hope it never gets so hot that it undergoes sublimation). Hurray for mistakes and happy accidents!</description>
+</item>
+<item>
+<title>Save iTunes: how the W3C&apos;s argument for web-wide DRM would have killed iTunes</title>
+<link>http://boingboing.net/2016/05/09/save-itunes-how-the-w3cs-ar.html</link>
+<author>Cory Doctorow - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/09/save-itunes-how-the-w3cs-ar.html</guid>
+<pubDate>Mon, 09 May 2016 18:01:27 +0000</pubDate>
+<description>&lt;p&gt;&lt;img width=&quot;1200&quot; height=&quot;600&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/drm-itunes2b.png&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;drm-itunes2b&quot; srcset=&quot;http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/drm-itunes2b.png?w=1200 1200w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/drm-itunes2b.png?resize=300%2C150 300w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/drm-itunes2b.png?resize=600%2C300 600w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/drm-itunes2b.png?resize=768%2C384 768w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/drm-itunes2b.png?resize=930%2C465 930w&quot; sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot; /&gt;&lt;/p&gt;&lt;p&gt;
+The World Wide Web Consortium&apos;s &lt;a href=&quot;https://www.eff.org/deeplinks/2013/10/lowering-your-standards&quot;&gt;plan to standardize web-wide digital rights management&lt;/a&gt; is based on the idea that if an entertainment company doesn&apos;t like a new technology, it should have the right to prevent that technology from coming into being.
+ &lt;a href=&quot;http://boingboing.net/2016/05/09/save-itunes-how-the-w3cs-ar.html#more-460992&quot; class=&quot;more-link&quot;&gt;(more&amp;hellip;)&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>If &quot;The Empire Strikes Back&quot; was a James Bond film, this would be the opening credits</title>
+<link>http://boingboing.net/2016/05/09/if-the-empire-strikes-back.html</link>
+<author>David Pescovitz - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/09/if-the-empire-strikes-back.html</guid>
+<pubDate>Mon, 09 May 2016 17:52:58 +0000</pubDate>
+<description>&lt;img width=&quot;600&quot; height=&quot;276&quot; src=&quot;http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/screenshot-6.jpg?fit=600%2C276&quot; class=&quot;attachment-medium size-medium wp-post-image&quot; alt=&quot;screenshot&quot; srcset=&quot;http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/screenshot-6.jpg?w=903 903w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/screenshot-6.jpg?resize=300%2C138 300w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/screenshot-6.jpg?resize=600%2C276 600w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/screenshot-6.jpg?resize=768%2C354 768w&quot; sizes=&quot;(max-width: 600px) 100vw, 600px&quot; /&gt; &lt;p&gt; &lt;P&gt;
+Created by &lt;a href=&quot;https://vimeo.com/165592795&quot;&gt;Kurt Rauffer&lt;/a&gt;, who writes:
+
+
+
+&lt;blockquote&gt;&lt;P&gt;Growing up in the 90s where Star Wars was released on VHS, the franchise really sparked my imagination as a child. It not only let me exercise my imagination but also supplied me with some of the happiest memories as I watched it with my family. After re-watching &quot;The Empire Strikes Back,&quot; I decided to use this as a chance to create a homage in the form of a title sequence. This would also serve as my senior &quot;thesis&quot; at SVA and took me the whole semester to complete.&lt;P&gt;
+The style and tone of the animation was inspired by the James Bond title sequences. The music was a rejected song from the newest Bond film, Spectre, sung by Radiohead. I really wanted to play on the concept of Luke trying to find himself and true purpose, so the music and inspiration felt fitting.&lt;/blockquote&gt;
+
+&lt;P&gt;
+&lt;img src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/screenshot-6.jpg&quot; alt=&quot;screenshot&quot; width=&quot;903&quot; height=&quot;416&quot; class=&quot;alignnone size-full wp-image-460987&quot; /&gt;
+&lt;P&gt;
+&lt;img src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/screenshot-7-930x417.jpg&quot; alt=&quot;screenshot&quot; width=&quot;930&quot; height=&quot;417&quot; class=&quot;alignnone size-large wp-image-460988&quot; /&gt;</description>
+</item>
+<item>
+<title>America&apos;s courts are going dark</title>
+<link>http://boingboing.net/2016/05/09/americas-courts-are-going-da.html</link>
+<author>Cory Doctorow - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/09/americas-courts-are-going-da.html</guid>
+<pubDate>Mon, 09 May 2016 17:38:40 +0000</pubDate>
+<description>&lt;p&gt;&lt;img width=&quot;1006&quot; height=&quot;768&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/1006px-Oak_Ridge_Wise_Monkeys.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;1006px-Oak_Ridge_Wise_Monkeys&quot; srcset=&quot;http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/1006px-Oak_Ridge_Wise_Monkeys.jpg?w=1006 1006w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/1006px-Oak_Ridge_Wise_Monkeys.jpg?resize=300%2C229 300w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/1006px-Oak_Ridge_Wise_Monkeys.jpg?resize=600%2C458 600w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/1006px-Oak_Ridge_Wise_Monkeys.jpg?resize=768%2C586 768w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/1006px-Oak_Ridge_Wise_Monkeys.jpg?resize=930%2C710 930w&quot; sizes=&quot;(max-width: 1006px) 100vw, 1006px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;
+US Federal Magistrate judge Stephen William Smith sounds the alarm about the skyrocketing trend of US courts operating in secret, with their findings (or even the fact that they&apos;re hearing a case at all) sealed to scrutiny, and an ever-increasing portion of judicial action taking place in off-record arbitration. 
+
+ &lt;a href=&quot;http://boingboing.net/2016/05/09/americas-courts-are-going-da.html#more-460977&quot; class=&quot;more-link&quot;&gt;(more&amp;hellip;)&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Watch this terrific Rube Goldberg magnet-and-marble tabletop demo</title>
+<link>http://boingboing.net/2016/05/09/watch-this-terrific-rube-goldb.html</link>
+<author>David Pescovitz - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/09/watch-this-terrific-rube-goldb.html</guid>
+<pubDate>Mon, 09 May 2016 17:32:24 +0000</pubDate>
+<description>&lt;img width=&quot;600&quot; height=&quot;338&quot; src=&quot;http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/lYVJQ7.gif?fit=600%2C338&quot; class=&quot;attachment-medium size-medium wp-post-image&quot; alt=&quot;&quot; /&gt; &lt;p&gt; &lt;P&gt;
+Kaplamino made this delightful Rube Goldberg-esque demo using magnets and steel balls. 
+&lt;P&gt;
+
+&lt;img src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/lYVJQ7.gif&quot; alt=&quot;&quot; width=&quot;640&quot; height=&quot;360&quot; class=&quot;alignright size-full wp-image-460979&quot; /&gt;</description>
+</item>
+<item>
+<title>Galactic Warfighters: recreating photos of US soldiers in battle using Star Wars action figures</title>
+<link>http://boingboing.net/2016/05/09/galactic-warfighters-recreati.html</link>
+<author>Cory Doctorow - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/09/galactic-warfighters-recreati.html</guid>
+<pubDate>Mon, 09 May 2016 17:27:03 +0000</pubDate>
+<description>&lt;p&gt;&lt;img width=&quot;1500&quot; height=&quot;1000&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/120420-IN448-6310.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;120420-IN448-6310&quot; srcset=&quot;http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/120420-IN448-6310.jpg?w=1500 1500w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/120420-IN448-6310.jpg?resize=300%2C200 300w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/120420-IN448-6310.jpg?resize=600%2C400 600w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/120420-IN448-6310.jpg?resize=768%2C512 768w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/120420-IN448-6310.jpg?resize=930%2C620 930w&quot; sizes=&quot;(max-width: 1500px) 100vw, 1500px&quot; /&gt;&lt;/p&gt;https://vimeo.com/164726039
+&lt;p&gt;
+Matthew Callahan&apos;s Galactic Warfighters series poses Star Wars action figures in scenes that recreate war journalism from US operations, captioned with AP-style slugs that conjure up the human cost of the battles hidden by the inscrutable armor of the Empire.
+ &lt;a href=&quot;http://boingboing.net/2016/05/09/galactic-warfighters-recreati.html#more-460972&quot; class=&quot;more-link&quot;&gt;(more&amp;hellip;)&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Moving short animation about a boy and his three-legged puppy</title>
+<link>http://boingboing.net/2016/05/09/moving-short-animation-about-a.html</link>
+<author>Cory Doctorow - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/09/moving-short-animation-about-a.html</guid>
+<pubDate>Mon, 09 May 2016 17:21:30 +0000</pubDate>
+<description>&lt;img width=&quot;320&quot; height=&quot;180&quot; src=&quot;http://i0.wp.com/media.boingboing.net/wp-content/uploads/2016/05/animation-3-1.gif?fit=320%2C180&quot; class=&quot;attachment-medium size-medium wp-post-image&quot; alt=&quot;animation (3)&quot; /&gt; &lt;p&gt; &lt;p&gt;
+
+&lt;a href=&quot;https://vimeo.com/152985022&quot;&gt;The Present&lt;/a&gt;, Jacob Frey&apos;s four-minute short about a young boy who&apos;s not sure about the three-legged puppy his mom gives him, won more than 50 awards and played more than 180 festivals -- it&apos;s got a sting in its tail (and its tale).
+ &lt;a href=&quot;http://boingboing.net/2016/05/09/moving-short-animation-about-a.html#more-460968&quot; class=&quot;more-link&quot;&gt;(more&amp;hellip;)&lt;/a&gt;&lt;/p&gt;</description>
+</item>
+<item>
+<title>Australian government issues report calling for copyright and patent liberalisation</title>
+<link>http://boingboing.net/2016/05/09/australian-government-issues-r.html</link>
+<author>Cory Doctorow - Radar ATAM.</author>
+<guid isPermaLink="true">http://boingboing.net/2016/05/09/australian-government-issues-r.html</guid>
+<pubDate>Mon, 09 May 2016 17:16:56 +0000</pubDate>
+<description>&lt;p&gt;&lt;img width=&quot;712&quot; height=&quot;456&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1054-1.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1054&quot; srcset=&quot;http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1054-1.jpg?w=712 712w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1054-1.jpg?resize=300%2C192 300w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1054-1.jpg?resize=600%2C384 600w&quot; sizes=&quot;(max-width: 712px) 100vw, 712px&quot; /&gt;&lt;/p&gt;&lt;p&gt;
+The Australian Productivity Commission has published its long-awaited, 600-page draft report on the country&apos;s copyright and patent laws, which are largely the product of diplomatic pressure from the US government, fronting for US entertainment industry associations. 
+
+ &lt;a href=&quot;http://boingboing.net/2016/05/09/australian-government-issues-r.html#more-460957&quot; class=&quot;more-link&quot;&gt;(more&amp;hellip;)&lt;/a&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>Iconic NYC record store Other Music to shut its doors</title>
@@ -326,12 +586,15 @@ A joint report by RNZ, TVNZ and Nicky Hager accuses New Zealand of being at the 
  &lt;a href=&quot;http://boingboing.net/2016/05/09/panama-papers-new-zealand-is.html#more-460950&quot; class=&quot;more-link&quot;&gt;(more&amp;hellip;)&lt;/a&gt;&lt;/p&gt;</description>
 </item>
 <item>
-<title>Panama Papers: King of Saudi Arabia accused of secretly donating $80M to Netanyahu&apos;s Israeli election campaign</title>
+<title>UPDATE Panama Papers: King of Saudi Arabia accused of secretly donating $80M to Netanyahu&apos;s Israeli election campaign</title>
 <link>http://boingboing.net/2016/05/09/panama-papers-king-of-saudi-a.html</link>
 <author>Cory Doctorow - Radar ATAM.</author>
 <guid isPermaLink="true">http://boingboing.net/2016/05/09/panama-papers-king-of-saudi-a.html</guid>
 <pubDate>Mon, 09 May 2016 16:50:17 +0000</pubDate>
 <description>&lt;p&gt;&lt;img width=&quot;1122&quot; height=&quot;701&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1053-1.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1053&quot; srcset=&quot;http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1053-1.jpg?w=1122 1122w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1053-1.jpg?resize=300%2C187 300w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1053-1.jpg?resize=600%2C375 600w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1053-1.jpg?resize=768%2C480 768w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/056c026d-1c66-4d42-9fae-a8e96df290c5-1020x1053-1.jpg?resize=930%2C581 930w&quot; sizes=&quot;(max-width: 1122px) 100vw, 1122px&quot; /&gt;&lt;/p&gt;&lt;p&gt;
+&lt;b&gt;Update&lt;/b&gt;: Opposition Labour leader Isaac Herzog, identified in the original article as the source accusation  &lt;a href=&quot;https://twitter.com/yossi_melman/status/729712682451013633&quot;&gt;denies having made the accusation&lt;/a&gt;; and called the websites claiming he did &quot;unsane.&quot;
+
+&lt;/p&gt;&lt;p&gt;
 It&apos;s hard to enumerate all the people to whom this would be politically significant: the Israeli opposition; leadership rivals from Benjamin Netanyahu&apos;s own party; Islamists who are at odds with wahabiism; fighters in Yemen and other territories where Saudi is fighting direct or proxy wars, and the citizens and elites of those countries. 
  &lt;a href=&quot;http://boingboing.net/2016/05/09/panama-papers-king-of-saudi-a.html#more-460940&quot; class=&quot;more-link&quot;&gt;(more&amp;hellip;)&lt;/a&gt;&lt;/p&gt;</description>
 </item>
@@ -379,7 +642,7 @@ Ricky from &lt;a href=&quot;https://insidethemagic.net&quot;&gt;Inside the Magic
 <guid isPermaLink="true">http://boingboing.net/2016/05/09/british-punks-then-and-now.html</guid>
 <pubDate>Mon, 09 May 2016 16:29:39 +0000</pubDate>
 <description>&lt;p&gt;&lt;img width=&quot;624&quot; height=&quot;410&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/screenshot-4.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;screenshot&quot; srcset=&quot;http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/screenshot-4.jpg?w=624 624w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/screenshot-4.jpg?resize=300%2C197 300w, http://i2.wp.com/media.boingboing.net/wp-content/uploads/2016/05/screenshot-4.jpg?resize=600%2C394 600w&quot; sizes=&quot;(max-width: 624px) 100vw, 624px&quot; /&gt;&lt;/p&gt;&lt;P&gt;
-The Guardian featured essays by UK punks who made the scene when it first emerged in the late 1970s. Above, Terry Chimes, 59, original drummer for The Clash, now a chiropractor.&lt;P&gt;
+&lt;a href=&quot;http://www.theguardian.com/music/2016/may/07/never-mind-bus-pass-punks-look-back-wildest-days&quot;&gt;The Guardian&lt;/a&gt; featured essays by UK punks who made the scene when it first emerged in the late 1970s. Above, Terry Chimes, 59, original drummer for The Clash, now a chiropractor.&lt;P&gt;
 &quot;I just wanted to be in a band, and this was the most exciting band I could find,&quot; he writes. &quot;Everyone else in The Clash was angry at the world and the establishment. I wasn’t. That’s why I left, actually. I felt like the odd one out.
 &lt;P&gt;
 Below, Jordan, 60, Sex Pistols stylist, Adam and the Ants, manager, now a nurse.
@@ -502,24 +765,6 @@ State medical boards are hybrids: part independent regulator, part industry asso
  &lt;a href=&quot;http://boingboing.net/2016/05/09/safe-patient-project-searchab.html#more-460900&quot; class=&quot;more-link&quot;&gt;(more&amp;hellip;)&lt;/a&gt;&lt;/p&gt;</description>
 </item>
 <item>
-<title>Become a WordPress Wizard with this comprehensive training bundle - just $49</title>
-<link>http://boingboing.net/2016/05/08/become-a-wordpress-wizard-with.html</link>
-<author>Boing Boing&apos;s Store - Radar ATAM.</author>
-<guid isPermaLink="true">http://boingboing.net/2016/05/08/become-a-wordpress-wizard-with.html</guid>
-<pubDate>Sun, 08 May 2016 17:16:58 +0000</pubDate>
-<description>&lt;p&gt;&lt;img width=&quot;630&quot; height=&quot;473&quot; src=&quot;http://media.boingboing.net/wp-content/uploads/2016/05/original_sale_3788_image.jpg&quot; class=&quot;attachment-post-thumbnail size-post-thumbnail wp-post-image&quot; alt=&quot;&quot; srcset=&quot;http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/original_sale_3788_image.jpg?w=630 630w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/original_sale_3788_image.jpg?resize=300%2C225 300w, http://i1.wp.com/media.boingboing.net/wp-content/uploads/2016/05/original_sale_3788_image.jpg?resize=600%2C450 600w&quot; sizes=&quot;(max-width: 630px) 100vw, 630px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;With all due respect to web content management systems like Drupal and Joomla, there’s a reason why Wordpress is king. Wordpress owns 60% of the CMS market and powers more than a quarter of all online sites. It’s open-source, SEO friendly, and streamlines the process of building and maintaining nearly any type of website. &lt;/p&gt;
-
-&lt;p&gt;Obviously, having a stockpile of Wordpress knowledge can be a big boost to your resume - so consider grabbing this jam-packed Wordpress Wizard bundle of courses, &lt;a href=&quot;https://store.boingboing.net/sales/wordpress-wizard-bundle?utm_source=boingboing.net&amp;amp;utm_medium=referral&amp;amp;utm_campaign=wordpress-wizard-bundle_050816&quot;&gt;now only $49&lt;/a&gt; in the Boing Boing Store.&lt;/p&gt;
-
-&lt;p&gt;Over 12 courses, you’ll unpack all the Wordpress techniques and tricks used by top-flight web developers, from creation to administration to utilizing 3rd party programs to further augment your Wordpress site.&lt;/p&gt;
-
-&lt;p&gt;You’ll receive the following courses:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;b&gt;Become a WordPress &amp;amp; WordPress Nirvana Expert Course&lt;/b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;How I Make $4000 Each Month Blogging&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Learn WordPress by Building 2 Responsive Websites&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Make an App for Your WordPress Website&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Creating a Business Website with a Responsive Design&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Build Your Brand: Blogging, SEO, Social Media &amp;amp; Relationships&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Bootstrap to WordPress: Build Custom Responsive Themes&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Talking With Clients – Creating a WordPress Website&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;WishList Member &amp;amp; WordPress: Create a Membership Site&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Develop WordPress Sites &amp;amp; Earn Money With Affiliate Programs&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;WordPress E-Commerce with WooCommerce&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Build a Money Making Website For Beginners: Work From Home&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
-
-&lt;p&gt;This course package would normally cost over $1,100, so lock in &lt;a href=&quot;https://store.boingboing.net/sales/wordpress-wizard-bundle?utm_source=boingboing.net&amp;amp;utm_medium=referral&amp;amp;utm_campaign=wordpress-wizard-bundle_050816&quot;&gt;this limited-time price of $49&lt;/a&gt; now.&lt;/p&gt;</description>
-</item>
-<item>
 <title>Ulrik Heltoft: 7 Films, One Photo and a Silver Nose</title>
 <link>http://www.digicult.it/art/ulrik-heltoft-7-films-one-photo-and-a-silver-nose/</link>
 <author>Redazione Digicult - Radar ATAM.</author>
@@ -572,11 +817,11 @@ State medical boards are hybrids: part independent regulator, part industry asso
 <item>
 <title>Prequel Tapes – Inner Systems</title>
 <link>http://neural.it/2016/05/prequel-tapes-inner-systems/</link>
-<author>Aurelio Cianciotta - Radar ATAM.</author>
+<author> - Radar ATAM.</author>
 <guid isPermaLink="true">http://neural.it/2016/05/prequel-tapes-inner-systems/</guid>
-<pubDate>Mon, 09 May 2016 07:20:09 +0000</pubDate>
-<description>&lt;p&gt;&lt;strong class=&quot;pub-details&quot;&gt;CD &#8211; R’COUP’D&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Coming from R&#8217;COUP&#8217;D, the parent of the famous Ninja Tunes label, Inner Systems is the latest record by Prequel Tapes. The identity behind the moniker is not known but the music tells a story of an English &lt;a class=&quot;read-more&quot; href=&quot;http://neural.it/2016/05/prequel-tapes-inner-systems/&quot;&gt;&#8594;&lt;/a&gt;</description>
+<pubDate>Mon, 09 May 2016 09:20:09 +0200</pubDate>
+<description>&lt;p&gt;&lt;strong&gt;CD &amp;ndash; R&amp;rsquo;COUP&amp;rsquo;D&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Coming from R&amp;rsquo;COUP&amp;rsquo;D, the parent of the famous Ninja Tunes label, Inner Systems is the latest record by Prequel Tapes. The identity behind the moniker is not known but the music tells a story of an English &lt;a href=&quot;http://neural.it/2016/05/prequel-tapes-inner-systems/&quot;&gt;&amp;rarr;&lt;/a&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>Radiohead &#8220;A Moon Shaped Pool&#8221;</title>
@@ -607,6 +852,48 @@ class=&quot;meta-nav&quot;&gt;&#8594;&lt;/span&gt;&lt;/a&gt;</description>
 <description>Online photography magazine Fotografia is looking to create an online photobook store curated with the best photobooks around. Featuring titles from publishers like Aperture, MACK, Self Publish Be Happy, Morel Books, they&#8217;re currently looking to fellow photobook lovers to help fund their &#8230; &lt;a
 href=&quot;http://www.booooooom.com/2016/05/09/crowdfund-project-of-the-day-fotomarket-by-fotografia/&quot;&gt;Continue reading &lt;span
 class=&quot;meta-nav&quot;&gt;&#8594;&lt;/span&gt;&lt;/a&gt;</description>
+</item>
+<item>
+<title>What is an open source program office? And why do you need one?</title>
+<link>https://opensource.com/business/16/5/whats-open-source-program-office</link>
+<author>johnmark - Radar ATAM.</author>
+<guid isPermaLink="true">https://opensource.com/business/16/5/whats-open-source-program-office</guid>
+<pubDate>Mon, 09 May 2016 03:03:00 -0400</pubDate>
+<description>&lt;img typeof=&quot;foaf:Image&quot; src=&quot;https://opensource.com/sites/default/files/images/business/BIZ_OpenInnovation.png&quot; width=&quot;520&quot; height=&quot;292&quot; alt=&quot;What is an open source program office?&quot; title=&quot;What is an open source program office?&quot; /&gt;&lt;p&gt;The open source program office is an essential part of any modern company with a reasonably ambitious plan to influence various sectors of software ecosystems. If a company wants to increase its influence, clarify its open source messaging, maximize the clout of its projects, or increase the efficiency of its product development, a multifaceted approach to open source programs is essential. Having viewed the operations of many such teams, I have summarized six common characteristics of successful open source programs:&lt;/p&gt;
+&lt;br&gt;
+&lt;a href=&quot;https://opensource.com/business/16/5/whats-open-source-program-office&quot;&gt;read more&lt;/a&gt;</description>
+</item>
+<item>
+<title>PittMesh routers are owned by individuals</title>
+<link>https://opensource.com/life/16/5/pittmesh</link>
+<author>JustinG - Radar ATAM.</author>
+<guid isPermaLink="true">https://opensource.com/life/16/5/pittmesh</guid>
+<pubDate>Mon, 09 May 2016 03:02:00 -0400</pubDate>
+<description>&lt;img typeof=&quot;foaf:Image&quot; src=&quot;https://opensource.com/sites/default/files/images/life/OSDC_Internet_Cables_520x292_0614_RD.png&quot; width=&quot;520&quot; height=&quot;292&quot; alt=&quot;Pittmesh: A community-owned wireless network&quot; title=&quot;Pittmesh: A community-owned wireless network&quot; /&gt;&lt;p&gt;We live in a society where large corporations essentially own two of the major ways we communicate: telephone (mobile and landlines) and the Internet (email, chat, etc). While paying for services to correspond with others over long distances might make sense, modern technology gives us better and more affordable options for communicating with those close to us. If you have wireless networking equipment in your home that is capable of communicating with your neighbor&apos;s equipment, why not just communicate directly with them?&lt;/p&gt;
+&lt;br&gt;
+&lt;a href=&quot;https://opensource.com/life/16/5/pittmesh&quot;&gt;read more&lt;/a&gt;</description>
+</item>
+<item>
+<title>What can you do with open data?</title>
+<link>https://opensource.com/business/16/5/what-can-you-do-open-data</link>
+<author>ghaff - Radar ATAM.</author>
+<guid isPermaLink="true">https://opensource.com/business/16/5/what-can-you-do-open-data</guid>
+<pubDate>Mon, 09 May 2016 03:01:00 -0400</pubDate>
+<description>&lt;img typeof=&quot;foaf:Image&quot; src=&quot;https://opensource.com/sites/default/files/images/business/bus-big-data.png&quot; width=&quot;520&quot; height=&quot;292&quot; alt=&quot;What can you do with open data?&quot; title=&quot;What can you do with open data?&quot; /&gt;&lt;p&gt;Play a word association game and the word &quot;open&quot; will almost surely be followed by &quot;source.&quot; And open source is certainly an important force for preserving user freedoms and access to computing. However, code isn&apos;t the only form of openness that&apos;s important.&lt;/p&gt;
+&lt;br&gt;
+&lt;a href=&quot;https://opensource.com/business/16/5/what-can-you-do-open-data&quot;&gt;read more&lt;/a&gt;</description>
+</item>
+<item>
+<title>Roadmaps, reflections, and more OpenStack news</title>
+<link>https://opensource.com/business/16/5/openstack-news-may-9</link>
+<author>Jason Baker - Radar ATAM.</author>
+<guid isPermaLink="true">https://opensource.com/business/16/5/openstack-news-may-9</guid>
+<pubDate>Mon, 09 May 2016 02:59:00 -0400</pubDate>
+<description>&lt;img typeof=&quot;foaf:Image&quot; src=&quot;https://opensource.com/sites/default/files/images/business/OSDC_blue_OpenStackclouds.png&quot; width=&quot;520&quot; height=&quot;292&quot; alt=&quot;OpenStack News&quot; title=&quot;OpenStack News&quot; /&gt;&lt;p&gt;Are you interested in keeping track of what is happening in the open source cloud? Opensource.com is your source for news in &lt;a href=&quot;https://opensource.com/resources/what-is-openstack&quot; target=&quot;_blank&quot; title=&quot;What is OpenStack?&quot;&gt;OpenStack&lt;/a&gt;, the open source cloud infrastructure project.&lt;/p&gt;
+&lt;h3&gt;OpenStack around the web&lt;/h3&gt;
+&lt;p&gt;There is a lot of interesting stuff being written about OpenStack. Here&apos;s a sampling from some of our favorites:&lt;/p&gt;
+&lt;br&gt;
+&lt;a href=&quot;https://opensource.com/business/16/5/openstack-news-may-9&quot;&gt;read more&lt;/a&gt;</description>
 </item>
 <item>
 <title>James Baldwin on Freedom and How We Imprison Ourselves</title>

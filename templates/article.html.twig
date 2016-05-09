@@ -4,14 +4,13 @@
 		<h4>
 			{% spaceless %}<a target="_BLANK" href="{{entry.link}}">{{entry.title}}</a>{% endspaceless %}
 			<span class="anchor">
-				<a href="#{{entry.title|slug}}">
-					#</a>
+				<a href="#{{entry.title|slug}}">#</a>
 			</span>
 		</h4>
 	</header>
 
 	<div class="content">
-		{{ entry.content|raw }}
+		{{ entry.content|replace({'hspace="5"': ''})|raw}}
 	</div>
 
 	<footer>

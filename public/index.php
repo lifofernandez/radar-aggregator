@@ -25,15 +25,11 @@ if(isset($_GET["categoria"])){
 
 
 
-
 /*	Twig 	*/
 
 $loader = new Twig_Loader_Filesystem('../templates');
 $twig = new Twig_Environment($loader);
-
-
 $twig->addExtension(new Twig_Extensions_Extension_Intl());
-
 
 // Custom Filter 'slug' 
 $filter = new Twig_SimpleFilter('slug', function ($string) {
@@ -44,11 +40,8 @@ $filter = new Twig_SimpleFilter('slug', function ($string) {
 });
 $twig->addFilter($filter);
 
-
 // Templates 
 $template = $twig->loadTemplate('index.html.twig');
-// $style = $twig->loadTemplate('overrides.css.twig');
-
 
 
 /*	Cargar	*/
@@ -78,15 +71,27 @@ if(isset($categoria)){
 
 
 /*	Render	*/
+// $html = $template->render($feeds);
+
+// $config = array(
+//            'indent'         => true,
+//            'output-xhtml'   => true,
+//            'wrap'           => 200);
+
+// // Tidy
+// $tidy = new tidy;
+// $tidy->parseString($html, $config, 'utf8');
+// $tidy->cleanRepair();
+
+// Output
+// echo $tidy;
+
 
 echo $template->render($feeds);
 
 
 
 /*	Leesto!	*/
-
-
-
 
 
 
