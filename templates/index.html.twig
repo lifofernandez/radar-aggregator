@@ -9,14 +9,14 @@
 	<title>RAM | Radar de noticias de Artes Multimediales</title>
 
 	<!-- Google Fonts -->
-	<link 
-		rel="stylesheet" 
+	<link
+		rel="stylesheet"
 		href="https://fonts.googleapis.com/css?
 			family=Roboto+Mono:400,100,300,400italic,500,700">
 
-	<!-- <link 
+	<!-- <link
 		href='https://fonts.googleapis.com/css?
-			family=Source+Code+Pro:400,700,500,200,300,600,900' 
+			family=Source+Code+Pro:400,700,500,200,300,600,900'
 		rel='stylesheet'
 	 	type='text/css'> -->
 
@@ -34,151 +34,8 @@
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://multimediales.com.ar/rss">
 
 
+	{% include 'overrides.css.twig' %}
 
-	<style type="text/css">
-
-
-
-		body{
-			font-family: "Roboto Mono", Courrier, monospace;
-		}
-		nav{
-			/*padding-top: 15px;*/
-		}
-		nav ul li{
-			list-style: none;
-			margin-bottom: .1rem;
-		/*	padding: .3rem 0;*/
-		}
-		nav {
-			font-size: 1.1rem;
-			line-height: 1.6rem;
-		}
-		body > header,
-		section,
-		body > footer{
-			/*width: 680px;margin: 0px auto;*/
-		}
-		section{
-			/*margin-bottom: 100px;*/
-			padding-top: 33px;
-		}
-
-		article{
-			/*width: 680px;*/
-			/*margin: 40px 0;*/
-			border-bottom: 1px solid #d3d3d3;
-			padding-top: 47px;
-			/*padding-top: 13px;*/
-		}
-		section article:last-child{
-			border-bottom-width: 0px;
-		}
-		article .content{
-			font-weight: 300;
-		}
-		
-		a{
-			color: #007C85;
-		}
-		.fecha{
-			font-weight: 100;
-		}
-		.content img{
-			display: block;
-			margin-bottom: 10px;
-			width: 100%;
-			height: auto;
-		}
-
-		#http://hackaday.com .content img, 
-		#http://we-make-money-not-art.com .content img{
-			display: none;
-		}
-		
-		article > footer{
-			margin-top: 20px;
-			padding: 5px 0;
-			text-align: right;
-			/*background: #007C85;*/
-			/*color: white;*/
-		}
-		.cat{
-			font-weight: 500;
-		}
-
-		.subrrayado{
-			border-bottom: 1px solid #d3d3d3;
-			padding-bottom: 5px;
-			margin-bottom: .5rem !important;
-		}
-		
-		.anchor a{
-			font-size: 2rem;
-			color: #d3d3d3;
-		}
-		.subtitulo{
-			font-size: 1.5rem;
-			/*color: #007C85;*/
-			/*font-weight: 700;*/
-			padding-left: 2px;
-			font-weight: 100;
-		}
-
-
-		
-		/*.resaltado a,.resaltado {
-			color:red;
-		}*/
-		
-
-		body > footer{
-			padding:50px 0;
-		}
-
-		/* aca agrego css segun params */
-
-		.{{ cats|join(', .') }}{
-			color: red;
-		}
-
-
-		/* ajuste relacion entre los titulos */
-		h1 {
-    	font-size: 7rem;
-    	font-weight: 100;
-		}
-		h2 {
-			/*font-size: 3.8rem;*/ /*	originalmente de h3 */
-			font-weight: 100;
-		}
-		h3 {
-			/*font-size: 3.6rem;*/ /*	originalmente de h4 */
-			font-weight: 100;
-			letter-spacing: 0rem
-		}
-		h4{
-			font-size: 2.2rem; /*	originalmente de h5 */
-			font-weight: 500;
-		}
-
-
-		/* hueevaa */
-		.row{
-			/*height: 100%;*/
-		}
-		.column{
-			/*height: 100%;
-			background: #d3d3d3;*/
-		}
-		section{
-			/*background: white;
-			margin: 0px -1rem;
-			padding: 0px 1rem;
-			padding-bottom: 100px;*/
-		}
-
-	</style>
 
 </head>
 
@@ -192,30 +49,30 @@
 
 			<header class="pinned fondeado">
 			<nav>
-				<h1>RAM</h1>
+				<h1 class="title"><a href="/">RAM</a></h1>
 
-				<ul><strong>Canales:</strong>
+				<ul class="menu canales"><strong>Canales:</strong>
 					{% for feed in feeds %}
+
 						<li>
-							<a
-								class="{{ feed.categories|join(' ') }}" 
+							{% spaceless %}<a
+								class="{{ feed.categories|join(' ') }}"
 								title="{{ feed.url }}"
 								href="/#{{ feed.url }}">
-								{{ feed.name|raw }}
-							</a> [{{ feed.entries|length }}]
+								{{ feed.name|raw }}</a>{% endspaceless %}
+								[{{ feed.entries|length }}]
 						</li>
-
-
 
 					{% endfor %}
 
 				</ul>
 
+
+
+				<p class="menu categorias">
 				<strong>Categorias:</strong><br>
-				
-				<p>
 					{% for cat in categories_main %}
-						
+
 						{# actualizo el estado de la categoria si es que tiene contenido #}
 						{% set estado = 'empty' %}
 						{% for feed in feeds %}
@@ -254,12 +111,12 @@
 
 				<header>
 					<h2>Radar de noticias de Artes Multimediales</h2><br>
-					<p><small>Los articulos a continuación fueron publicados 
+					<p><small>Los artículos a continuación fueron publicados
+					en sus respectivos canales, el contenido del mismo y las opiniones
+					expresadas son de exclusiva responsabilidad de los autores; su
+					recopilación en esta página es sin fines de lucro y no tiene otro motivo que la divulgación de temas relacionados a la carrera.
 					{# timestamp|localizeddate("J d \\d\\e M \\d\\e Y","none", locale) #}
-					en sus respectivos canales, el contenido del mismo y las opiniones 
-					expresadas son de exclusiva responsabilidad de los autores; su 
-					recopilacion en esta página es sin fines delucro y no tiene otro motivo 
-					que la divulgación de temas ralacionados con la carrera.</small></p>
+					</small></p>
 				</header >
 
 				{% for feed in feeds %}
@@ -284,7 +141,7 @@
 	<footer>
 		<a target="_BLANK" href="http://una.edu.ar/">
 			Universidad Nacional del las Artes
-		</a> / 
+		</a> /
 		<a target="_BLANK" href="http://multimedia.una.edu.ar/">
 			Área Transdepartamental de Artes Multimediales
 		</a>
@@ -295,7 +152,7 @@
 		src="http://code.jquery.com/jquery-2.2.3.min.js"
 		integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
 		crossorigin="anonymous"></script>
-	<script 
+	<script
 		src="https://cdn.jsdelivr.net/jquery.pin/1.0.3/jquery.pin.min.js"></script>
 
 	<script>

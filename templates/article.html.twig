@@ -2,9 +2,7 @@
 
 	<header>
 		<h4>
-			<a target="_BLANK" href="{{entry.link}}">
-				{{entry.title}}
-			</a>
+			{% spaceless %}<a class="fancy" target="_BLANK" href="{{entry.link}}">{{entry.title}}</a>{% endspaceless %}
 			<span class="anchor">
 				<a href="#{{entry.link}}">
 					#</a>
