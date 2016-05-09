@@ -2,7 +2,7 @@
 
 	<header>
 		<h4>
-			{% spaceless %}<a target="_BLANK" href="{{ entry.title|slug}}">{{entry.title}}</a>{% endspaceless %}
+			{% spaceless %}<a target="_BLANK" href="{{entry.link}}">{{entry.title}}</a>{% endspaceless %}
 			<span class="anchor">
 				<a href="#{{entry.title|slug}}">
 					#</a>

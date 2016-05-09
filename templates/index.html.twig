@@ -57,9 +57,9 @@
 
 						<li>
 							{% spaceless %}<a
-								class="{{ feed.categories|join(' ') }}"
-								title="{{ feed.url }}"
-								href="/#{{ feed.name|slug }}">
+								class="{{feed.categories|join(' ')}}"
+								title="{{feed.url}}"
+								href="/#{{feed.name|slug}}">
 								{{ feed.name|raw }}</a>{% endspaceless %}
 								[{{ feed.entries|length }}]
 						</li>
