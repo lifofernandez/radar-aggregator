@@ -1,5 +1,7 @@
 <?php
 
+
+
 /*	Imports	*/
 
 //////////////
@@ -14,7 +16,8 @@
 require_once '../vendor/autoload.php';
 
 
-/* Params 	*/
+
+/*	Params 	*/
 
 if(isset($_GET["categoria"])){
 	$categoria = $_GET["categoria"];
@@ -22,15 +25,30 @@ if(isset($_GET["categoria"])){
 
 
 
+
 /*	Twig 	*/
 
 $loader = new Twig_Loader_Filesystem('../templates');
 $twig = new Twig_Environment($loader);
+
+
 $twig->addExtension(new Twig_Extensions_Extension_Intl());
 
 
+// Custom Filter 'slug' 
+$filter = new Twig_SimpleFilter('slug', function ($string) {
+	$string = transliterator_transliterate("Any-Latin; NFD; [:Nonspacing Mark:] Remove; NFC; [:Punctuation:] Remove; Lower();", $string);
+    $string = preg_replace('/[-\s]+/', '-', $string);
+    $string = trim($string, '-');
+    return $string;
+});
+$twig->addFilter($filter);
+
+
+// Templates 
 $template = $twig->loadTemplate('index.html.twig');
 // $style = $twig->loadTemplate('overrides.css.twig');
+
 
 
 /*	Cargar	*/
@@ -39,7 +57,8 @@ $feedsJson = file_get_contents("../hoy.json");
 $feeds = json_decode($feedsJson,true); // 'true' devuelve  array
 
 
-/* Filtro 	*/
+
+/*	Filtro 	*/
 
 #?categoria[]=arte&categoria[]=web&categoria[]=videogames
 
@@ -57,12 +76,18 @@ if(isset($categoria)){
 }
 
 
+
 /*	Render	*/
 
 echo $template->render($feeds);
 
 
+
 /*	Leesto!	*/
+
+
+
+
 
 
 ?>

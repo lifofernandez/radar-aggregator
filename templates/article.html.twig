@@ -1,10 +1,10 @@
-<article id="{{entry.link}}">
+<article id="{{ entry.title|slug }}">
 
 	<header>
 		<h4>
-			{% spaceless %}<a class="fancy" target="_BLANK" href="{{entry.link}}">{{entry.title}}</a>{% endspaceless %}
+			{% spaceless %}<a target="_BLANK" href="{{ entry.title|slug}}">{{entry.title}}</a>{% endspaceless %}
 			<span class="anchor">
-				<a href="#{{entry.link}}">
+				<a href="#{{entry.title|slug}}">
 					#</a>
 			</span>
 		</h4>

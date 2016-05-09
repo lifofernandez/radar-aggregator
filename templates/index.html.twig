@@ -7,6 +7,7 @@
 
 
 	<title>RAM | Radar de noticias de Artes Multimediales</title>
+  <link rel="shortcut icon" href="/favicon.ico" />
 
 	<!-- Google Fonts -->
 	<link
@@ -58,7 +59,7 @@
 							{% spaceless %}<a
 								class="{{ feed.categories|join(' ') }}"
 								title="{{ feed.url }}"
-								href="/#{{ feed.url }}">
+								href="/#{{ feed.name|slug }}">
 								{{ feed.name|raw }}</a>{% endspaceless %}
 								[{{ feed.entries|length }}]
 						</li>
