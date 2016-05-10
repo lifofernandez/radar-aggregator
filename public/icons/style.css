@@ -38,12 +38,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-twitter:before {
-  content: "\66";
-}
+
 .icon-facebook:before {
-  content: "\74";
+  content: "\66";
 }
 .icon-rss:before {
   content: "\72";
+}
+.icon-twitter:before {
+  content: "\74";
 }
