@@ -39,8 +39,11 @@
 }
 
 .icon-twitter:before {
-  content: "\62";
+  content: "\66";
 }
 .icon-facebook:before {
-  content: "\61";
+  content: "\74";
+}
+.icon-rss:before {
+  content: "\72";
 }
