@@ -1,4 +1,4 @@
-http://www.atamvirtual.com.ar/rss/file.php/23/30f8f887fa832b8241a2ddff3b2410d2/mod_forum/1/rss.xml,institucional
+http://www.atamvirtual.com.ar/rss/file.php/23/30f8f887fa832b8241a2ddff3b2410d2/mod_forum/1/rss.xml,ATAM
 http://createdigitalmusic.com/feed/,sonido
 http://salonkritik.net/index.xml,arte,crítica
 http://www.dataisnature.com/?feed=rss2,arte
@@ -25,6 +25,7 @@ http://shomeya.com/articles.rss,web
 http://feeds.feedburner.com/gestalten_tv,actualidad
 http://puredata.info/news/RSS,sonido
 http://feeds.feedburner.com/nodepond,sonido
+http://feeds.feedburner.com/TheRhizomeBlogRss,arte,cultura-digital
 http://www.reddit.com/r/programming/.rss,programación
 http://boingboing.net/feed,miscelánea
 http://www.digicult.it/feed/atom/,actualidad
@@ -36,4 +37,15 @@ https://opensource.com/feed,código-abierto
 https://www.brainpickings.org/feed/,creatividad,miscelánea
 http://benfry.com/writing/feed,referentes
 http://dma.ucla.edu/feed.php?type=news&format=rss,instituciones
+<<<<<<< HEAD
 http://feeds.feedburner.com/Aulaelectroacustica?format=xml,música,español
+=======
+http://www.pmwiki.org/wiki/Site/AllRecentChanges?action=rss,arduino
+http://feeds.feedburner.com/OpenCulture,actualidad
+http://feeds.poetryfoundation.org/AvantGardeAllTheTime,arte,poesía
+http://www.blogsandocs.com/?feed=rss2,publicaciones
+http://feeds2.feedburner.com/Art21Blog,arte,educacion
+http://feeds2.feedburner.com/Art21BlogVideo,arte,educacion,videos
+http://www.flong.com/blog/feed/,referentes
+http://www.cceba.org.ar/feed/,instituciones
+>>>>>>> baccaadf39e873dc8f03b060120ef90f8589893e
