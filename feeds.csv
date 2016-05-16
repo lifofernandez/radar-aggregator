@@ -37,15 +37,16 @@ https://opensource.com/feed,código-abierto
 https://www.brainpickings.org/feed/,creatividad,miscelánea
 http://benfry.com/writing/feed,referentes
 http://dma.ucla.edu/feed.php?type=news&format=rss,instituciones
-<<<<<<< HEAD
 http://feeds.feedburner.com/Aulaelectroacustica?format=xml,música,español
-=======
-http://www.pmwiki.org/wiki/Site/AllRecentChanges?action=rss,arduino
+https://blog.arduino.cc/feed,arduino
 http://feeds.feedburner.com/OpenCulture,actualidad
-http://feeds.poetryfoundation.org/AvantGardeAllTheTime,arte,poesía
+http://feeds.poetryfoundation.org/AvantGardeAllTheTime,arte,poesía,español
 http://www.blogsandocs.com/?feed=rss2,publicaciones
 http://feeds2.feedburner.com/Art21Blog,arte,educacion
 http://feeds2.feedburner.com/Art21BlogVideo,arte,educacion,videos
 http://www.flong.com/blog/feed/,referentes
-http://www.cceba.org.ar/feed/,instituciones
->>>>>>> baccaadf39e873dc8f03b060120ef90f8589893e
+http://www.cceba.org.ar/feed/,instituciones,español
+http://feeds.arstechnica.com/arstechnica/open-source,tecnología,open-source
+http://www.thisiscolossal.com/feed/,arte,diseño,imagen
+http://www.engadget.com/rss.xml,aparatos
+https://news.ycombinator.com/rss,miscelánea
