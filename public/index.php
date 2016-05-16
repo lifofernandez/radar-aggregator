@@ -89,7 +89,7 @@ if(isset($categoria)){
 // Render
 //-----------------------------------------------------
 
-echo $sitemap->render($feeds);
+echo $index->render($feeds);
 
 
 
