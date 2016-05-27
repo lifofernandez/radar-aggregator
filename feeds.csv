@@ -42,7 +42,7 @@ http://feeds.poetryfoundation.org/AvantGardeAllTheTime,poesía,español
 http://www.blogsandocs.com/?feed=rss2,publicaciones
 http://feeds2.feedburner.com/Art21Blog,educacion
 http://feeds2.feedburner.com/Art21BlogVideo,educacion,videos
-http://www.flong.com/blog/feed/,referentes
+http://www.flong.com/blog/feed/,referentes<
 http://www.cceba.org.ar/feed/,instituciones,español
 http://feeds.arstechnica.com/arstechnica/open-source,tecnología,open-source
 http://www.thisiscolossal.com/feed/,diseño,imagen
@@ -54,3 +54,4 @@ https://shuttleworthfoundation.org/feed,instituciones
 http://www.advogato.org/rss/articles.xml,free-software,
 http://www.soundonsound.com/apps/xmlfeed.php,publicaciones,sonido
 http://www.media.mit.edu/news/rss-feeds,instituciones
+http://rss.slashdot.org/Slashdot/slashdotMain,noticias
