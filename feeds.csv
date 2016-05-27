@@ -6,7 +6,7 @@ http://www.datagenetics.com/feed/rss.xml,dataviz
 http://xkcd.com/rss.xml,humor
 http://feeds.feedburner.com/well-formed_data,dataviz
 http://www.creativeapplications.net/feed/,multimedia
-http://what-if.xkcd.com/feed.atom,reflexión
+http://what-if.xkcd.com/feed.atom,publicaciones
 http://www.fluid-radio.co.uk/feed/,sonido
 http://feeds2.feedburner.com/independentgaming,videojuegos,
 http://feeds.feedburner.com/bookgraphics,imagen
@@ -15,13 +15,13 @@ http://www.flong.com/blog/feed/,referentes
 http://www.aec.at/news/en/feed/,festivales
 http://feeds.feedburner.com/visualcomplexity,dataviz
 http://feeds.feedburner.com/colourlovers,imagen
-http://hackaday.com/blog/feed/,actualidad
+http://hackaday.com/blog/feed/,diy
 http://feeds.feedburner.com/GamasutraNews,videogames
 http://feeds.infosthetics.com/infosthetics.com,dataviz
 http://flowingdata.com/feed,dataviz
 http://feeds.feedburner.com/generatorx,dataviz
 http://shomeya.com/articles.rss,web
-http://feeds.feedburner.com/gestalten_tv,actualidad
+http://feeds.feedburner.com/gestalten_tv,miscelánea
 http://puredata.info/news/RSS,sonido
 http://feeds.feedburner.com/nodepond,sonido
 http://feeds.feedburner.com/TheRhizomeBlogRss,cultura-digital
@@ -37,7 +37,7 @@ http://benfry.com/writing/feed,referentes
 http://dma.ucla.edu/feed.php?type=news&format=rss,instituciones
 http://feeds.feedburner.com/Aulaelectroacustica?format=xml,música,español
 https://blog.arduino.cc/feed,arduino
-http://feeds.feedburner.com/OpenCulture,actualidad
+http://feeds.feedburner.com/OpenCulture,cultura-abierta
 http://feeds.poetryfoundation.org/AvantGardeAllTheTime,poesía,español
 http://www.blogsandocs.com/?feed=rss2,publicaciones
 http://feeds2.feedburner.com/Art21Blog,educacion
