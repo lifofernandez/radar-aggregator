@@ -93,26 +93,5 @@ echo $index->render($feeds);
 
 
 
-//-----------------------------------------------------
-// Reserva/Trash
-//-----------------------------------------------------
-
-// $html = $template->render($feeds);
-
-// $config = array(
-//            'indent'         => true,
-//            'output-xhtml'   => true,
-//            'wrap'           => 200);
-
-// // Tidy
-// $tidy = new tidy;
-// $tidy->parseString($html, $config, 'utf8');
-// $tidy->cleanRepair();
-
-// Output
-// echo $tidy;
-
-
-
 
 ?>
