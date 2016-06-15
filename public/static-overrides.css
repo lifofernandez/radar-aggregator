@@ -146,3 +146,6 @@ h4{
 	margin-bottom: inherit;
 	padding: 0 2rem;
 }
+.share_submission{
+	display:none;
+}
