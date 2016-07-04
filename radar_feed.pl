@@ -4,7 +4,7 @@
 ######################################################################
 use strict;
 #use warnings;
-use autodie;
+#use autodie;
 use feature         "say";
 use POSIX           "strftime";
 use Getopt::Std;
@@ -126,6 +126,7 @@ sub feeds_list {
 	my $n = 0;
 	my @datas = read_file($file_name, { binmode => ':utf8'});
 	foreach my $ln (@datas){
+        next if ($ln =~ m/^#/g);
 		chomp($ln);
 		my @r = split(/,/,$ln);
 		#print Dumper(@r) if $debug;
@@ -149,7 +150,7 @@ Utiliza XML::FeedPP.
 
 sub url_getter {
 	foreach my $uri_rss (@uri_rss_all){
-		my $feed = XML::FeedPP->new($uri_rss);
+		my $feed = XML::FeedPP->new($uri_rss) || next;
 		my $nro = 0;
         my @entries = ();
 		for my $entry ($feed->get_item()){
