@@ -6,3 +6,4 @@ reserva/
 vendor/
 composer.*
 composer*
+*.json
